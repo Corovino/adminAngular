@@ -1,0 +1,33 @@
+aside{
+  border-right: 3px solid #00ABFE;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+  position: fixed;
+  left: 0;
+  top: 64px;
+  padding: 20px 0;
+  height: calc(100% - 64px);
+  transition: all linear 0.2s;
+  width: 240px;
+}
+  aside *{ transition: all linear 0.2s; }
+  aside ul li a{
+    color: #1C2326;
+    display: block;
+    padding: 12px 10px 12px 60px;
+    position: relative;
+  }
+    aside ul li a:hover{ background-color: #D2D2D2; }
+    aside ul li a i{
+      font-size: 21px;
+      margin-right: 10px;
+      position: absolute;
+      left: 30px;
+      top: 12px;
+    }
+      aside ul li a i.icon-users{ font-size: 18px; left: 25px; }
+      aside ul li a i.icon-patient{ font-size: 18px; left: 25px; }
+    aside ul li.active a{
+      background-color: #00ABFE;
+      border-left: 4px solid #1C2326;
+      color: #FFFFFF;
+    }
