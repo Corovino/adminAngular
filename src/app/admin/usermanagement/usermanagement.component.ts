@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {MdDialog} from '@angular/material';
+import {DeleteComponent} from '../../admin/modal/delete/delete.component';
 
 @Component({
   selector: 'app-usermanagement',
@@ -7,7 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UsermanagementComponent implements OnInit {
 
-  constructor() { }
+  search = [
+    {value: 'option1', viewValue: 'Option 1'},
+    {value: 'option2', viewValue: 'Option 2'},
+    {value: 'option3', viewValue: 'Option 3'}
+  ];
+  constructor(public dialog: MdDialog) {}
+  openDelete() {
+    this.dialog.open(DeleteComponent);
+  }
 
   ngOnInit() {
   }

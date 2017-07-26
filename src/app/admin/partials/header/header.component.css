@@ -16,3 +16,56 @@ header{
     width: 210px;
     text-align: center;
   }
+  header h2.title{
+    display: block;
+    float: left;
+    font-size: 18px;
+    border-left: 1px solid #D4D4D4;
+    color: #D4D4D4;
+    margin: 20px 13px;
+    padding-left: 25px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  header .dropdown{
+    display: block;
+    float: right;
+    height: 52px;
+    margin-top: 9px;
+    margin-right: 10px;
+  }
+    header .dropdown > a{
+      display: block;
+      padding-left: 55px;
+      padding-right: 20px;
+      position: relative;
+    }
+    header .dropdown span.photo{
+      border: 2px solid #A9B8BF;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 100%;
+      overflow: hidden;
+      height: 45px;
+      width: 45px;
+    }
+      header .dropdown span.photo img{ max-width: 100%; }
+    header .dropdown span.name{
+      color: #FFFFFF;
+      display: block;
+      font-size: 14px;
+      line-height: 20px;
+      padding-top: 4px;
+    }
+    header .dropdown span{
+      display: block;
+      color: #00ABFE;
+      font-size: 13px;
+    }
+    header .dropdown i{
+      position: absolute;
+      font-size: 6px;
+      top: 20px;
+      right: 0px;
+    }

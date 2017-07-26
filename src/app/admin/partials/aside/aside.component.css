@@ -4,7 +4,7 @@ aside{
   position: fixed;
   left: 0;
   top: 64px;
-  padding: 20px 0;
+  padding: 20px 0 90px 0px;
   height: calc(100% - 64px);
   transition: all linear 0.2s;
   width: 240px;
@@ -31,3 +31,33 @@ aside{
       border-left: 4px solid #1C2326;
       color: #FFFFFF;
     }
+
+    aside div.search{
+      position: absolute;
+      padding: 0px 20px;
+      bottom: 30px;
+      left: 0;
+    }
+      aside div.search:after{
+        color: #0277BD;
+        content: "\E917";
+        font-family: 'icomoon';
+        position: absolute;
+        top: 5px;
+        right: 35px;
+      }
+      aside div.search input{
+        border-radius: 20px;
+        box-sizing: border-box;
+        height: 30px;
+        line-height: 30px;
+        padding: 0px 40px 0px 15px;
+        width: 100%;
+        background-color: #FFFFFF;
+        border: none;
+        font-size: 14px;
+        color: #455A64;
+      }
+      aside div.search input:focus{
+        box-shadow: none;
+      }

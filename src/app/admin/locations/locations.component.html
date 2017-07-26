@@ -1,3 +1,106 @@
-<p>
-  locations works!
-</p>
+<div class="main col-lg-9 col-lg-offset-3">
+  <a href="javascript:void(0)" (click)="openNewLocation()" class="add"><i class="icon-plus"></i></a>
+  <div class="sectionlocations">
+    <div class="options">
+      <h2 class="title">Location on the map</h2>
+      <div class="right">
+        <md-select placeholder="Search">
+          <md-option *ngFor="let search of search" [value]="search.value">
+            {{ search.viewValue }}
+          </md-option>
+        </md-select>
+      </div>
+    </div>
+    <div class="cont">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="item">
+            <div class="dropdown">
+              <button md-button [mdMenuTriggerFor]="menu"><i class="icon-menu"></i></button>
+              <md-menu #menu="mdMenu">
+                <a class="dropdown-item" href="#"><i class="icon-edit"></i>Edit</a>
+                <a class="dropdown-item" href="javascript:void(0)" (click)="openDelete()"><i class="icon-delete"></i>Delete</a>
+              </md-menu>
+            </div>
+            <h3 class="title">CHICAGO, IL</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum tempus urna, eu dignissim ante gravida vel. Praesent commodo elit eu dolor facilisis placerat. Nulla facilisi. Lorem ipsum</p>
+            <p class="colorblue">123 fake Street 345802</p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="item">
+            <div class="dropdown">
+              <button md-button [mdMenuTriggerFor]="menu"><i class="icon-menu"></i></button>
+              <md-menu #menu="mdMenu">
+                <a class="dropdown-item" href="#"><i class="icon-edit"></i>Edit</a>
+                <a class="dropdown-item" href="javascript:void(0)" (click)="openDelete()"><i class="icon-delete"></i>Delete</a>
+              </md-menu>
+            </div>
+            <h3 class="title">CHICAGO, IL</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum tempus urna, eu dignissim ante gravida vel. Praesent commodo elit eu dolor facilisis placerat. Nulla facilisi. Lorem ipsum</p>
+            <p class="colorblue">123 fake Street 345802</p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="item">
+            <div class="dropdown">
+              <button md-button [mdMenuTriggerFor]="menu"><i class="icon-menu"></i></button>
+              <md-menu #menu="mdMenu">
+                <a class="dropdown-item" href="#"><i class="icon-edit"></i>Edit</a>
+                <a class="dropdown-item" href="javascript:void(0)" (click)="openDelete()"><i class="icon-delete"></i>Delete</a>
+              </md-menu>
+            </div>
+            <h3 class="title">CHICAGO, IL</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum tempus urna, eu dignissim ante gravida vel. Praesent commodo elit eu dolor facilisis placerat. Nulla facilisi. Lorem ipsum</p>
+            <p class="colorblue">123 fake Street 345802</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="item">
+            <div class="dropdown">
+              <button md-button [mdMenuTriggerFor]="menu"><i class="icon-menu"></i></button>
+              <md-menu #menu="mdMenu">
+                <a class="dropdown-item" href="#"><i class="icon-edit"></i>Edit</a>
+                <a class="dropdown-item" href="javascript:void(0)" (click)="openDelete()"><i class="icon-delete"></i>Delete</a>
+              </md-menu>
+            </div>
+            <h3 class="title">CHICAGO, IL</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum tempus urna, eu dignissim ante gravida vel. Praesent commodo elit eu dolor facilisis placerat. Nulla facilisi. Lorem ipsum</p>
+            <p class="colorblue">123 fake Street 345802</p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="item">
+            <div class="dropdown">
+              <button md-button [mdMenuTriggerFor]="menu"><i class="icon-menu"></i></button>
+              <md-menu #menu="mdMenu">
+                <a class="dropdown-item" href="#"><i class="icon-edit"></i>Edit</a>
+                <a class="dropdown-item" href="javascript:void(0)" (click)="openDelete()"><i class="icon-delete"></i>Delete</a>
+              </md-menu>
+            </div>
+            <h3 class="title">CHICAGO, IL</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum tempus urna, eu dignissim ante gravida vel. Praesent commodo elit eu dolor facilisis placerat. Nulla facilisi. Lorem ipsum</p>
+            <p class="colorblue">123 fake Street 345802</p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="item">
+            <div class="dropdown">
+              <button md-button [mdMenuTriggerFor]="menu"><i class="icon-menu"></i></button>
+              <md-menu #menu="mdMenu">
+                <a class="dropdown-item" href="#"><i class="icon-edit"></i>Edit</a>
+                <a class="dropdown-item" href="javascript:void(0)" (click)="openDelete()"><i class="icon-delete"></i>Delete</a>
+              </md-menu>
+            </div>
+            <h3 class="title">CHICAGO, IL</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum tempus urna, eu dignissim ante gravida vel. Praesent commodo elit eu dolor facilisis placerat. Nulla facilisi. Lorem ipsum</p>
+            <p class="colorblue">123 fake Street 345802</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,61 @@
+<div class="newlocation w830">
+  <h3 class="withline">New Location</h3>
+  <form class="form">
+    <div class="row">
+      <div class="col-sm-6">
+        <fieldset>
+          <md-input-container>
+            <input mdInput placeholder="Name" value="">
+          </md-input-container>
+        </fieldset>
+        <fieldset>
+          <md-input-container class="example-full-width">
+            <input mdInput #message maxlength="256" placeholder="Description" value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam gravida venenatis accumsan. In mi massa, tempus">
+            <md-hint align="end">{{message.value.length}} / 256</md-hint>
+          </md-input-container>
+        </fieldset>
+      </div>
+      <div class="col-sm-6">
+        <fieldset>
+          <md-input-container>
+            <input mdInput placeholder="Address Line 1" value="">
+          </md-input-container>
+        </fieldset>
+        <fieldset>
+          <md-input-container>
+            <input mdInput placeholder="Address Line 2" value="">
+          </md-input-container>
+        </fieldset>
+        <fieldset>
+          <md-input-container>
+            <input mdInput placeholder="Zipcode" value="">
+          </md-input-container>
+        </fieldset>
+        <fieldset>
+          <md-select placeholder="Select One">
+            <md-option *ngFor="let food of foods" [value]="food.value">
+              {{ food.viewValue }}
+            </md-option>
+          </md-select>
+        </fieldset>
+        <fieldset>
+          <md-select placeholder="Select One">
+            <md-option *ngFor="let food of foods" [value]="food.value">
+              {{ food.viewValue }}
+            </md-option>
+          </md-select>
+        </fieldset>
+        <fieldset>
+          <md-select placeholder="Select One">
+            <md-option *ngFor="let food of foods" [value]="food.value">
+              {{ food.viewValue }}
+            </md-option>
+          </md-select>
+        </fieldset>
+      </div>
+    </div>
+    <div class="contcenter">
+      <button [md-dialog-close]="true" class="btn btn-primary blue inline">Create</button>
+    </div>
+  </form>
+</div>

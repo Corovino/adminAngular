@@ -1,0 +1,24 @@
+.modaldescription{ width: 445px; }
+  .modaldescription p{
+    color: #83898A;
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+  .modaldescription ul.location{
+    margin: 0;
+    overflow: hidden;
+  }
+    .modaldescription ul.location li{
+      background-color: #00ABFE;
+      border-radius: 5px;
+      color: #FFFFFF;
+      display: block;
+      float: left;
+      font-size: 15px;
+      height: 36px;
+      line-height: 36px;
+      margin-right: 10px;
+      text-align: center;
+      width: 36px;
+    }
+      .modaldescription ul.location li:hover{ background-color: #2098D3; }
