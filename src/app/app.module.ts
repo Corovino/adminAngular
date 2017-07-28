@@ -8,8 +8,11 @@ import { CdkTableModule } from '@angular/cdk';
 
 import { AppComponent } from './app.component';
 import { AppRouting } from './admin/app-routing/app-routing';
-import { TestComponent } from './admin/test/test.component';
-import { UsermanagementComponent } from './admin/usermanagement/usermanagement.component';
+import { TestinfoComponent } from './admin/test/testinfo/testinfo.component';
+import { TestlistComponent } from './admin/test/testlist/testlist.component';
+import { UserlistComponent } from './admin/usermanagement/userlist/userlist.component';
+import { UserinfoComponent } from './admin/usermanagement/userinfo/userinfo.component';
+import { NewuserComponent } from './admin/usermanagement/newuser/newuser.component';
 import { DashboardComponent } from './admin/dashboard/dashboard.component';
 import { PatientManagementComponent } from './admin/patient-management/patient-management.component';
 import { AccessPermitionComponent } from './admin/access-permition/access-permition.component';
@@ -20,11 +23,10 @@ import { DescriptionTestComponent } from './admin/modal/description-test/descrip
 import { DeleteComponent } from './admin/modal/delete/delete.component';
 import { NewLocationComponent } from './admin/modal/new-location/new-location.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
-    TestComponent,
-    UsermanagementComponent,
     DashboardComponent,
     PatientManagementComponent,
     AccessPermitionComponent,
@@ -33,7 +35,12 @@ import { NewLocationComponent } from './admin/modal/new-location/new-location.co
     HeaderComponent,
     DescriptionTestComponent,
     DeleteComponent,
-    NewLocationComponent
+    NewLocationComponent,
+    UserlistComponent,
+    UserinfoComponent,
+    NewuserComponent,
+    TestinfoComponent,
+    TestlistComponent
   ],
   imports: [
     BrowserModule,
@@ -44,7 +51,6 @@ import { NewLocationComponent } from './admin/modal/new-location/new-location.co
     MdCheckboxModule,
     MdSidenavModule,
     CdkTableModule
-
   ],
   providers: [],
   bootstrap: [AppComponent],

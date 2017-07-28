@@ -1,12 +1,14 @@
 .modaldescription{ width: 445px; }
   .modaldescription p{
     color: #83898A;
-    font-size: 15px;
+    font-size: 14px;
     margin-bottom: 30px;
   }
   .modaldescription ul.location{
     margin: 0;
     overflow: hidden;
+    padding: 0;
+    list-style: none;
   }
     .modaldescription ul.location li{
       background-color: #00ABFE;

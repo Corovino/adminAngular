@@ -10,27 +10,33 @@ aside{
   width: 240px;
 }
   aside *{ transition: all linear 0.2s; }
-  aside ul li a{
-    color: #1C2326;
-    display: block;
-    padding: 12px 10px 12px 60px;
-    position: relative;
+  aside ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
   }
-    aside ul li a:hover{ background-color: #D2D2D2; }
-    aside ul li a i{
-      font-size: 21px;
-      margin-right: 10px;
-      position: absolute;
-      left: 30px;
-      top: 12px;
+    aside ul li a{
+      color: #1C2326;
+      display: block;
+      padding: 12px 10px 12px 60px;
+      position: relative;
+      text-decoration: none;
     }
-      aside ul li a i.icon-users{ font-size: 18px; left: 25px; }
-      aside ul li a i.icon-patient{ font-size: 18px; left: 25px; }
-    aside ul li.active a{
-      background-color: #00ABFE;
-      border-left: 4px solid #1C2326;
-      color: #FFFFFF;
-    }
+      aside ul li a:hover{ background-color: #D2D2D2; }
+      aside ul li a i{
+        font-size: 21px;
+        margin-right: 10px;
+        position: absolute;
+        left: 30px;
+        top: 12px;
+      }
+        aside ul li a i.icon-users{ font-size: 18px; left: 25px; }
+        aside ul li a i.icon-patient{ font-size: 18px; left: 25px; }
+      aside ul li.active a{
+        background-color: #00ABFE;
+        border-left: 4px solid #1C2326;
+        color: #FFFFFF;
+      }
 
     aside div.search{
       position: absolute;
@@ -60,4 +66,5 @@ aside{
       }
       aside div.search input:focus{
         box-shadow: none;
+        outline: none;
       }

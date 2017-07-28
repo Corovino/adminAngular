@@ -1,0 +1,49 @@
+.userinfo.bgwhite{ padding: 50px 20px 40px 20px; position: relative; }
+  .userinfo .dropdown{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+  }
+  .userinfo.bgwhite .br{ border-right: 1px solid #f1f1f1; height: 400px; }
+  .userinfo.bgwhite .info{ text-align: center; }
+    .userinfo.bgwhite span.photo{
+      background-color: #00ABFE;
+      border-radius: 100%;
+      border: 3px solid #00ABFE;
+      display: block;
+      height: 118px;
+      overflow: hidden;
+      margin: 0 auto 20px;
+      width: 118px;
+    }
+    .userinfo.bgwhite span.photo img{ max-height: 100%; }
+    .userinfo.bgwhite .info h3{
+      color: #00ABFE;
+      font-size: 25px;
+      font-weight: 300;
+      margin: 0 0 10px 0;
+      text-transform: uppercase;
+      font-weight: 300;
+    }
+    .userinfo.bgwhite .info p,
+    .userinfo.bgwhite .info p span{ font-size: 15px; }
+    .userinfo.bgwhite p{
+      color: #83898A;
+      font-size: 14px;
+      margin-bottom: 10px;
+      line-height: 23px;
+    }
+      .userinfo.bgwhite p span{
+        color: #38464D;
+        display: inline-block;
+        font-size: 14px;
+        padding-right: 5px;
+      }
+    .userinfo.bgwhite .certification p{ font-size: 13px; }
+    .userinfo.bgwhite .certification p span{ display: block; }
+    .userinfo.bgwhite .div{ margin-bottom: 20px; }
+    .userinfo.bgwhite .div p{
+      color: #38464D;
+      font-size: 14px;
+      margin-bottom: 1px;
+    }

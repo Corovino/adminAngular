@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import {MdSidenavModule} from '@angular/material';
-import {MdDialog} from '@angular/material';
 
 @Component({
   selector: 'app-aside',
@@ -9,23 +7,9 @@ import {MdDialog} from '@angular/material';
 })
 export class AsideComponent implements OnInit {
 
-  tiles = [
-
-  ];
-
-  constructor(public dialog: MdDialog) { }
-
-  openDialog() {
-    this.dialog.open(DialogOverviewExampleDialog);
-  }
+  constructor() { }
 
   ngOnInit() {
   }
 
 }
-
-@Component({
-  selector: 'dialog-overview-example-dialog',
-  templateUrl: './dialog-overview-example-dialog.html',
-})
-export class DialogOverviewExampleDialog {}

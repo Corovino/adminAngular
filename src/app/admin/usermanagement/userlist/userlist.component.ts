@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import {MdDialog} from '@angular/material';
-import {DeleteComponent} from '../../admin/modal/delete/delete.component';
+import { MdDialog } from '@angular/material';
+import { DeleteComponent } from '../../../admin/modal/delete/delete.component';
 
 @Component({
-  selector: 'app-usermanagement',
-  templateUrl: './usermanagement.component.html',
-  styleUrls: ['./usermanagement.component.css']
+  selector: 'app-userlist',
+  templateUrl: './userlist.component.html',
+  styleUrls: ['./userlist.component.css']
 })
-export class UsermanagementComponent implements OnInit {
+export class UserlistComponent implements OnInit {
 
   search = [
     {value: 'option1', viewValue: 'Option 1'},

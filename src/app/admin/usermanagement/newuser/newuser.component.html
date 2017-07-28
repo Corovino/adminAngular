@@ -1,0 +1,75 @@
+<div class="main col-lg-9 col-lg-offset-3">
+  <div class="sectionewuser">
+    <div class="options">
+      <h2 class="title">New User</h2>
+    </div>
+    <div class="bgwhite">
+      <form class="form">
+        <div class="row mb20">
+          <div class="col-sm-6">
+            <fieldset>
+              <md-input-container>
+                <input mdInput placeholder="First Name" value="">
+              </md-input-container>
+            </fieldset>
+            <fieldset>
+              <md-input-container>
+                <input mdInput placeholder="Last Name" value="">
+              </md-input-container>
+            </fieldset>
+            <fieldset>
+              <md-input-container>
+                <input mdInput placeholder="Employee ID" value="">
+              </md-input-container>
+            </fieldset>
+            <fieldset>
+              <md-input-container>
+                <input mdInput placeholder="Email" value="">
+              </md-input-container>
+            </fieldset>
+            <fieldset>
+              <md-input-container>
+                <input mdInput placeholder="Alt Email" value="">
+              </md-input-container>
+            </fieldset>
+          </div>
+          <div class="col-sm-6">
+            <!--<fieldset>
+              <md-input-container>
+                <input mdInput [mdDatepicker]="picker" placeholder="DOB">
+                <button mdSuffix [mdDatepickerToggle]="picker"></button>
+              </md-input-container>
+              <md-datepicker #picker></md-datepicker>
+            </fieldset>-->
+            <fieldset>
+              <md-select placeholder="Gender">
+                <md-option *ngFor="let gender of gender" [value]="gender.value">
+                  {{ gender.viewValue }}
+                </md-option>
+              </md-select>
+            </fieldset>
+            <fieldset>
+              <md-input-container>
+                <span mdPrefix>+1 &nbsp;</span>
+                <input type="tel" mdInput placeholder="Phone">
+              </md-input-container>
+            </fieldset>
+            <fieldset>
+              <md-input-container>
+                <span mdPrefix>+1 &nbsp;</span>
+                <input type="tel" mdInput placeholder="Mobile">
+              </md-input-container>
+            </fieldset>
+          </div>
+        </div>
+        <div class="contcenter">
+          <ul class="inline">
+            <li><button class="btn btn-primary blue inline">Cancel</button></li>
+            <li><button class="btn btn-primary blue inline">Save</button></li>
+          </ul>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+

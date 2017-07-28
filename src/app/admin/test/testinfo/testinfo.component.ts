@@ -1,28 +1,24 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-new-location',
-  templateUrl: './new-location.component.html',
-  styleUrls: ['./new-location.component.css']
+  selector: 'app-testinfo',
+  templateUrl: './testinfo.component.html',
+  styleUrls: ['./testinfo.component.css']
 })
-export class NewLocationComponent implements OnInit {
+export class TestinfoComponent implements OnInit {
 
-  state = [
+  location = [
     {value: 'option1', viewValue: 'Option 1'},
     {value: 'option2', viewValue: 'Option 2'},
     {value: 'option3', viewValue: 'Option 3'}
   ];
-  city = [
-    {value: 'option1', viewValue: 'Option 1'},
-    {value: 'option2', viewValue: 'Option 2'},
-    {value: 'option3', viewValue: 'Option 3'}
-  ];
-  timezone = [
+  division = [
     {value: 'option1', viewValue: 'Option 1'},
     {value: 'option2', viewValue: 'Option 2'},
     {value: 'option3', viewValue: 'Option 3'}
   ];
   constructor() { }
+
   ngOnInit() {
   }
 

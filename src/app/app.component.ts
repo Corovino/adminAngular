@@ -25,7 +25,10 @@ export class AppComponent {
           case '/test':
             this.titlePage = 'Test';
             break;
-          case '/usersManagement':
+          case '/usersManagement' :
+            this.titlePage = 'User Management';
+            break;
+          case '/usersManagement/userinfo' :
             this.titlePage = 'User Management';
             break;
           case '/accessPermission':

@@ -1,0 +1,68 @@
+<div class="main col-lg-9 col-lg-offset-3">
+  <div class="sectionnewtest">
+    <div class="options">
+      <h2 class="title">New test</h2>
+      <div class="steps">
+        <span class="current"></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div class="bgwhite">
+      <div class="contcenter">
+        <h4>Test Info</h4>
+      </div>
+      <form class="form">
+        <div class="row mb40">
+          <div class="col-md-6">
+            <fieldset>
+              <md-input-container>
+                <input mdInput placeholder="Test ID" value="">
+              </md-input-container>
+            </fieldset>
+            <fieldset>
+              <md-input-container>
+                <input mdInput placeholder="Test Name" value="">
+              </md-input-container>
+            </fieldset>
+            <fieldset>
+              <md-input-container class="example-full-width">
+                <input mdInput #message maxlength="256" placeholder="Description" value="">
+                <md-hint align="end">{{message.value.length}} / 256</md-hint>
+              </md-input-container>
+            </fieldset>
+          </div>
+          <div class="col-md-6">
+            <fieldset>
+              <md-select placeholder="Location">
+                <md-option *ngFor="let location of location" [value]="location.value">
+                  {{ location.viewValue }}
+                </md-option>
+              </md-select>
+            </fieldset>
+            <fieldset>
+              <md-select placeholder="Division">
+                <md-option *ngFor="let division of division" [value]="division.value">
+                  {{ division.viewValue }}
+                </md-option>
+              </md-select>
+            </fieldset>
+            <fieldset>
+              <md-input-container>
+                <input mdInput placeholder="Calculation">
+                <md-icon mdSuffix><i class="icon-calculation"></i></md-icon>
+              </md-input-container>
+            </fieldset>
+          </div>
+        </div>
+        <div class="contcenter">
+          <ul class="inline">
+            <li><button class="btn btn-primary blue">Cancel</button></li>
+            <li><button class="btn btn-primary blue">Next</button></li>
+          </ul>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
