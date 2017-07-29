@@ -18,9 +18,10 @@ a:hover{ text-decoration: none; }
 
 .container-fluid{ min-width: 1100px !important; }
 .col-lg-offset-3 { margin-left: calc(100% - (100% - 250px)) !important; padding-top: 90px; }
-.col-lg-9{ min-width: 820px; width: calc(100% - 250px); }
+.col-lg-9{ min-width: 820px; width: calc(100% - 260px); }
 .col-md-3 { width: 25%; float: left; }
 .col-md-6 { width: 50%; float: left; }
+.mb0{ margin-bottom: 0px; }
 .mb20{ margin-bottom: 20px; }
 .mb40{ margin-bottom: 40px; }
 
@@ -45,6 +46,8 @@ ul.inline{
     text-transform: uppercase;
     margin: 6px 0 0 0;
   }
+  .options .form{ padding: 0; }
+  .options .form .mat-select{ margin-bottom: 0; }
   .options .right{ float: right; margin-right: 10px }
   .options .filter{ display: block; float: left; }
   .options .filter a{
@@ -150,10 +153,10 @@ table.table .btn.btn-primary{
 }
 .btn.btn-primary {
   border: none;
-  padding: 10px 30px;
+  padding: 6px 40px;
   margin: 0;
   text-transform: none;
-  font-size: 15px;
+  font-size: 14px;
 }
   .btn.btn-primary.blue{ background-color: #00ABFE; color: #FFFFFF; }
   .btn.btn-primary.blue:active,
@@ -250,7 +253,11 @@ a.add{
   width: 56px;
   box-shadow: 0px 2px 8px rgba(0,0,0,0.5);
   font-size: 18px;
+  z-index: 100;
 }
+  a.add:hover,
+  a.add:focus,
+  a.add:visited{ text-decoration: none; }
 
 /* Checkbox
 ================================================== */
@@ -260,20 +267,30 @@ a.add{
 }
 table.table .mat-checkbox-inner-container{ top: 3px; }
 
+.mat-checkbox-layout{ font-weight: 400; }
+
+
 /* Select
 ================================================== */
-.mat-select{ min-width: 150px; }
-.mat-select-trigger{ font-size:14px; }
-.mat-select-underline { background-color: #00ABFE !important; }
-.mat-select-arrow{ color: #00ABFE; }
-.mat-select-disabled .mat-select-value, .mat-select-trigger { color: #1C2326; }
-.mat-select:focus:not(.mat-select-disabled).mat-primary .mat-select-arrow,
-.mat-select:focus:not(.mat-select-disabled).mat-primary .mat-select-trigger { color: #00ABFE; }
-.mat-option{
+.form .mat-select{ min-width: 150px; }
+.form .mat-select-trigger{ font-size:14px; }
+.form .mat-select:focus:not(.mat-select-disabled).mat-primary .mat-select-underline {
+  background-color: #00ABFE;
+  height: 2px;
+}
+.form .mat-select-arrow{ color: #00ABFE; }
+.form .mat-select-disabled .mat-select-value, .mat-select-trigger { color: #1C2326; }
+.form .mat-select:focus:not(.mat-select-disabled).mat-primary .mat-select-arrow,
+.form .mat-select:focus:not(.mat-select-disabled).mat-primary .mat-select-trigger { color: #00ABFE; }
+.form .mat-option{
   height: 35px;
   line-height: 35px;
   font-size:13px;
   color: #1C2326;
+}
+.mat-option.mat-selected.mat-primary,
+.mat-primary .mat-option.mat-selected {
+  color: #00ABFE;
 }
 
 /* Modals
@@ -322,6 +339,7 @@ h3.withline{
     margin-bottom: 20px;
   }
   .form .mat-select-trigger{ height: 46px; font-size: 13px; }
+  .form.selsmall .mat-select-trigger{ height: 30px; }
   .form .mat-input-element{ font-size: 13px; }
   .form .mat-input-placeholder{ color: #38464D; }
   .form .mat-input-placeholder-wrapper{ color: #38464D; font-size: 13px; }
@@ -335,6 +353,7 @@ h3.withline{
     box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
     border-radius: 5px;
     padding: 20px;
+    margin-bottom: 40px;
   }
   .form .icon-calculation{ color: #00ABFE; }
 

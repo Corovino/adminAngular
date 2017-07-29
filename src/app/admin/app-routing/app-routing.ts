@@ -4,20 +4,22 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { DashboardComponent } from '../dashboard/dashboard.component';
 import { PatientManagementComponent } from '../patient-management/patient-management.component';
-import { AccessPermitionComponent } from '../access-permition/access-permition.component';
 import { LocationsComponent } from '../locations/locations.component';
 import { UserlistComponent } from '../usermanagement/userlist/userlist.component';
 import { UserinfoComponent } from '../usermanagement/userinfo/userinfo.component';
 import { NewuserComponent } from '../usermanagement/newuser/newuser.component';
 import { TestinfoComponent } from '../test/testinfo/testinfo.component';
-import {TestlistComponent} from "../test/testlist/testlist.component";
+import { TestlistComponent } from '../test/testlist/testlist.component';
+import { PermitionlistComponent } from '../access-permition/permitionlist/permitionlist.component';
+import { NewpermitionComponent } from '../access-permition/newpermition/newpermition.component';
 
 
 const routes: Routes = [
   { path: 'test', component: TestlistComponent },
   { path: 'usersManagement', component: UserlistComponent },
   { path: 'patientManagement', component: PatientManagementComponent },
-  { path: 'accessPermission', component: AccessPermitionComponent },
+  { path: 'accessPermission', component: PermitionlistComponent },
+  { path: 'accessPermission/newpermition', component: NewpermitionComponent },
   { path: 'locations', component: LocationsComponent },
   { path: 'usersManagement/userinfo', component: UserinfoComponent },
   { path: 'usersManagement/newuser', component: NewuserComponent },

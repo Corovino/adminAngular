@@ -15,13 +15,14 @@ import { UserinfoComponent } from './admin/usermanagement/userinfo/userinfo.comp
 import { NewuserComponent } from './admin/usermanagement/newuser/newuser.component';
 import { DashboardComponent } from './admin/dashboard/dashboard.component';
 import { PatientManagementComponent } from './admin/patient-management/patient-management.component';
-import { AccessPermitionComponent } from './admin/access-permition/access-permition.component';
 import { LocationsComponent } from './admin/locations/locations.component';
 import { AsideComponent } from './admin/partials/aside/aside.component';
 import { HeaderComponent } from './admin/partials/header/header.component';
 import { DescriptionTestComponent } from './admin/modal/description-test/description-test.component';
 import { DeleteComponent } from './admin/modal/delete/delete.component';
 import { NewLocationComponent } from './admin/modal/new-location/new-location.component';
+import { PermitionlistComponent } from './admin/access-permition/permitionlist/permitionlist.component';
+import { NewpermitionComponent } from './admin/access-permition/newpermition/newpermition.component';
 
 
 @NgModule({
@@ -29,7 +30,6 @@ import { NewLocationComponent } from './admin/modal/new-location/new-location.co
     AppComponent,
     DashboardComponent,
     PatientManagementComponent,
-    AccessPermitionComponent,
     LocationsComponent,
     AsideComponent,
     HeaderComponent,
@@ -40,7 +40,9 @@ import { NewLocationComponent } from './admin/modal/new-location/new-location.co
     UserinfoComponent,
     NewuserComponent,
     TestinfoComponent,
-    TestlistComponent
+    TestlistComponent,
+    PermitionlistComponent,
+    NewpermitionComponent
   ],
   imports: [
     BrowserModule,

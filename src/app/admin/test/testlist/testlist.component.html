@@ -3,7 +3,7 @@
   <div class="sectiontest">
     <div class="options">
       <h2 class="title">Test list</h2>
-      <div class="right">
+      <div class="right form selsmall">
         <md-select placeholder="Search">
           <md-option *ngFor="let search of search" [value]="search.value">
             {{ search.viewValue }}
@@ -22,7 +22,7 @@
       </thead>
       <tbody>
       <tr>
-        <td>Test Name<a class="ml10" routerLink="testinfo"><i class="icon-eye"></i></a></td>
+        <td>Test Name<a href="#" class="ml10"><i class="icon-eye"></i></a></td>
         <td><a href="javascript:void(0)" (click)="openDescription()">Description</a></td>
         <td>PUBLISHED</td>
         <td>

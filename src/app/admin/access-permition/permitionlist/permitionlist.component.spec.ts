@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AccessPermitionComponent } from './access-permition.component';
+import { PermitionlistComponent } from './permitionlist.component';
 
-describe('AccessPermitionComponent', () => {
-  let component: AccessPermitionComponent;
-  let fixture: ComponentFixture<AccessPermitionComponent>;
+describe('PermitionlistComponent', () => {
+  let component: PermitionlistComponent;
+  let fixture: ComponentFixture<PermitionlistComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AccessPermitionComponent ]
+      declarations: [ PermitionlistComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AccessPermitionComponent);
+    fixture = TestBed.createComponent(PermitionlistComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
