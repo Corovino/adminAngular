@@ -14,7 +14,8 @@
   float: left;
   text-align: center;
   padding-right: 20px;
-  width: 180px;
+  padding-left: 20px;
+  width: 210px;
 }
   .patientlist .chartsection .bgwhite .info .img{
     display: block;
@@ -37,9 +38,17 @@
     padding-bottom: 5px;
   }
 
-  .chart{
+  .chartsection .chart{
     display: block;
     float: left;
-    height: 150px;
-    width: calc(100% - 180px);
+    width: calc(100% - 220px);
+    padding-left: 30px;
   }
+    .chartsection .chart canvas{
+      max-height: 100% !important;
+      max-width: 100% !important;
+      height: 100% !important;
+      width: 100% !important;
+    }
+
+.datepicker{ margin: 15px 0px 25px 0px; }

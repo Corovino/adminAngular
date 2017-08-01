@@ -12,14 +12,12 @@
       </div>
       <div class="bgwhite">
         <div class="info">
-          <div class="form-group" *ngFor="let dateInput of dateInputs">
-              <div class="input-group" daterangepicker [options]="{startDate:dateInput.start, endDate:dateInput.end }" >
-                <span class="form-control uneditable-input">
-                    {{ dateInput.start | date:'M/dd/y' }} - {{ dateInput.end| date:'M/dd/y' }}
-                </span>
-                <span class="input-group-btn">
-                  <a type="button" class="btn btn-default"><i class="glyphicon glyphicon-calendar"></i></a>
-                </span>
+          <div class="datepicker" *ngFor="let dateInput of dateInputs">
+            <div daterangepicker [options]="{startDate:dateInput.start, endDate:dateInput.end }" >
+              <span class="text">
+                {{ dateInput.start | date:'M/dd/y' }} - {{ dateInput.end| date:'M/dd/y' }}
+                 <span class="arrow"><i class="icon-arrowbottom"></i></span>
+              </span>
             </div>
           </div>
           <span class="img"><img src="assets/images/patient.svg" alt=""/></span>
@@ -27,16 +25,12 @@
           <p class="border">NEW PATIENTS</p>
         </div>
         <div class="chart">
-          <canvas baseChart [data]="doughnutChartData"
-                  [labels]="doughnutChartLabels"
-                  [chartType]="doughnutChartType"
-                  [colors]="doughnutChartColors"
-                  (chartHover)="chartHovered($event)"
-                  (chartClick)="chartClicked($event)"></canvas>
           <canvas baseChart
                   [data]="lineChartData"
                   [labels]="lineChartLabels"
                   [chartType]="lineChartType"
+                  [colors]="lineChartColors"
+                  [legend] = false
                   (chartHover)="chartHovered($event)"
                   (chartClick)="chartClicked($event)"></canvas>
         </div>
