@@ -37,6 +37,12 @@ export class AppComponent {
           case '/locations':
             this.titlePage = 'Location';
             break;
+          case '/patientManagement':
+            this.titlePage = 'Patient Management';
+            break;
+          case '/patientManagement/patienttestlist':
+            this.titlePage = 'Patient Management';
+            break;
         }
       }
     });

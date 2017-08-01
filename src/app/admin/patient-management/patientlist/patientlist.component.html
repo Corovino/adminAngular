@@ -1,0 +1,276 @@
+<div class="main col-lg-9 col-lg-offset-3">
+  <a routerLink="newpermition" class="add"><i class="icon-plus"></i></a>
+  <div class="patientlist">
+    <section class="chartsection">
+      <div class="bgblue">
+        <div>
+          <div class="verticalcenter">
+            <p class="number">2.542.234</p>
+            <p>PATIENTS</p>
+          </div>
+        </div>
+      </div>
+      <div class="bgwhite">
+        <div class="info">
+          <div class="form-group" *ngFor="let dateInput of dateInputs">
+              <div class="input-group" daterangepicker [options]="{startDate:dateInput.start, endDate:dateInput.end }" >
+                <span class="form-control uneditable-input">
+                    {{ dateInput.start | date:'M/dd/y' }} - {{ dateInput.end| date:'M/dd/y' }}
+                </span>
+                <span class="input-group-btn">
+                  <a type="button" class="btn btn-default"><i class="glyphicon glyphicon-calendar"></i></a>
+                </span>
+            </div>
+          </div>
+          <span class="img"><img src="assets/images/patient.svg" alt=""/></span>
+          <p class="bignumber">135</p>
+          <p class="border">NEW PATIENTS</p>
+        </div>
+        <div class="chart">
+          <canvas baseChart [data]="doughnutChartData"
+                  [labels]="doughnutChartLabels"
+                  [chartType]="doughnutChartType"
+                  [colors]="doughnutChartColors"
+                  (chartHover)="chartHovered($event)"
+                  (chartClick)="chartClicked($event)"></canvas>
+          <canvas baseChart
+                  [data]="lineChartData"
+                  [labels]="lineChartLabels"
+                  [chartType]="lineChartType"
+                  (chartHover)="chartHovered($event)"
+                  (chartClick)="chartClicked($event)"></canvas>
+        </div>
+      </div>
+    </section>
+    <div class="options">
+      <h2 class="title">Patient list</h2>
+      <div class="right form selsmall">
+        <md-select placeholder="Search">
+          <md-option *ngFor="let search of search" [value]="search.value">
+            {{ search.viewValue }}
+          </md-option>
+        </md-select>
+      </div>
+    </div>
+    <table class="table">
+      <thead>
+      <tr>
+        <th width="30%">Name<i class="icon-arrowbottom"></i></th>
+        <th width="20%">ID Number<i class="icon-arrowbottom"></i></th>
+        <th width="30%">Location<i class="icon-arrowbottom"></i></th>
+        <th width="20%"></th>
+      </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a routerLink="patienttestlist">PATIENT NAME</a></td>
+          <td>870347299</td>
+          <td>CHICAGO, IL</td>
+          <td>
+            <a class="btn btn-primary blue" href="#">New Test</a>
+            <div class="dropdown">
+              <button md-button [mdMenuTriggerFor]="menu"><i class="icon-menu"></i></button>
+              <md-menu #menu="mdMenu">
+                <a class="dropdown-item" href="#"><i class="icon-edit"></i>Edit</a>
+                <a class="dropdown-item" href="javascript:void(0)" (click)="openDelete()"><i class="icon-delete"></i>Delete</a>
+              </md-menu>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><a routerLink="patienttestlist">PATIENT NAME</a></td>
+          <td>870347299</td>
+          <td>CHICAGO, IL</td>
+          <td>
+            <a class="btn btn-primary blue" href="#">New Test</a>
+            <div class="dropdown">
+              <button md-button [mdMenuTriggerFor]="menu"><i class="icon-menu"></i></button>
+              <md-menu #menu="mdMenu">
+                <a class="dropdown-item" href="#"><i class="icon-edit"></i>Edit</a>
+                <a class="dropdown-item" href="javascript:void(0)" (click)="openDelete()"><i class="icon-delete"></i>Delete</a>
+              </md-menu>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><a routerLink="patienttestlist">PATIENT NAME</a></td>
+          <td>870347299</td>
+          <td>CHICAGO, IL</td>
+          <td>
+            <a class="btn btn-primary blue" href="#">New Test</a>
+            <div class="dropdown">
+              <button md-button [mdMenuTriggerFor]="menu"><i class="icon-menu"></i></button>
+              <md-menu #menu="mdMenu">
+                <a class="dropdown-item" href="#"><i class="icon-edit"></i>Edit</a>
+                <a class="dropdown-item" href="javascript:void(0)" (click)="openDelete()"><i class="icon-delete"></i>Delete</a>
+              </md-menu>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><a routerLink="patienttestlist">PATIENT NAME</a></td>
+          <td>870347299</td>
+          <td>CHICAGO, IL</td>
+          <td>
+            <a class="btn btn-primary blue" href="#">New Test</a>
+            <div class="dropdown">
+              <button md-button [mdMenuTriggerFor]="menu"><i class="icon-menu"></i></button>
+              <md-menu #menu="mdMenu">
+                <a class="dropdown-item" href="#"><i class="icon-edit"></i>Edit</a>
+                <a class="dropdown-item" href="javascript:void(0)" (click)="openDelete()"><i class="icon-delete"></i>Delete</a>
+              </md-menu>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><a routerLink="patienttestlist">PATIENT NAME</a></td>
+          <td>870347299</td>
+          <td>CHICAGO, IL</td>
+          <td>
+            <a class="btn btn-primary blue" href="#">New Test</a>
+            <div class="dropdown">
+              <button md-button [mdMenuTriggerFor]="menu"><i class="icon-menu"></i></button>
+              <md-menu #menu="mdMenu">
+                <a class="dropdown-item" href="#"><i class="icon-edit"></i>Edit</a>
+                <a class="dropdown-item" href="javascript:void(0)" (click)="openDelete()"><i class="icon-delete"></i>Delete</a>
+              </md-menu>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><a routerLink="patienttestlist">PATIENT NAME</a></td>
+          <td>870347299</td>
+          <td>CHICAGO, IL</td>
+          <td>
+            <a class="btn btn-primary blue" href="#">New Test</a>
+            <div class="dropdown">
+              <button md-button [mdMenuTriggerFor]="menu"><i class="icon-menu"></i></button>
+              <md-menu #menu="mdMenu">
+                <a class="dropdown-item" href="#"><i class="icon-edit"></i>Edit</a>
+                <a class="dropdown-item" href="javascript:void(0)" (click)="openDelete()"><i class="icon-delete"></i>Delete</a>
+              </md-menu>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><a routerLink="patienttestlist">PATIENT NAME</a></td>
+          <td>870347299</td>
+          <td>CHICAGO, IL</td>
+          <td>
+            <a class="btn btn-primary blue" href="#">New Test</a>
+            <div class="dropdown">
+              <button md-button [mdMenuTriggerFor]="menu"><i class="icon-menu"></i></button>
+              <md-menu #menu="mdMenu">
+                <a class="dropdown-item" href="#"><i class="icon-edit"></i>Edit</a>
+                <a class="dropdown-item" href="javascript:void(0)" (click)="openDelete()"><i class="icon-delete"></i>Delete</a>
+              </md-menu>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><a routerLink="patienttestlist">PATIENT NAME</a></td>
+          <td>870347299</td>
+          <td>CHICAGO, IL</td>
+          <td>
+            <a class="btn btn-primary blue" href="#">New Test</a>
+            <div class="dropdown">
+              <button md-button [mdMenuTriggerFor]="menu"><i class="icon-menu"></i></button>
+              <md-menu #menu="mdMenu">
+                <a class="dropdown-item" href="#"><i class="icon-edit"></i>Edit</a>
+                <a class="dropdown-item" href="javascript:void(0)" (click)="openDelete()"><i class="icon-delete"></i>Delete</a>
+              </md-menu>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><a routerLink="patienttestlist">PATIENT NAME</a></td>
+          <td>870347299</td>
+          <td>CHICAGO, IL</td>
+          <td>
+            <a class="btn btn-primary blue" href="#">New Test</a>
+            <div class="dropdown">
+              <button md-button [mdMenuTriggerFor]="menu"><i class="icon-menu"></i></button>
+              <md-menu #menu="mdMenu">
+                <a class="dropdown-item" href="#"><i class="icon-edit"></i>Edit</a>
+                <a class="dropdown-item" href="javascript:void(0)" (click)="openDelete()"><i class="icon-delete"></i>Delete</a>
+              </md-menu>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><a routerLink="patienttestlist">PATIENT NAME</a></td>
+          <td>870347299</td>
+          <td>CHICAGO, IL</td>
+          <td>
+            <a class="btn btn-primary blue" href="#">New Test</a>
+            <div class="dropdown">
+              <button md-button [mdMenuTriggerFor]="menu"><i class="icon-menu"></i></button>
+              <md-menu #menu="mdMenu">
+                <a class="dropdown-item" href="#"><i class="icon-edit"></i>Edit</a>
+                <a class="dropdown-item" href="javascript:void(0)" (click)="openDelete()"><i class="icon-delete"></i>Delete</a>
+              </md-menu>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><a routerLink="patienttestlist">PATIENT NAME</a></td>
+          <td>870347299</td>
+          <td>CHICAGO, IL</td>
+          <td>
+            <a class="btn btn-primary blue" href="#">New Test</a>
+            <div class="dropdown">
+              <button md-button [mdMenuTriggerFor]="menu"><i class="icon-menu"></i></button>
+              <md-menu #menu="mdMenu">
+                <a class="dropdown-item" href="#"><i class="icon-edit"></i>Edit</a>
+                <a class="dropdown-item" href="javascript:void(0)" (click)="openDelete()"><i class="icon-delete"></i>Delete</a>
+              </md-menu>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><a routerLink="patienttestlist">PATIENT NAME</a></td>
+          <td>870347299</td>
+          <td>CHICAGO, IL</td>
+          <td>
+            <a class="btn btn-primary blue" href="#">New Test</a>
+            <div class="dropdown">
+              <button md-button [mdMenuTriggerFor]="menu"><i class="icon-menu"></i></button>
+              <md-menu #menu="mdMenu">
+                <a class="dropdown-item" href="#"><i class="icon-edit"></i>Edit</a>
+                <a class="dropdown-item" href="javascript:void(0)" (click)="openDelete()"><i class="icon-delete"></i>Delete</a>
+              </md-menu>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><a routerLink="patienttestlist">PATIENT NAME</a></td>
+          <td>870347299</td>
+          <td>CHICAGO, IL</td>
+          <td>
+            <a class="btn btn-primary blue" href="#">New Test</a>
+            <div class="dropdown">
+              <button md-button [mdMenuTriggerFor]="menu"><i class="icon-menu"></i></button>
+              <md-menu #menu="mdMenu">
+                <a class="dropdown-item" href="#"><i class="icon-edit"></i>Edit</a>
+                <a class="dropdown-item" href="javascript:void(0)" (click)="openDelete()"><i class="icon-delete"></i>Delete</a>
+              </md-menu>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+      <tfoot>
+      <tr>
+        <td colspan="4">
+          <div class="pagination">
+            <nav>
+              <a href="#"><span class="icon-arrowleft"><span class="path1"></span><span class="path2"></span></span></a>
+              <a href="#">1 - 200</a>
+              <a href="#"><span class="icon-arrowright"><span class="path1"></span><span class="path2"></span></span></a>
+            </nav>
+          </div>
+        </td>
+      </tr>
+      </tfoot>
+    </table>
+  </div>
+</div>

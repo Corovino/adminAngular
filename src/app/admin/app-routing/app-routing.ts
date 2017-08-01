@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 
 import { DashboardComponent } from '../dashboard/dashboard.component';
-import { PatientManagementComponent } from '../patient-management/patient-management.component';
 import { LocationsComponent } from '../locations/locations.component';
 import { UserlistComponent } from '../usermanagement/userlist/userlist.component';
 import { UserinfoComponent } from '../usermanagement/userinfo/userinfo.component';
@@ -12,12 +11,14 @@ import { TestinfoComponent } from '../test/testinfo/testinfo.component';
 import { TestlistComponent } from '../test/testlist/testlist.component';
 import { PermitionlistComponent } from '../access-permition/permitionlist/permitionlist.component';
 import { NewpermitionComponent } from '../access-permition/newpermition/newpermition.component';
-
+import { PatientlistComponent } from '../patient-management/patientlist/patientlist.component';
+import { PatienttestlistComponent } from '../patient-management/patienttestlist/patienttestlist.component';
 
 const routes: Routes = [
   { path: 'test', component: TestlistComponent },
   { path: 'usersManagement', component: UserlistComponent },
-  { path: 'patientManagement', component: PatientManagementComponent },
+  { path: 'patientManagement', component: PatientlistComponent },
+  { path: 'patientManagement/patienttestlist', component: PatienttestlistComponent },
   { path: 'accessPermission', component: PermitionlistComponent },
   { path: 'accessPermission/newpermition', component: NewpermitionComponent },
   { path: 'locations', component: LocationsComponent },

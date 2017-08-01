@@ -3,11 +3,11 @@ import { MdDialog } from '@angular/material';
 import { DeleteComponent } from '../../../admin/modal/delete/delete.component';
 
 @Component({
-  selector: 'app-permitionlist',
-  templateUrl: './permitionlist.component.html',
-  styleUrls: ['./permitionlist.component.css']
+  selector: 'app-patienttestlist',
+  templateUrl: './patienttestlist.component.html',
+  styleUrls: ['./patienttestlist.component.css']
 })
-export class PermitionlistComponent implements OnInit {
+export class PatienttestlistComponent implements OnInit {
 
   search = [
     {value: 'option1', viewValue: 'Option 1'},
@@ -15,10 +15,9 @@ export class PermitionlistComponent implements OnInit {
     {value: 'option3', viewValue: 'Option 3'}
   ];
   constructor(public dialog: MdDialog) {}
+  ngOnInit() {}
   openDelete() {
     this.dialog.open(DeleteComponent);
-  }
-  ngOnInit() {
   }
 
 }

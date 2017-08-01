@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {MdDialog} from '@angular/material';
-import {NewLocationComponent} from '../../admin/modal/new-location/new-location.component';
+import { MdDialog } from '@angular/material';
+import { NewLocationComponent } from '../../admin/modal/new-location/new-location.component';
+import { DeleteComponent } from '../../admin/modal/delete/delete.component';
 
 @Component({
   selector: 'app-locations',
@@ -18,6 +19,9 @@ export class LocationsComponent implements OnInit {
 
   openNewLocation() {
     this.dialog.open(NewLocationComponent);
+  }
+  openDelete() {
+    this.dialog.open(DeleteComponent);
   }
   ngOnInit() {
   }

@@ -1,0 +1,45 @@
+.patientlist .chartsection .bgblue p.number{
+  font-size: 30px;
+  line-height: 25px;
+}
+.patientlist .chartsection .bgblue p{
+  font-size: 15px;
+  text-transform: uppercase;
+  line-height: 20px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+.patientlist .chartsection .bgwhite .info{
+  display: block;
+  float: left;
+  text-align: center;
+  padding-right: 20px;
+  width: 180px;
+}
+  .patientlist .chartsection .bgwhite .info .img{
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+    .patientlist .chartsection .bgwhite .info .img img{ max-width: 100%; }
+  .patientlist .chartsection .bgwhite .info p.bignumber{
+    color: #00ABFE;
+    font-size: 40px;
+    margin-bottom: 10px;
+    line-height: 30px;
+  }
+  .patientlist .chartsection .bgwhite .info p.border{
+    border-bottom: 7px solid #0085C6;
+    color: #83898A;
+    font-size: 15px;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+  }
+
+  .chart{
+    display: block;
+    float: left;
+    height: 150px;
+    width: calc(100% - 180px);
+  }

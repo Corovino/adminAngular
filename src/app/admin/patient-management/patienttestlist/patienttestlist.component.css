@@ -1,0 +1,53 @@
+.userinfo.bgwhite{
+  padding: 20px 30px;
+  position: relative;
+  margin-bottom: 20px;
+}
+.userinfo .edit{
+  color: #00ABFE;
+  font-size: 20px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.userinfo .btnmiddle{ line-height: 135px; text-align: center; }
+  .userinfo .btnmiddle .btn{ vertical-align: middle; }
+.userinfo.bgwhite .br{ border-right: 1px solid #f1f1f1; height: 135px; }
+.userinfo.bgwhite .info{ text-align: center; }
+.userinfo.bgwhite span.photo{
+  background-color: #00ABFE;
+  border-radius: 100%;
+  border: 3px solid #00ABFE;
+  display: block;
+  height: 72px;
+  overflow: hidden;
+  margin: 0 auto 10px;
+  width: 72px;
+}
+  .userinfo.bgwhite span.photo img{ max-height: 100%; }
+
+.userinfo.bgwhite .info h3{
+  color: #00ABFE;
+  font-size: 18px;
+  font-weight: 300;
+  margin: 0 0 10px 0;
+  text-transform: uppercase;
+}
+.userinfo.bgwhite p{
+  color: #83898A;
+  font-size: 15px;
+  margin-bottom: 5px;
+  line-height: 23px;
+}
+  .userinfo.bgwhite p span{
+    color: #38464D;
+    display: inline-block;
+    padding-right: 5px;
+  }
+
+  table.table .score{
+    color: #00ABFE;
+    display: block;
+    font-size: 16px;
+    text-align: center;
+  }

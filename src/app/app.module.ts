@@ -5,6 +5,9 @@ import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { MdButtonModule, MdCheckboxModule} from '@angular/material';
 import { MdSidenavModule} from '@angular/material';
 import { CdkTableModule } from '@angular/cdk';
+import { ChartsModule } from 'ng2-charts';
+import { Daterangepicker } from 'ng2-daterangepicker';
+import { MomentModule } from 'angular2-moment';
 
 import { AppComponent } from './app.component';
 import { AppRouting } from './admin/app-routing/app-routing';
@@ -14,7 +17,6 @@ import { UserlistComponent } from './admin/usermanagement/userlist/userlist.comp
 import { UserinfoComponent } from './admin/usermanagement/userinfo/userinfo.component';
 import { NewuserComponent } from './admin/usermanagement/newuser/newuser.component';
 import { DashboardComponent } from './admin/dashboard/dashboard.component';
-import { PatientManagementComponent } from './admin/patient-management/patient-management.component';
 import { LocationsComponent } from './admin/locations/locations.component';
 import { AsideComponent } from './admin/partials/aside/aside.component';
 import { HeaderComponent } from './admin/partials/header/header.component';
@@ -23,13 +25,14 @@ import { DeleteComponent } from './admin/modal/delete/delete.component';
 import { NewLocationComponent } from './admin/modal/new-location/new-location.component';
 import { PermitionlistComponent } from './admin/access-permition/permitionlist/permitionlist.component';
 import { NewpermitionComponent } from './admin/access-permition/newpermition/newpermition.component';
+import { PatientlistComponent } from './admin/patient-management/patientlist/patientlist.component';
+import { PatienttestlistComponent } from './admin/patient-management/patienttestlist/patienttestlist.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
-    PatientManagementComponent,
     LocationsComponent,
     AsideComponent,
     HeaderComponent,
@@ -42,7 +45,9 @@ import { NewpermitionComponent } from './admin/access-permition/newpermition/new
     TestinfoComponent,
     TestlistComponent,
     PermitionlistComponent,
-    NewpermitionComponent
+    NewpermitionComponent,
+    PatientlistComponent,
+    PatienttestlistComponent
   ],
   imports: [
     BrowserModule,
@@ -52,7 +57,10 @@ import { NewpermitionComponent } from './admin/access-permition/newpermition/new
     MdButtonModule,
     MdCheckboxModule,
     MdSidenavModule,
-    CdkTableModule
+    CdkTableModule,
+    ChartsModule,
+    Daterangepicker,
+    MomentModule
   ],
   providers: [],
   bootstrap: [AppComponent],

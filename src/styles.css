@@ -134,20 +134,24 @@ table.table{
         table.table > tbody > tr > td{
           border-bottom: 1px solid #EAEAEA;
           font-weight: 400;
-          padding: 7px 20px;
+          padding: 8px 20px 7px 20px;
           vertical-align: middle;
         }
         table.table > tbody > tr:hover > td{ background-color: rgba(0,171,254,0.05); }
           table.table > tbody > tr > td .ml10{ margin-left: 10px }
           table.table > tbody > tr > td a{ display: inline-block;}
           table.table > tbody > tr > td i.icon-eye{ position: relative; top: 2px; }
+          table.table > tbody > tr > td i.icon-delete{
+            font-size: 14px;
+            position: relative;
+            top: 3px;
+          }
 
 /* Buttons
 ================================================== */
 table.table .btn.btn-primary{
-  height: 30px;
   font-size: 13px;
-  padding: 7px 20px;
+  padding: 3px 20px;
   margin: 0;
   text-transform: none;
 }
@@ -384,6 +388,37 @@ h3.withline{
     border-bottom-right-radius: 10px;
   }
     .steps span.current{ background-color: #00ABFE; }
+
+/* Charts
+================================================== */
+.chartsection{ overflow: hidden; margin-bottom: 20px; }
+  .chartsection .bgblue{
+    display: block;
+    float: left;
+    padding: 0 10px 0 0;
+    width: 20%;
+  }
+    .chartsection .bgblue > div{
+      background-color: #00ABFE;
+      box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      color: #FFFFFF;
+      padding: 20px;
+      text-align: center;
+      line-height: 290px;
+      height: 290px;
+    }
+    .chartsection .bgblue > div .verticalcenter{
+      display: inline-block;
+      vertical-align: middle;
+    }
+  .chartsection .bgwhite{
+    display: block;
+    float: left;
+    height: 290px;
+    margin-bottom: 0;
+    width: 80%;
+  }
 
 /* Icons
 ================================================== */
