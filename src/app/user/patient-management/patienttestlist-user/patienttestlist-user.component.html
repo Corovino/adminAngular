@@ -1,0 +1,180 @@
+<div class="main col-lg-9 col-lg-offset-3">
+  <div class="patienttestlist">
+    <div class="bgwhite userinfo">
+      <a class="edit" href="javascript:void(0)"><i class="icon-edit"></i></a>
+      <div class="row">
+        <div class="col-md-3 br">
+          <div class="info">
+            <span class="photo"><img src="assets/images/profile.png" alt=""/></span>
+            <h3>Paul Smith </h3>
+            <p><span>Driving Lic No:</span> 63562898109</p>
+          </div>
+        </div>
+        <div class="col-md-3 br">
+          <p><span>DOB:</span>09 / MARCH / 17</p>
+          <p><span>Nationality:</span>EEUU</p>
+          <p><span>Gender:</span>Man</p>
+          <p><span>Weight:</span>170</p>
+          <p><span>Status:</span>Married</p>
+        </div>
+        <div class="col-md-3 br">
+          <p><span>Phone:</span>260 345 4466</p>
+          <p><span>Cellphone:</span>311 233 5533</p>
+          <p><span>Mailing Address:</span>70 Monrrouses street 445566 Chicago, Il </p>
+        </div>
+        <div class="col-md-3">
+          <div class="btnmiddle">
+            <a class="btn btn-primary blue" href="javascript:void(0)">New Test</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="options">
+      <h2 class="title">Test list</h2>
+      <div class="right form selsmall">
+        <md-select placeholder="Search">
+          <md-option *ngFor="let search of search" [value]="search.value">
+            {{ search.viewValue }}
+          </md-option>
+        </md-select>
+      </div>
+    </div>
+    <table class="table">
+      <thead>
+      <tr>
+        <th>Test ID<i class="icon-arrowbottom"></i></th>
+        <th>Test Name<i class="icon-arrowbottom"></i></th>
+        <th>Created On <i class="icon-arrowbottom"></i></th>
+        <th>Location<i class="icon-arrowbottom"></i></th>
+        <th>Score<i class="icon-arrowbottom"></i></th>
+        <th>Status<i class="icon-arrowbottom"></i></th>
+        <th></th>
+        <th></th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td><a href="javascript:void(0)">001234</a></td>
+        <td><a href="javascript:void(0)">Test Name</a></td>
+        <td>22/01/2017</td>
+        <td>CHICAGO, IL</td>
+        <td><span class="score">6</span></td>
+        <td>IN PROGRESS</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="javascript:void(0)">001234</a></td>
+        <td><a href="javascript:void(0)">Test Name</a></td>
+        <td>22/01/2017</td>
+        <td>CHICAGO, IL</td>
+        <td><span class="score">6</span></td>
+        <td>UNSUBMITED</td>
+        <td><a class="btn btn-primary blue" href="javascript:void(0)">Submit</a></td>
+      </tr>
+      <tr>
+        <td><a href="javascript:void(0)">001234</a></td>
+        <td><a href="javascript:void(0)">Test Name</a></td>
+        <td>22/01/2017</td>
+        <td>CHICAGO, IL</td>
+        <td><span class="score">6</span></td>
+        <td>UNSUBMITED</td>
+        <td><a class="btn btn-primary blue" href="javascript:void(0)">Submit</a></td>
+      </tr>
+      <tr>
+        <td><a href="javascript:void(0)">001234</a></td>
+        <td><a href="javascript:void(0)">Test Name</a></td>
+        <td>22/01/2017</td>
+        <td>CHICAGO, IL</td>
+        <td><span class="score">6</span></td>
+        <td>IN PROGRESS</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="javascript:void(0)">001234</a></td>
+        <td><a href="javascript:void(0)">Test Name</a></td>
+        <td>22/01/2017</td>
+        <td>CHICAGO, IL</td>
+        <td><span class="score">6</span></td>
+        <td>UNSUBMITED</td>
+        <td><a class="btn btn-primary blue" href="javascript:void(0)">Submit</a></td>
+      </tr>
+      <tr>
+        <td><a href="javascript:void(0)">001234</a></td>
+        <td><a href="javascript:void(0)">Test Name</a></td>
+        <td>22/01/2017</td>
+        <td>CHICAGO, IL</td>
+        <td><span class="score">6</span></td>
+        <td>IN PROGRESS</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="javascript:void(0)">001234</a></td>
+        <td><a href="javascript:void(0)">Test Name</a></td>
+        <td>22/01/2017</td>
+        <td>CHICAGO, IL</td>
+        <td><span class="score">6</span></td>
+        <td>IN PROGRESS</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="javascript:void(0)">001234</a></td>
+        <td><a href="javascript:void(0)">Test Name</a></td>
+        <td>22/01/2017</td>
+        <td>CHICAGO, IL</td>
+        <td><span class="score">6</span></td>
+        <td>UNSUBMITED</td>
+        <td><a class="btn btn-primary blue" href="javascript:void(0)">Submit</a></td>
+      </tr>
+      <tr>
+        <td><a href="javascript:void(0)">001234</a></td>
+        <td><a href="javascript:void(0)">Test Name</a></td>
+        <td>22/01/2017</td>
+        <td>CHICAGO, IL</td>
+        <td><span class="score">6</span></td>
+        <td>UNSUBMITED</td>
+        <td><a class="btn btn-primary blue" href="javascript:void(0)">Submit</a></td>
+      </tr>
+      <tr>
+        <td><a href="javascript:void(0)">001234</a></td>
+        <td><a href="javascript:void(0)">Test Name</a></td>
+        <td>22/01/2017</td>
+        <td>CHICAGO, IL</td>
+        <td><span class="score">6</span></td>
+        <td>IN PROGRESS</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="javascript:void(0)">001234</a></td>
+        <td><a href="javascript:void(0)">Test Name</a></td>
+        <td>22/01/2017</td>
+        <td>CHICAGO, IL</td>
+        <td><span class="score">6</span></td>
+        <td>UNSUBMITED</td>
+        <td><a class="btn btn-primary blue" href="javascript:void(0)">Submit</a></td>
+      </tr>
+      <tr>
+        <td><a href="javascript:void(0)">001234</a></td>
+        <td><a href="javascript:void(0)">Test Name</a></td>
+        <td>22/01/2017</td>
+        <td>CHICAGO, IL</td>
+        <td><span class="score">6</span></td>
+        <td>IN PROGRESS</td>
+        <td></td>
+      </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="9">
+            <div class="pagination">
+              <nav>
+                <a href="#"><span class="icon-arrowleft"><span class="path1"></span><span class="path2"></span></span></a>
+                <a href="#">1 - 6</a>
+                <a href="#"><span class="icon-arrowright"><span class="path1"></span><span class="path2"></span></span></a>
+              </nav>
+            </div>
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+</div>

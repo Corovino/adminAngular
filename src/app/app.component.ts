@@ -10,43 +10,29 @@ export class AppComponent {
   title = 'app';
   private currentUrl: string = '/';
 
-  public titlePage: string;
+  public titlePageUser: string;
 
-  constructor(private router: Router ) {
-
-  }
+  constructor(private router: Router ) {}
   ngOnInit() {
-    this.titlePage = '';
+
     this.router.events.forEach((event: NavigationEvent) => {
       if (event instanceof NavigationStart) {
         this.currentUrl = event.url;
         console.log(this.currentUrl);
         switch (this.currentUrl) {
-          case '/test':
-            this.titlePage = 'Test';
+          case '/user':
+            this.titlePageUser = 'Test-User';
+            console.log(this.titlePageUser);
             break;
-          case '/usersManagement' :
-            this.titlePage = 'User Management';
+          default:
+            this.titlePageUser = "User Admin";
             break;
-          case '/usersManagement/userinfo' :
-            this.titlePage = 'User Management';
-            break;
-          case '/accessPermission':
-            this.titlePage = 'Access Permition';
-            break;
-          case '/locations':
-            this.titlePage = 'Location';
-            break;
-          case '/patientManagement':
-            this.titlePage = 'Patient Management';
-            break;
-          case '/patientManagement/patienttestlist':
-            this.titlePage = 'Patient Management';
-            break;
+
         }
+
       }
     });
+
   }
 }
-
 

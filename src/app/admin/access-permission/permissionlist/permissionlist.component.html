@@ -1,0 +1,111 @@
+<div class="main col-lg-9 col-lg-offset-3">
+  <a routerLink="newpermission" class="add"><i class="icon-plus"></i></a>
+  <div class="sectionpermition">
+    <div class="options">
+      <h2 class="title">Permission list</h2>
+      <div>
+        <nav class="filter">
+          <a href="javascript:void(0)" (click)="openDelete()"><span class="icon-delete"></span>DELETE</a>
+          <a href="#"><span class="icon-list"></span>VIEW FULL LIST</a>
+        </nav>
+        <div class="right form selsmall">
+          <md-select placeholder="Search">
+            <md-option *ngFor="let search of search" [value]="search.value">
+              {{ search.viewValue }}
+            </md-option>
+          </md-select>
+        </div>
+      </div>
+    </div>
+    <table class="table tablesize15">
+      <thead>
+      <tr>
+        <th width="50px"><md-checkbox></md-checkbox></th>
+        <th>Permition name <i class="icon-arrowbottom"></i></th>
+        <th></th>
+      </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><md-checkbox></md-checkbox></td>
+          <td><a href="#">Access to inputting finances</a></td>
+          <td>
+            <div class="dropdown">
+              <button md-button [mdMenuTriggerFor]="menu"><i class="icon-menu"></i></button>
+              <md-menu #menu="mdMenu">
+                <a class="dropdown-item" href="#"><i class="icon-edit"></i>Edit</a>
+                <a class="dropdown-item" href="javascript:void(0)" (click)="openDelete()"><i class="icon-delete"></i>Delete</a>
+              </md-menu>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><md-checkbox></md-checkbox></td>
+          <td><a href="#">Admins</a></td>
+          <td>
+            <div class="dropdown">
+              <button md-button [mdMenuTriggerFor]="menu"><i class="icon-menu"></i></button>
+              <md-menu #menu="mdMenu">
+                <a class="dropdown-item" href="#"><i class="icon-edit"></i>Edit</a>
+                <a class="dropdown-item" href="javascript:void(0)" (click)="openDelete()"><i class="icon-delete"></i>Delete</a>
+              </md-menu>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><md-checkbox></md-checkbox></td>
+          <td><a href="#">Group Leaders</a></td>
+          <td>
+            <div class="dropdown">
+              <button md-button [mdMenuTriggerFor]="menu"><i class="icon-menu"></i></button>
+              <md-menu #menu="mdMenu">
+                <a class="dropdown-item" href="#"><i class="icon-edit"></i>Edit</a>
+                <a class="dropdown-item" href="javascript:void(0)" (click)="openDelete()"><i class="icon-delete"></i>Delete</a>
+              </md-menu>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><md-checkbox></md-checkbox></td>
+          <td><a href="#">Members / Volunteers</a></td>
+          <td>
+            <div class="dropdown">
+              <button md-button [mdMenuTriggerFor]="menu"><i class="icon-menu"></i></button>
+              <md-menu #menu="mdMenu">
+                <a class="dropdown-item" href="#"><i class="icon-edit"></i>Edit</a>
+                <a class="dropdown-item" href="javascript:void(0)" (click)="openDelete()"><i class="icon-delete"></i>Delete</a>
+              </md-menu>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><md-checkbox></md-checkbox></td>
+          <td><a href="#">Service Coordinators</a></td>
+          <td>
+            <div class="dropdown">
+              <button md-button [mdMenuTriggerFor]="menu"><i class="icon-menu"></i></button>
+              <md-menu #menu="mdMenu">
+                <a class="dropdown-item" href="#"><i class="icon-edit"></i>Edit</a>
+                <a class="dropdown-item" href="javascript:void(0)" (click)="openDelete()"><i class="icon-delete"></i>Delete</a>
+              </md-menu>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+      <tfoot>
+      <tr>
+        <td colspan="6">
+          <div class="pagination">
+            <nav>
+              <a href="#"><span class="icon-arrowleft"><span class="path1"></span><span class="path2"></span></span></a>
+              <a href="#">1 - 6</a>
+              <a href="#"><span class="icon-arrowright"><span class="path1"></span><span class="path2"></span></span></a>
+            </nav>
+          </div>
+        </td>
+      </tr>
+      </tfoot>
+    </table>
+  </div>
+</div>
+

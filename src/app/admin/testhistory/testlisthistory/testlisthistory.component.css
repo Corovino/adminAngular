@@ -1,0 +1,56 @@
+.testlisthistory .chartsection .bgblue p.number{
+  font-size: 80px;
+  line-height: 70px;
+  font-weight: 500;
+}
+  .testlisthistory .chartsection .bgblue p{
+    font-size: 15px;
+    text-transform: uppercase;
+    line-height: 20px;
+    font-weight: 300;
+    letter-spacing: 1px;
+  }
+.testlisthistory .chartsection .bgwhite .info{
+  display: block;
+  float: left;
+  text-align: center;
+  padding-right: 20px;
+  padding-left: 20px;
+  width: 210px;
+}
+.testlisthistory .chartsection .bgwhite .info .detail{ text-align: center; margin-bottom: 20px; }
+  .testlisthistory .chartsection .bgwhite .info .detail:last-child{ margin-bottom: 0; }
+  .testlisthistory .chartsection .bgwhite .info .detail.borderblue{ border-left: 6px solid #0085C6; }
+  .testlisthistory .chartsection .bgwhite .info .detail.bordergreen{ border-left: 6px solid #64DD17; }
+  .testlisthistory .chartsection .bgwhite .info .detail span.number{
+    color: #38464D;
+    display: block;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .testlisthistory .chartsection .bgwhite .info .detail p{
+    color: #83898A;
+    font-size: 15px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+  }
+    .testlisthistory .chartsection .bgwhite .info .detail p span{
+      display: block;
+    }
+
+
+.chartsection .chart{
+  display: block;
+  float: left;
+  width: calc(100% - 220px);
+  padding-left: 30px;
+}
+.chartsection .chart canvas{
+  max-height: 100% !important;
+  max-width: 100% !important;
+  height: 100% !important;
+  width: 100% !important;
+}
+
+.datepicker{ margin: 15px 0px 40px 0px; }

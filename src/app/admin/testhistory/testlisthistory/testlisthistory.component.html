@@ -1,0 +1,217 @@
+<div class="main col-lg-9 col-lg-offset-3">
+  <a routerLink="" class="add"><i class="icon-plus"></i></a>
+  <div class="testlisthistory">
+    <section class="chartsection">
+      <div class="bgblue">
+        <div>
+          <div class="verticalcenter">
+            <p class="number">14</p>
+            <p>TEST IN PROGRESS</p>
+          </div>
+        </div>
+      </div>
+      <div class="bgwhite">
+        <div class="info">
+          <div class="datepicker" *ngFor="let dateInput of dateInputs">
+            <div daterangepicker [options]="{startDate:dateInput.start, endDate:dateInput.end }" >
+              <span class="text">
+                {{ dateInput.start | date:'M/dd/y' }} - {{ dateInput.end| date:'M/dd/y' }}
+                 <span class="arrow"><i class="icon-arrowbottom"></i></span>
+              </span>
+            </div>
+          </div>
+          <div class="detail borderblue">
+            <span class="number">235</span>
+            <p>TESTS HAVE <span>BEEN DONE</span></p>
+          </div>
+          <div class="detail bordergreen">
+            <span class="number">235</span>
+            <p>SUBMITTED <span>TESTS</span></p>
+          </div>
+        </div>
+        <div class="chart">
+          <canvas baseChart
+                  [data]="lineChartData"
+                  [labels]="lineChartLabels"
+                  [chartType]="lineChartType"
+                  [colors]="lineChartColors"
+                  [legend] = false
+                  (chartHover)="chartHovered($event)"
+                  (chartClick)="chartClicked($event)"></canvas>
+        </div>
+      </div>
+    </section>
+    <div class="options">
+      <h2 class="title">Patient list</h2>
+      <div class="right form selsmall">
+        <md-select placeholder="Search">
+          <md-option *ngFor="let search of search" [value]="search.value">
+            {{ search.viewValue }}
+          </md-option>
+        </md-select>
+      </div>
+    </div>
+    <table class="table">
+      <thead>
+      <tr>
+        <th>Test ID<i class="icon-arrowbottom"></i></th>
+        <th>Test Name<i class="icon-arrowbottom"></i></th>
+        <th>Created On <i class="icon-arrowbottom"></i></th>
+        <th>Location<i class="icon-arrowbottom"></i></th>
+        <th>Score<i class="icon-arrowbottom"></i></th>
+        <th>Interviewer<i class="icon-arrowbottom"></i></th>
+        <th>Status<i class="icon-arrowbottom"></i></th>
+        <th></th>
+        <th></th>
+      </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a href="javascript:void(0)">001234</a></td>
+          <td><a href="javascript:void(0)">Test Name</a></td>
+          <td>22/01/2017</td>
+          <td>CHICAGO, IL</td>
+          <td><span class="score">6</span></td>
+          <td>User Name</td>
+          <td>IN PROGRESS</td>
+          <td></td>
+          <td><a href="javascript:void(0)" class="delete" (click)="openDelete()"><i class="icon-delete"></i></a></td>
+        </tr>
+        <tr>
+          <td><a href="javascript:void(0)">001234</a></td>
+          <td><a href="javascript:void(0)">Test Name</a></td>
+          <td>22/01/2017</td>
+          <td>CHICAGO, IL</td>
+          <td><span class="score">6</span></td>
+          <td>User Name</td>
+          <td>UNSUBMITED</td>
+          <td><a class="btn btn-primary blue" href="javascript:void(0)">Submit</a></td>
+          <td><a href="javascript:void(0)" class="delete" (click)="openDelete()"><i class="icon-delete"></i></a></td>
+        </tr>
+        <tr>
+          <td><a href="javascript:void(0)">001234</a></td>
+          <td><a href="javascript:void(0)">Test Name</a></td>
+          <td>22/01/2017</td>
+          <td>CHICAGO, IL</td>
+          <td><span class="score">6</span></td>
+          <td>User Name</td>
+          <td>UNSUBMITED</td>
+          <td><a class="btn btn-primary blue" href="javascript:void(0)">Submit</a></td>
+          <td><a href="javascript:void(0)" class="delete" (click)="openDelete()"><i class="icon-delete"></i></a></td>
+        </tr>
+        <tr>
+          <td><a href="javascript:void(0)">001234</a></td>
+          <td><a href="javascript:void(0)">Test Name</a></td>
+          <td>22/01/2017</td>
+          <td>CHICAGO, IL</td>
+          <td><span class="score">6</span></td>
+          <td>User Name</td>
+          <td>IN PROGRESS</td>
+          <td></td>
+          <td><a href="javascript:void(0)" class="delete" (click)="openDelete()"><i class="icon-delete"></i></a></td>
+        </tr>
+        <tr>
+          <td><a href="javascript:void(0)">001234</a></td>
+          <td><a href="javascript:void(0)">Test Name</a></td>
+          <td>22/01/2017</td>
+          <td>CHICAGO, IL</td>
+          <td><span class="score">6</span></td>
+          <td>User Name</td>
+          <td>UNSUBMITED</td>
+          <td><a class="btn btn-primary blue" href="javascript:void(0)">Submit</a></td>
+          <td><a href="javascript:void(0)" class="delete" (click)="openDelete()"><i class="icon-delete"></i></a></td>
+        </tr>
+        <tr>
+          <td><a href="javascript:void(0)">001234</a></td>
+          <td><a href="javascript:void(0)">Test Name</a></td>
+          <td>22/01/2017</td>
+          <td>CHICAGO, IL</td>
+          <td><span class="score">6</span></td>
+          <td>User Name</td>
+          <td>IN PROGRESS</td>
+          <td></td>
+          <td><a href="javascript:void(0)" class="delete" (click)="openDelete()"><i class="icon-delete"></i></a></td>
+        </tr>
+        <tr>
+          <td><a href="javascript:void(0)">001234</a></td>
+          <td><a href="javascript:void(0)">Test Name</a></td>
+          <td>22/01/2017</td>
+          <td>CHICAGO, IL</td>
+          <td><span class="score">6</span></td>
+          <td>User Name</td>
+          <td>IN PROGRESS</td>
+          <td></td>
+          <td><a href="javascript:void(0)" class="delete" (click)="openDelete()"><i class="icon-delete"></i></a></td>
+        </tr>
+        <tr>
+          <td><a href="javascript:void(0)">001234</a></td>
+          <td><a href="javascript:void(0)">Test Name</a></td>
+          <td>22/01/2017</td>
+          <td>CHICAGO, IL</td>
+          <td><span class="score">6</span></td>
+          <td>User Name</td>
+          <td>UNSUBMITED</td>
+          <td><a class="btn btn-primary blue" href="javascript:void(0)">Submit</a></td>
+          <td><a href="javascript:void(0)" class="delete" (click)="openDelete()"><i class="icon-delete"></i></a></td>
+        </tr>
+        <tr>
+          <td><a href="javascript:void(0)">001234</a></td>
+          <td><a href="javascript:void(0)">Test Name</a></td>
+          <td>22/01/2017</td>
+          <td>CHICAGO, IL</td>
+          <td><span class="score">6</span></td>
+          <td>User Name</td>
+          <td>UNSUBMITED</td>
+          <td><a class="btn btn-primary blue" href="javascript:void(0)">Submit</a></td>
+          <td><a href="javascript:void(0)" class="delete" (click)="openDelete()"><i class="icon-delete"></i></a></td>
+        </tr>
+        <tr>
+          <td><a href="javascript:void(0)">001234</a></td>
+          <td><a href="javascript:void(0)">Test Name</a></td>
+          <td>22/01/2017</td>
+          <td>CHICAGO, IL</td>
+          <td><span class="score">6</span></td>
+          <td>User Name</td>
+          <td>IN PROGRESS</td>
+          <td></td>
+          <td><a href="javascript:void(0)" class="delete" (click)="openDelete()"><i class="icon-delete"></i></a></td>
+        </tr>
+        <tr>
+          <td><a href="javascript:void(0)">001234</a></td>
+          <td><a href="javascript:void(0)">Test Name</a></td>
+          <td>22/01/2017</td>
+          <td>CHICAGO, IL</td>
+          <td><span class="score">6</span></td>
+          <td>User Name</td>
+          <td>UNSUBMITED</td>
+          <td><a class="btn btn-primary blue" href="javascript:void(0)">Submit</a></td>
+          <td><a href="javascript:void(0)" class="delete" (click)="openDelete()"><i class="icon-delete"></i></a></td>
+        </tr>
+        <tr>
+          <td><a href="javascript:void(0)">001234</a></td>
+          <td><a href="javascript:void(0)">Test Name</a></td>
+          <td>22/01/2017</td>
+          <td>CHICAGO, IL</td>
+          <td><span class="score">6</span></td>
+          <td>User Name</td>
+          <td>IN PROGRESS</td>
+          <td></td>
+          <td><a href="javascript:void(0)" class="delete" (click)="openDelete()"><i class="icon-delete"></i></a></td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="9">
+            <div class="pagination">
+              <nav>
+                <a href="#"><span class="icon-arrowleft"><span class="path1"></span><span class="path2"></span></span></a>
+                <a href="#">1 - 6</a>
+                <a href="#"><span class="icon-arrowright"><span class="path1"></span><span class="path2"></span></span></a>
+              </nav>
+            </div>
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+</div>

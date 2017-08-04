@@ -1,0 +1,78 @@
+.sectionnewpermission .bgwhite{ padding: 0; }
+  .sectionnewpermission .bgwhite .section{ padding: 30px 30px 20px 30px; }
+    .sectionnewpermission .bgwhite .section.bb{ border-bottom: 1px solid #f1f1f1; }
+    .sectionnewpermission .bgwhite .section.bb .cont{ overflow: hidden; }
+    .sectionnewpermission .bgwhite .section.bb .left{ float: left; width: 70%; }
+    .sectionnewpermission .bgwhite .section.bb .right{ float: right; }
+    .sectionnewpermission .bgwhite .section p{
+      color: #83898A;
+      font-size: 13px;
+      max-width: 70%;
+      margin-bottom: 10px;
+    }
+.sectionnewpermission .bgwhite .form{ padding: 0; }
+
+/* Tabs Permition
+================================================== */
+.permitassignment{ overflow: hidden; }
+  .permitassignment .permitionmenu{
+    display: block;
+    float: left;
+    width: 30%;
+  }
+    .permitassignment .permitionmenu h4{ padding: 20px 30px 0 30px; }
+    .permitassignment .permitionmenu nav a{
+      color: #38464D;
+      display: block;
+      padding: 5px 30px;
+      position: relative;
+    }
+      .permitassignment .permitionmenu nav a.active:after {
+        left: 100%;
+        top: 50%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-color: rgba(0, 171, 254, 0);
+        border-left-color: #00ABFE;
+        border-width: 10px;
+        margin-top: -10px;
+      }
+      .permitassignment .permitionmenu nav a.active{ background-color: #00ABFE; color: #FFFFFF; }
+
+  .permitassignment .permitioncontent{
+    border-left: 1px solid #cdcdcd;
+    display: block;
+    float: right;
+    width: 70%;
+  }
+    .permitassignment .permitioncontent .bgcolor{
+      background-color: #E2F5FF;
+      padding: 20px 30px;
+      margin-bottom: 20px;
+    }
+      .permitassignment .permitioncontent .bgcolor p{
+        color: #83898A;
+        font-size: 13px;
+        margin-bottom: 0;
+      }
+      .permitassignment .permitioncontent .permittree{
+        list-style: none;
+        padding: 0;
+        margin: 0px 30px 40px 30px;
+      }
+      .permitassignment .permitioncontent .permittree li{ margin-bottom: 20px; }
+        .permitassignment .permitioncontent .permittree li ul{
+          list-style: none;
+          padding-left: 20px;
+          padding-top: 10px;
+        }
+        .permitassignment .permitioncontent .permittree li p{
+          padding-left: 30px;
+          color: #83898A;
+          font-size: 13px;
+          margin-bottom: 0;
+        }
