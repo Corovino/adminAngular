@@ -1,0 +1,32 @@
+<div class="main col-lg-9 col-lg-offset-3">
+  <section class="dashboard">
+    <div class="col-sm-6">
+      <div class="bgwhite">
+        <div class="chart">
+          <canvas baseChart
+                  [data]="lineChartData"
+                  [labels]="lineChartLabels"
+                  [chartType]="lineChartType"
+                  [colors]="lineChartColors"
+                  [legend] = false
+                  (chartHover)="chartHovered($event)"
+                  (chartClick)="chartClicked($event)"></canvas>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="bgwhite">
+        <div class="chart">
+          <canvas baseChart [data]="doughnutChartData"
+                  [labels]="doughnutChartLabels"
+                  [chartType]="doughnutChartType"
+                  [colors]="doughnutChartColors"
+                  [legend] = false
+                  (chartHover)="chartHovered($event)"
+                  (chartClick)="chartClicked($event)"></canvas>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+

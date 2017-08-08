@@ -15,12 +15,12 @@ import { AppRouting } from './app-routing/app-routing';
 import { AdminComponent } from './admin/admin/admin.component';
 import { AsideAdminComponent } from './admin/partials/asideadmin/asideadmin.component';
 import { HeaderAdminComponent } from './admin/partials/headeradmin/headeradmin.component';
+import { DashboardAdminComponent } from './admin/dashboard-admin/dashboard-admin.component';
 import { TestinfoComponent } from './admin/test/testinfo/testinfo.component';
 import { TestlistComponent } from './admin/test/testlist/testlist.component';
 import { UserlistComponent } from './admin/usermanagement/userlist/userlist.component';
 import { UserinfoComponent } from './admin/usermanagement/userinfo/userinfo.component';
 import { NewuserComponent } from './admin/usermanagement/newuser/newuser.component';
-import { DashboardComponent } from './admin/dashboard/dashboard.component';
 import { LocationsComponent } from './admin/locations/locations.component';
 import { DescriptionTestComponent } from './admin/modal/description-test/description-test.component';
 import { DeleteComponent } from './admin/modal/delete/delete.component';
@@ -32,11 +32,14 @@ import { PatienttestlistComponent } from './admin/patient-management/patienttest
 import { TestlisthistoryComponent } from './admin/testhistory/testlisthistory/testlisthistory.component';
 
 import { UserComponent } from './user/user/user.component';
-import { TesthistoryComponent } from './user/testhistory/testhistory.component';
 import { AsideuserComponent } from './user/partials/asideuser/asideuser.component';
 import { HeaderuserComponent } from './user/partials/headeruser/headeruser.component';
+import { DashboardUserComponent } from './user/dashboard-user/dashboard-user.component';
+import { TesthistoryComponent } from './user/testhistory/testhistory.component';
 import { PatienttestlistUserComponent } from './user/patient-management/patienttestlist-user/patienttestlist-user.component';
 import { PatientlistUserComponent } from './user/patient-management/patientlist-user/patientlist-user.component';
+import { TestListRepositoryComponent } from './user/testrepository/test-list-repository/test-list-repository.component';
+import { TestPacientRepositoryComponent } from './user/testrepository/test-pacient-repository/test-pacient-repository.component';
 
 
 @NgModule({
@@ -45,7 +48,7 @@ import { PatientlistUserComponent } from './user/patient-management/patientlist-
     AdminComponent,
     AsideAdminComponent,
     HeaderAdminComponent,
-    DashboardComponent,
+    DashboardAdminComponent,
     LocationsComponent,
     DescriptionTestComponent,
     DeleteComponent,
@@ -62,10 +65,13 @@ import { PatientlistUserComponent } from './user/patient-management/patientlist-
     TestlisthistoryComponent,
     TesthistoryComponent,
     UserComponent,
+    DashboardUserComponent,
     AsideuserComponent,
     HeaderuserComponent,
     PatienttestlistUserComponent,
     PatientlistUserComponent,
+    TestListRepositoryComponent,
+    TestPacientRepositoryComponent,
   ],
   imports: [
     BrowserModule,

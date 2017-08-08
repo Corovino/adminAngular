@@ -21,8 +21,17 @@ export class UserComponent implements OnInit {
         this.currentUrl = event.url;
         console.log(this.currentUrl);
         switch (this.currentUrl) {
-          case '/user/test':
+          case '/user/dashboard':
+            this.titlePage = 'Dashboard';
+            break;
+          case '/user/testrepository':
             this.titlePage = 'Test Repository';
+            break;
+          case '/user/testpacient':
+            this.titlePage = 'Test Repository';
+            break;
+          case '/user/patientManagement':
+            this.titlePage = 'Patient Management';
             break;
           case '/user/patientManagement/PatientlistUser':
             this.titlePage = 'Patient Management';
@@ -30,7 +39,10 @@ export class UserComponent implements OnInit {
           case '/user/patientManagement/PatienttestlistUser':
             this.titlePage = 'Patient Management';
             break;
-        }
+          case '/user/testhistory':
+            this.titlePage = 'Test History';
+            break;
+         }
       }
     });
   }
