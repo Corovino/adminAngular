@@ -40,10 +40,10 @@ import { PatienttestlistUserComponent } from './user/patient-management/patientt
 import { PatientlistUserComponent } from './user/patient-management/patientlist-user/patientlist-user.component';
 import { TestListRepositoryComponent } from './user/testrepository/test-list-repository/test-list-repository.component';
 import { TestPacientRepositoryComponent } from './user/testrepository/test-pacient-repository/test-pacient-repository.component';
-import { SelecttestComponent } from './admin/modal/src/app/admin/modal/selecttest/selecttest.component';
-import { PatientscoreComponent } from './admin/modal/src/app/admin/modal/patientscore/patientscore.component';
-import { TestComponent } from './admin/modal/src/app/admin/modal/test/test.component';
-import { NewpatientComponent } from './admin/modal/src/app/admin/modal/newpatient/newpatient.component';
+import { SelecttestComponent } from './admin/modal/selecttest/selecttest.component';
+import { PatientscoreComponent } from './admin/modal/patientscore/patientscore.component';
+import { TestComponent } from './admin/modal/test/test.component';
+import { NewpatientComponent } from './admin/modal/newpatient/newpatient.component';
 
 
 @NgModule({
