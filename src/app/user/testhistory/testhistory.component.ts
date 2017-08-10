@@ -1,9 +1,8 @@
-import {Component, NgModule, OnInit} from '@angular/core';
-import {BrowserModule} from '@angular/platform-browser';
-import { Daterangepicker } from 'ng2-daterangepicker';
+import {Component, OnInit} from '@angular/core';
 import { DaterangepickerConfig } from 'ng2-daterangepicker';
 import * as moment from 'moment/moment';
 import { MdDialog } from '@angular/material';
+import { PatientscoreComponent } from '../../modal/patientscore/patientscore.component';
 
 @Component({
   selector: 'app-testhistory',
@@ -18,7 +17,6 @@ export class TesthistoryComponent implements OnInit {
     {value: 'option3', viewValue: 'Option 3'}
   ];
 
-
   // lineChart
   public lineChartData: Array<any> = [
     [65, 59, 80, 81, 56, 55, 40],
@@ -28,7 +26,7 @@ export class TesthistoryComponent implements OnInit {
   public lineChartType: string = 'line';
   public lineChartColors: Array<any> = [
     { // Blue
-      backgroundColor: 'transparent',
+      backgroundColor: 'rgba(0,133,198,0.2)',
       borderColor: '#0085C6',
       pointBackgroundColor: '#0085C6',
       pointBorderColor: '#0085C6',
@@ -36,7 +34,7 @@ export class TesthistoryComponent implements OnInit {
       pointHoverBorderColor: '#0085C6'
     },
     { // green
-      backgroundColor: 'transparent',
+      backgroundColor: 'rgba(100,221,23,0.2)',
       borderColor: '#64DD17',
       pointBackgroundColor: '#64DD17',
       pointBorderColor: '#64DD17',
@@ -79,6 +77,11 @@ export class TesthistoryComponent implements OnInit {
   public chartHovered(e: any): void {
     console.log(e);
   }
+
+  openScore() {
+    this.dialog.open(PatientscoreComponent);
+  }
+
   ngOnInit() {}
 
 }

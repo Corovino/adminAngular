@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MdDialog } from '@angular/material';
-import { NewLocationComponent } from '../../admin/modal/new-location/new-location.component';
-import { DeleteComponent } from '../../admin/modal/delete/delete.component';
+import { NewLocationComponent } from '../../modal/new-location/new-location.component';
+import { DeleteComponent } from '../../modal/delete/delete.component';
 
 @Component({
   selector: 'app-locations',

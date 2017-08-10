@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MdDialog } from '@angular/material';
+import { SelecttestComponent } from '../../../modal/selecttest/selecttest.component';
 
 @Component({
   selector: 'app-patienttestlist-user',
@@ -15,5 +16,7 @@ export class PatienttestlistUserComponent implements OnInit {
   ];
   constructor(public dialog: MdDialog) {}
   ngOnInit() {}
-
+  selectTest() {
+    this.dialog.open(SelecttestComponent);
+  }
 }

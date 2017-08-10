@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MdDialog } from '@angular/material';
-import { DeleteComponent } from '../../../admin/modal/delete/delete.component';
+import { DeleteComponent } from '../../../modal/delete/delete.component';
 
 @Component({
   selector: 'app-permissionlist',

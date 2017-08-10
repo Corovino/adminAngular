@@ -22,9 +22,9 @@ import { UserlistComponent } from './admin/usermanagement/userlist/userlist.comp
 import { UserinfoComponent } from './admin/usermanagement/userinfo/userinfo.component';
 import { NewuserComponent } from './admin/usermanagement/newuser/newuser.component';
 import { LocationsComponent } from './admin/locations/locations.component';
-import { DescriptionTestComponent } from './admin/modal/description-test/description-test.component';
-import { DeleteComponent } from './admin/modal/delete/delete.component';
-import { NewLocationComponent } from './admin/modal/new-location/new-location.component';
+import { DescriptionTestComponent } from './modal/description-test/description-test.component';
+import { DeleteComponent } from './modal/delete/delete.component';
+import { NewLocationComponent } from './modal/new-location/new-location.component';
 import { PermissionlistComponent } from './admin/access-permission/permissionlist/permissionlist.component';
 import { NewpermissionComponent } from './admin/access-permission/newpermission/newpermission.component';
 import { PatientlistComponent } from './admin/patient-management/patientlist/patientlist.component';
@@ -40,10 +40,11 @@ import { PatienttestlistUserComponent } from './user/patient-management/patientt
 import { PatientlistUserComponent } from './user/patient-management/patientlist-user/patientlist-user.component';
 import { TestListRepositoryComponent } from './user/testrepository/test-list-repository/test-list-repository.component';
 import { TestPacientRepositoryComponent } from './user/testrepository/test-pacient-repository/test-pacient-repository.component';
-import { SelecttestComponent } from './admin/modal/selecttest/selecttest.component';
-import { PatientscoreComponent } from './admin/modal/patientscore/patientscore.component';
-import { TestComponent } from './admin/modal/test/test.component';
-import { NewpatientComponent } from './admin/modal/newpatient/newpatient.component';
+import { SelecttestComponent } from './modal/selecttest/selecttest.component';
+import { PatientscoreComponent } from './modal/patientscore/patientscore.component';
+import { TestComponent } from './modal/test/test.component';
+import { NewpatientComponent } from './modal/newpatient/newpatient.component';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
@@ -80,6 +81,7 @@ import { NewpatientComponent } from './admin/modal/newpatient/newpatient.compone
     PatientscoreComponent,
     TestComponent,
     NewpatientComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
@@ -96,6 +98,14 @@ import { NewpatientComponent } from './admin/modal/newpatient/newpatient.compone
   ],
   providers: [],
   bootstrap: [AppComponent],
-  entryComponents: [DescriptionTestComponent, DeleteComponent, NewLocationComponent]
+  entryComponents: [
+    DescriptionTestComponent,
+    DeleteComponent,
+    NewLocationComponent,
+    SelecttestComponent,
+    PatientscoreComponent,
+    TestComponent,
+    NewpatientComponent
+  ]
 })
 export class AppModule { }

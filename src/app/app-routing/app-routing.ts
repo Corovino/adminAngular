@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 
+import { LoginComponent } from '../login/login.component';
+
 import { AdminComponent } from '../admin/admin/admin.component';
 import { DashboardAdminComponent } from '../admin/dashboard-admin/dashboard-admin.component';
 import { LocationsComponent } from '../admin/locations/locations.component';
@@ -52,6 +54,9 @@ const routes: Routes = [
       { path: 'patientManagement', component: PatientlistUserComponent },
       { path: 'patientManagement/PatienttestlistUser', component: PatienttestlistUserComponent }
     ]
+  },
+  { path: 'login',
+    component: LoginComponent
   }
 ];
 

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MdDialog } from '@angular/material';
-import { DescriptionTestComponent } from '../../../admin/modal/description-test/description-test.component';
-import { DeleteComponent } from '../../../admin/modal/delete/delete.component';
+import { DescriptionTestComponent } from '../../../modal/description-test/description-test.component';
+import { DeleteComponent } from '../../../modal/delete/delete.component';
 
 @Component({
   selector: 'app-testlist',

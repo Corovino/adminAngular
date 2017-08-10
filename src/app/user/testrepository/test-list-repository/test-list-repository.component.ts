@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MdDialog } from '@angular/material';
-import { DescriptionTestComponent } from '../../../admin/modal/description-test/description-test.component';
+import { DescriptionTestComponent } from '../../../modal/description-test/description-test.component';
 
 @Component({
   selector: 'app-test-list-repository',

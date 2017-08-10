@@ -29,7 +29,7 @@ export class TestlisthistoryComponent implements OnInit {
   public lineChartType: string = 'line';
   public lineChartColors: Array<any> = [
     { // Blue
-      backgroundColor: 'transparent',
+      backgroundColor: 'rgba(0,133,198,0.2)',
       borderColor: '#0085C6',
       pointBackgroundColor: '#0085C6',
       pointBorderColor: '#0085C6',
@@ -37,7 +37,7 @@ export class TestlisthistoryComponent implements OnInit {
       pointHoverBorderColor: '#0085C6'
     },
     { // green
-      backgroundColor: 'transparent',
+      backgroundColor: 'rgba(100,221,23,0.2)',
       borderColor: '#64DD17',
       pointBackgroundColor: '#64DD17',
       pointBorderColor: '#64DD17',

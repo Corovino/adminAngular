@@ -368,6 +368,16 @@ h3.withline{
   }
   .form .icon-calculation{ color: #00ABFE; }
 
+section.login .form .mat-input-placeholder,
+section.login .form .mat-input-element{
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 1px;
+  font-size: 13px;
+}
+section.login .form .mat-input-underline { background-color: #FFFFFF; }
+
 /* Steps
 ================================================== */
 .steps{

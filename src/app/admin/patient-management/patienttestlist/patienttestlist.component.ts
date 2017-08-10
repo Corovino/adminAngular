@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MdDialog } from '@angular/material';
-import { DeleteComponent } from '../../../admin/modal/delete/delete.component';
+import { DeleteComponent } from '../../../modal/delete/delete.component';
+import { SelecttestComponent } from '../../../modal/selecttest/selecttest.component';
 
 @Component({
   selector: 'app-patienttestlist',
@@ -19,5 +20,7 @@ export class PatienttestlistComponent implements OnInit {
   openDelete() {
     this.dialog.open(DeleteComponent);
   }
-
+  selectTest() {
+    this.dialog.open(SelecttestComponent);
+  }
 }
