@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { MdDatepickerModule } from '@angular/material';
 
 @Component({
   selector: 'app-newuser',
@@ -9,8 +8,56 @@ import { MdDatepickerModule } from '@angular/material';
 export class NewuserComponent implements OnInit {
 
   gender = [
-    {value: 'male ', viewValue: 'Male'},
-    {value: 'female', viewValue: 'Female'}
+    { value: 'male ', viewValue: 'Male'},
+    { value: 'female', viewValue: 'Female'}
+  ];
+  city = [
+    { value: 'option ', viewValue: 'option'},
+    { value: 'option', viewValue: 'option'},
+    { value: 'option ', viewValue: 'option'},
+    { value: 'option', viewValue: 'option'}
+  ];
+  state = [
+    { value: 'option ', viewValue: 'option'},
+    { value: 'option', viewValue: 'option'},
+    { value: 'option ', viewValue: 'option'},
+    { value: 'option', viewValue: 'option'}
+  ];
+  reportsto = [
+    { value: 'option ', viewValue: 'option'},
+    { value: 'option', viewValue: 'option'},
+    { value: 'option ', viewValue: 'option'},
+    { value: 'option', viewValue: 'option'}
+  ];
+  usertype = [
+    { value: 'option ', viewValue: 'option'},
+    { value: 'option', viewValue: 'option'},
+    { value: 'option ', viewValue: 'option'},
+    { value: 'option', viewValue: 'option'}
+  ];
+  certifications = [
+    { value: 'option ', viewValue: 'option'},
+    { value: 'option', viewValue: 'option'},
+    { value: 'option ', viewValue: 'option'},
+    { value: 'option', viewValue: 'option'}
+  ];
+  roleselection = [
+    { value: 'option ', viewValue: 'option'},
+    { value: 'option', viewValue: 'option'},
+    { value: 'option ', viewValue: 'option'},
+    { value: 'option', viewValue: 'option'}
+  ];
+  location = [
+    { value: 'option ', viewValue: 'option'},
+    { value: 'option', viewValue: 'option'},
+    { value: 'option ', viewValue: 'option'},
+    { value: 'option', viewValue: 'option'}
+  ];
+  division = [
+    { value: 'option ', viewValue: 'option'},
+    { value: 'option', viewValue: 'option'},
+    { value: 'option ', viewValue: 'option'},
+    { value: 'option', viewValue: 'option'}
   ];
 
   constructor() { }

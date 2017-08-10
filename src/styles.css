@@ -224,10 +224,7 @@ table.table > tfoot > tr > td{ background-color: #FFFFFF; }
         left: 15px;
         font-size: 15px;
       }
-      .mat-menu-content a i.icon-password{
-        font-size:13px;
-        left: 7px;
-      }
+      .mat-menu-content a i.icon-password{ font-size:13px; left: 7px; }
         .mat-menu-content a:hover i, .dropdown-menu a:hover i{ color: #FFFFFF;}
 
 /* Pagination
@@ -277,7 +274,12 @@ a.add{
 table.table .mat-checkbox-inner-container{ top: 3px; }
 
 .mat-checkbox-layout{ font-weight: 400; }
+.mat-checkbox-layout .mat-checkbox-label{ font-size: 14px; }
 
+/* Slide Toggle
+================================================== */
+.mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-thumb{ background-color: #00ABFE; }
+.mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-bar{ background-color: rgba(0,171,254,0.4); }
 
 /* Select
 ================================================== */
@@ -347,11 +349,11 @@ h3.withline{
     outline: 0;
     margin-bottom: 20px;
   }
-  .form .mat-select-trigger{ height: 46px; font-size: 13px; }
+  .form .mat-select-trigger{ height: 46px; font-size: 14px; }
   .form.selsmall .mat-select-trigger{ height: 30px; }
-  .form .mat-input-element{ font-size: 13px; }
+  .form .mat-input-element{ font-size: 14px; }
   .form .mat-input-placeholder{ color: #38464D; }
-  .form .mat-input-placeholder-wrapper{ color: #38464D; font-size: 13px; }
+  .form .mat-input-placeholder-wrapper{ color: #38464D; font-size: 14px; }
   .form .mat-focused .mat-input-underline,
   .form .mat-input-ripple{ background-color: #00ABFE; }
   .form .mat-focused .mat-input-placeholder.mat-float{ color: #00ABFE; }
@@ -518,6 +520,7 @@ h3.withline{
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-question:before { content: "\e922"; color: #00abfe; }
 .icon-testrepository:before { content: "\e921"; }
 .icon-back:before { content: "\e920"; color: #00abfe; }
 .icon-interview:before { content: "\e900"; }

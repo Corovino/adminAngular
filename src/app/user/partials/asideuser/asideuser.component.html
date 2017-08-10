@@ -1,9 +1,9 @@
 <aside>
   <ul>
-    <li><a routerLink="/user/testrepository" routerLinkActive="active"><i class="icon-testrepository"></i>Test Repository</a></li>
-    <li><a routerLink="/user/patientManagement" routerLinkActive="active"><i class="icon-users"></i>Patient Management</a></li>
-    <li><a routerLink="/user/testhistory"><i class="icon-testhistory"></i>Test History</a></li>
-    <li><a href="javascript:void(0)"><i class="icon-billing"></i>Billing</a></li>
+    <li class="nav-item active" routerLinkActive="active" [routerLinkActiveOptions]="{exact : true}"><a routerLink="/user/testrepository"><i class="icon-testrepository"></i>Test Repository</a></li>
+    <li routerLinkActive="active"><a routerLink="/user/patientManagement"><i class="icon-users"></i>Patient Management</a></li>
+    <li routerLinkActive="active"><a routerLink="/user/testhistory"><i class="icon-testhistory"></i>Test History</a></li>
+    <li routerLinkActive="active"><a href="javascript:void(0)"><i class="icon-billing"></i>Billing</a></li>
   </ul>
   <div class="search">
     <input name="" value="" placeholder="Search"/>

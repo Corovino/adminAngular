@@ -1,0 +1,21 @@
+.bb{
+  border-bottom: 1px solid #f1f1f1;
+  padding-bottom: 30px;
+  margin-bottom: 40px;
+}
+.mb43{ margin-bottom: 43px !important;}
+
+fieldset.status{
+  padding: 15px 0px;
+}
+  fieldset.status label{
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 0;
+    font-weight: normal;
+    font-size: 13px;
+  }
+  fieldset.status .mat-slide-toggle{
+    position: relative;
+    top: 3px;
+  }
