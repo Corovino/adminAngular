@@ -4,7 +4,8 @@ import { Daterangepicker } from 'ng2-daterangepicker';
 import { DaterangepickerConfig } from 'ng2-daterangepicker';
 import * as moment from 'moment/moment';
 import { MdDialog } from '@angular/material';
-import { DeleteComponent } from '../../../admin/modal/delete/delete.component';
+import { DeleteComponent } from '../../../modal/delete/delete.component';
+import { PatientscoreComponent } from '../../../modal/patientscore/patientscore.component';
 
 @Component({
   selector: 'app-testlisthistory',
@@ -57,7 +58,7 @@ export class TestlisthistoryComponent implements OnInit {
   public mainInput = {
     start: moment().subtract(12, 'month'),
     end: moment().subtract(6, 'month')
-  }
+  };
 
   public eventLog = '';
   constructor(private daterangepickerOptions: DaterangepickerConfig, public dialog: MdDialog) {
@@ -80,7 +81,9 @@ export class TestlisthistoryComponent implements OnInit {
   public chartHovered(e: any): void {
     console.log(e);
   }
-
+  openScore() {
+    this.dialog.open(PatientscoreComponent);
+  }
   openDelete() {
     this.dialog.open(DeleteComponent);
   }

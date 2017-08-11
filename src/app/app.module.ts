@@ -45,7 +45,7 @@ import { PatientscoreComponent } from './modal/patientscore/patientscore.compone
 import { TestComponent } from './modal/test/test.component';
 import { NewpatientComponent } from './modal/newpatient/newpatient.component';
 import { LoginComponent } from './login/login.component';
-
+import { AlertsComponent } from './modal/alerts/alerts.component';
 
 @NgModule({
   declarations: [
@@ -82,6 +82,7 @@ import { LoginComponent } from './login/login.component';
     TestComponent,
     NewpatientComponent,
     LoginComponent,
+    AlertsComponent,
   ],
   imports: [
     BrowserModule,

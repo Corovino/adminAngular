@@ -1,10 +1,8 @@
 import {Component, NgModule, OnInit} from '@angular/core';
-import {BrowserModule} from '@angular/platform-browser';
-import { Daterangepicker } from 'ng2-daterangepicker';
 import { DaterangepickerConfig } from 'ng2-daterangepicker';
 import * as moment from 'moment/moment';
 import { MdDialog } from '@angular/material';
-import { DeleteComponent } from '../../../admin/modal/delete/delete.component';
+import { DeleteComponent } from '../../../modal/delete/delete.component';
 
 @Component({
   selector: 'app-patientlist',
@@ -48,7 +46,7 @@ export class PatientlistComponent implements OnInit {
   public mainInput = {
     start: moment().subtract(12, 'month'),
     end: moment().subtract(6, 'month')
-  }
+  };
 
   public eventLog = '';
   constructor(private daterangepickerOptions: DaterangepickerConfig, public dialog: MdDialog) {
