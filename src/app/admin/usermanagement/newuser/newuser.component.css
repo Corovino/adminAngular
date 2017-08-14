@@ -19,3 +19,13 @@ fieldset.status{
     position: relative;
     top: 3px;
   }
+
+.placeholderImage{
+  background-color: #38464D;
+  border: 2px solid #00ABFE;
+  border-radius: 100%;
+  overflow: hidden;
+  height: 114px;
+  margin: 0 auto 20px;
+  width: 114px;
+}

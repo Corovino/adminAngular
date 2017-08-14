@@ -11,12 +11,35 @@ import * as moment from 'moment/moment';
 })
 export class DashboardUserComponent implements OnInit {
 
+  distribution = [
+    {value: '1', viewValue: 'Gender'},
+    {value: '2', viewValue: 'Age Ranges'},
+    {value: '3', viewValue: 'Drug of Choice'},
+    {value: '4', viewValue: 'Employment Status'},
+    {value: '5', viewValue: 'Level of Education'},
+    {value: '6', viewValue: 'Test performed'}
+  ];
+
+  information = [
+    {value: '1', viewValue: 'Patient'},
+    {value: '2', viewValue: 'Evaluator'},
+    {value: '3', viewValue: 'Office'}
+   ];
+
+  // Datepicker
+  public dateInputs: any = [
+    {
+      start: moment().subtract(4, 'month'),
+      end: moment()
+    }
+  ];
   // lineChart
   public lineChartData: Array<any> = [
-    [65, 59, 80, 81, 56, 55, 40],
-    [28, 48, 40, 19, 86, 27, 90]
+    [65, 59, 70, 70, 66, 55, 40, 78],
+    [28, 48, 40, 50, 60, 40, 35, 55],
+    [18, 28, 30, 9, 40, 17, 30, 50],
   ];
-  public lineChartLabels: Array<any> = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
+  public lineChartLabels: Array<any> = ['01/02', '02/02', '03/02', '04/02', '05/02', '06/02', '07/02', '08/02'];
   public lineChartType: string = 'line';
   public lineChartColors: Array<any> = [
     { // Blue
@@ -34,17 +57,25 @@ export class DashboardUserComponent implements OnInit {
       pointBorderColor: '#64DD17',
       pointHoverBackgroundColor: '#64DD17',
       pointHoverBorderColor: '#64DD17'
+    },
+    { // black
+      backgroundColor: 'transparent',
+      borderColor: '#1C2326',
+      pointBackgroundColor: '#1C2326',
+      pointBorderColor: '#1C2326',
+      pointHoverBackgroundColor: '#1C2326',
+      pointHoverBorderColor: '#1C2326'
     }
   ];
-
-  // Datepicker
-  public dateInputs: any = [
+  // Doughnut
+  public doughnutChartLabels: string[] = ['Males', 'Females'];
+  public doughnutChartData: number[] = [21, 79];
+  public doughnutChartType: string = 'doughnut';
+  public doughnutChartColors: Array<any> = [
     {
-      start: moment().subtract(4, 'month'),
-      end: moment()
+      backgroundColor: [ '#64DD17', '#00ABFE' ]
     }
   ];
-
   public mainInput = {
     start: moment().subtract(12, 'month'),
     end: moment().subtract(6, 'month')
@@ -71,29 +102,6 @@ export class DashboardUserComponent implements OnInit {
   public chartHovered(e: any): void {
     console.log(e);
   }
-  // Doughnut
-  public doughnutChartLabels: string[] = ['Males', 'Females'];
-  public doughnutChartData: number[] = [350, 100];
-  public doughnutChartType: string = 'doughnut';
-  public doughnutChartColors: Array<any> = [
-    { // Blue
-      backgroundColor: '#0085C6',
-      borderColor: '#0085C6',
-      pointBackgroundColor: '#0085C6',
-      pointBorderColor: '#0085C6',
-      pointHoverBackgroundColor: '#0085C6',
-      pointHoverBorderColor: '#0085C6'
-    },
-    { // green
-      backgroundColor: '#64DD17',
-      borderColor: '#64DD17',
-      pointBackgroundColor: '#64DD17',
-      pointBorderColor: '#64DD17',
-      pointHoverBackgroundColor: '#64DD17',
-      pointHoverBorderColor: '#64DD17'
-    }
-  ];
   ngOnInit() {
   }
-
 }

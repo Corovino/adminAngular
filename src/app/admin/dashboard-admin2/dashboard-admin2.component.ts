@@ -3,11 +3,11 @@ import { DaterangepickerConfig } from 'ng2-daterangepicker';
 import * as moment from 'moment/moment';
 
 @Component({
-  selector: 'app-dashboard-admin',
-  templateUrl: './dashboard-admin.component.html',
-  styleUrls: ['./dashboard-admin.component.css']
+  selector: 'app-dashboard-admin2',
+  templateUrl: './dashboard-admin2.component.html',
+  styleUrls: ['./dashboard-admin2.component.css']
 })
-export class DashboardAdminComponent implements OnInit {
+export class DashboardAdmin2Component implements OnInit {
 
   distribution = [
     {value: '1', viewValue: 'Gender'},
@@ -27,11 +27,11 @@ export class DashboardAdminComponent implements OnInit {
   ];
   // Doughnut
   public doughnutChartLabels: string[] = ['Males', 'Females'];
-  public doughnutChartData: number[] = [21, 79];
+  public doughnutChartData: number[] = [8, 17, 8, 20, 19, 22];
   public doughnutChartType: string = 'doughnut';
   public doughnutChartColors: Array<any> = [
     {
-      backgroundColor: [ '#64DD17', '#00ABFE' ]
+      backgroundColor: [ '#33691E', '#72D1FF', '#00ABFE', '#006B9E', '#B2FF59', '#64DD17']
     }
   ];
   public mainInput = {

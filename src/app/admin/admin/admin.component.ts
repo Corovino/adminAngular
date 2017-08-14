@@ -1,12 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { CurrentURLService } from '../../providers/current-url.service';
 import { Router, NavigationStart, Event as NavigationEvent } from '@angular/router';
 
 @Component({
   selector: 'app-admin',
   templateUrl: './admin.component.html',
-  styleUrls: ['./admin.component.css'],
-  providers: [CurrentURLService]
+  styleUrls: ['./admin.component.css']
 })
 export class AdminComponent implements OnInit {
 
@@ -24,14 +22,20 @@ export class AdminComponent implements OnInit {
           case '/admin/test':
             this.titlePage = 'Test';
             break;
+          case '/admin/testinfo':
+            this.titlePage = 'Test';
+            break;
+          case '/admin/newtest':
+            this.titlePage = 'Test';
+            break;
           case '/admin/usersManagement' :
             this.titlePage = 'User Management';
             break;
           case '/admin/testhistory' :
-            this.titlePage = 'Test hostory';
+            this.titlePage = 'Test history';
             break;
           case '/admin/patientManagement':
-            this.titlePage = 'Patient Manager';
+            this.titlePage = 'Patient Management';
             break;
           case '/admin/accessPermission':
             this.titlePage = 'Access Permission';

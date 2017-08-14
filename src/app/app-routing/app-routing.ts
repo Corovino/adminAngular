@@ -6,6 +6,7 @@ import { LoginComponent } from '../login/login.component';
 
 import { AdminComponent } from '../admin/admin/admin.component';
 import { DashboardAdminComponent } from '../admin/dashboard-admin/dashboard-admin.component';
+import { DashboardAdmin2Component } from '../admin/dashboard-admin2/dashboard-admin2.component';
 import { LocationsComponent } from '../admin/locations/locations.component';
 import { UserlistComponent } from '../admin/usermanagement/userlist/userlist.component';
 import { UserinfoComponent } from '../admin/usermanagement/userinfo/userinfo.component';
@@ -17,6 +18,8 @@ import { NewpermissionComponent } from '../admin/access-permission/newpermission
 import { PatientlistComponent } from '../admin/patient-management/patientlist/patientlist.component';
 import { PatienttestlistComponent } from '../admin/patient-management/patienttestlist/patienttestlist.component';
 import { TestlisthistoryComponent } from '../admin/testhistory/testlisthistory/testlisthistory.component';
+import { ScoreComponent } from '../admin/patient-management/score/score.component';
+import { NewtestComponent } from '../admin/test/newtest/newtest.component';
 
 import { UserComponent } from '../user/user/user.component';
 import { DashboardUserComponent } from '../user/dashboard-user/dashboard-user.component';
@@ -25,22 +28,26 @@ import { TestPacientRepositoryComponent } from '../user/testrepository/test-paci
 import { TesthistoryComponent } from '../user/testhistory/testhistory.component';
 import { PatienttestlistUserComponent } from '../user/patient-management/patienttestlist-user/patienttestlist-user.component';
 import { PatientlistUserComponent } from '../user/patient-management/patientlist-user/patientlist-user.component';
+import { ScorepatientComponent } from '../user/patient-management/scorepatient/scorepatient.component';
 
 const routes: Routes = [
   { path: 'admin',
     component: AdminComponent,
     children: [
       { path: 'dashboardAdmin', component: DashboardAdminComponent },
+      { path: 'dashboardAdmin2', component: DashboardAdmin2Component },
       { path: 'test', component: TestlistComponent },
+      { path: 'test/testinfo', component: TestinfoComponent },
+      { path: 'test/newtest', component: NewtestComponent },
       { path: 'usersManagement', component: UserlistComponent },
       { path: 'patientManagement', component: PatientlistComponent },
       { path: 'patientManagement/patienttestlist', component: PatienttestlistComponent },
+      { path: 'patientManagement/score', component: ScoreComponent },
       { path: 'accessPermission', component: PermissionlistComponent },
       { path: 'accessPermission/newpermission', component: NewpermissionComponent },
       { path: 'locations', component: LocationsComponent },
       { path: 'usersManagement/userinfo', component: UserinfoComponent },
       { path: 'usersManagement/newuser', component: NewuserComponent },
-      { path: 'test/testinfo', component: TestinfoComponent },
       { path: 'testhistory', component: TestlisthistoryComponent }
     ]
   },
@@ -52,7 +59,8 @@ const routes: Routes = [
       { path: 'testpacient', component: TestPacientRepositoryComponent },
       { path: 'testhistory', component: TesthistoryComponent },
       { path: 'patientManagement', component: PatientlistUserComponent },
-      { path: 'patientManagement/PatienttestlistUser', component: PatienttestlistUserComponent }
+      { path: 'patientManagement/PatienttestlistUser', component: PatienttestlistUserComponent },
+      { path: 'patientManagement/score', component: ScorepatientComponent }
     ]
   },
   { path: 'login',

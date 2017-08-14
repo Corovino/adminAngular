@@ -347,7 +347,6 @@ h3.withline{
 .bgwhite .mat-nav-list .mat-list-item .mat-list-item-content {
   color: #83898A;
   display: block;
-  font-weight: 300;
   height: auto;
   padding: 2px 0;
   font-size: 14px;
@@ -365,7 +364,7 @@ h3.withline{
     margin-bottom: 20px;
   }
   .form .mat-select-trigger{ height: 46px; font-size: 14px; }
-  .form.selsmall .mat-select-trigger{ height: 30px; }
+  .selsmall .mat-select-trigger{ height: 30px; }
   .form .mat-input-element{ font-size: 14px; }
   .form .mat-input-placeholder{ color: #38464D; }
   .form .mat-input-placeholder-wrapper{ color: #38464D; font-size: 14px; }
@@ -481,8 +480,16 @@ section.login .form .mat-input-underline { background-color: #FFFFFF; }
 .daterangepicker .ranges li.active,
 .daterangepicker .ranges li:hover { background: #00ABFE; border: 1px solid #00ABFE; }
 
-.daterangepicker .range_inputs .btn{ padding: 5px 18px; }
+.daterangepicker .range_inputs .btn {
+  padding: 5px 18px;
+  display: block;
+  float: none;
+  margin-bottom: 5px;
+  width: 100%;
+}
 .daterangepicker .range_inputs .btn-success{ background-color: #00ABFE; border: 1px solid #00ABFE; }
+.daterangepicker .calendar-table{ width: 230px !important; }
+.daterangepicker .calendar td, .daterangepicker .calendar th{ min-width: 30px !important; }
 .daterangepicker .calendar td.active,
 .daterangepicker .calendar td.active:hover,
 .daterangepicker .calendar td.end-date{ background-color: #00ABFE; color: #FFFFFF }
@@ -516,6 +523,61 @@ section.login .form .mat-input-underline { background-color: #FFFFFF; }
   }
 .daterangepicker .daterangepicker_input i{ color: #00ABFE; }
 
+.daterangepicker.dropdown-menu{ min-width: 137px; }
+.daterangepicker .ranges{ width: 120px !important; }
+@media (min-width: 564px){
+  .daterangepicker .ranges ul {
+    width: 120px !important;
+  }
+}
+
+/* File Upload
+================================================== */
+.bgwhite .file-upload[_ngcontent-c5]{ padding: 0; background-color: transparent; }
+.bgwhite .image-upload[_ngcontent-c5] {
+  --common-radius: 3px;
+  --active-color: #00ABFE;
+  border: none;
+}
+.bgwhite .clear[_ngcontent-c5]{ background-color: #38464D; }
+.bgwhite .button[_ngcontent-c5]{
+  box-shadow: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  text-align: center;
+  text-transform: none;
+  display: block;
+  float: none;
+  border-radius: 3px;
+  padding: 8px;
+  font-weight: 400;
+}
+.bgwhite .drag-box-message[_ngcontent-c5]{ display: none; }
+
+/* Tabs
+================================================== */
+.bgwhite .mat-tab-labels{
+  display: block;
+  text-align: center;
+  padding-top: 10px;
+}
+  .bgwhite .mat-tab-label[_ngcontent-c5]{
+    display: inline-block;
+    font-size: 14px;
+    text-transform: uppercase;
+    height: 40px;
+    line-height: 40px;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+  .bgwhite .mat-ink-bar{
+    background-color: #00ABFE;
+    height: 5px;
+  }
+
+  .bgwhite .mat-tab-label-active{ color: #00ABFE; }
+  .bgwhite .mat-tab-label:focus { background-color: rgba(0,171,254,.12); }
+  .bgwhite .mat-tab-body-content{ overflow: hidden; }
 
 /* Icons
 ================================================== */
@@ -545,6 +607,8 @@ section.login .form .mat-input-underline { background-color: #FFFFFF; }
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-patient2:before { content: "\e923"; }
+.icon-test2:before { content: "\e924"; }
 .icon-question:before { content: "\e922"; color: #00abfe; }
 .icon-testrepository:before { content: "\e921"; }
 .icon-back:before { content: "\e920"; color: #00abfe; }

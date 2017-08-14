@@ -1,0 +1,116 @@
+.sectionscore{  max-width: 950px; }
+.sectionscore h5.title{
+  font-size: 17px;
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+.sectionscore .head{ overflow: hidden; margin-bottom: 20px; }
+.sectionscore .head .left{ float: left; }
+.sectionscore .head .right{ float: right; }
+.sectionscore .head .right ul.inline{ padding-top: 15px; }
+
+.sectionscore h4{
+  color: #00ABFE;
+  font-size: 25px;
+  margin: 0 0 5px 0;
+  font-weight: 400;
+}
+.sectionscore p.date{
+  color: #2E3A40;
+  font-size: 15px;
+  margin-bottom: 0;
+}
+.sectionscore p.date span{ color: #83898A; }
+.sectionscore p{
+  color: #83898A;
+  font-size: 13px;
+  margin-bottom: 0;
+}
+.sectionscore .bgwhite.item{
+  border-radius: 5px;
+  padding: 20px;
+  height: 320px;
+  margin-bottom: 20px;
+}
+.sectionscore .bgwhite.item .contleft{
+  display: block;
+  float: left;
+  padding: 0 5px 0 0;
+  width: 40%;
+}
+.sectionscore .bgwhite.item .contright{
+  display: block;
+  float: right;
+  padding: 0 0 0 5px;
+  width: 60%;
+}
+.sectionscore .bgwhite.item h3{
+  font-size: 17px;
+  margin: 0 0 10px 0;
+  text-transform: uppercase;
+  line-height: 25px;
+}
+.sectionscore .bgwhite.item h3 i{
+  color: #00ABFE;
+  display: inline-block;
+  position: relative;
+  top: 4px;
+  margin-right: 5px;
+  font-size: 25px;
+}
+.sectionscore .bgwhite.item p.info{ float: right; padding-right: 22px; }
+.sectionscore .bgwhite.item p.info span{ padding: 0 10px; }
+
+.mat-grid-list{ padding-top: 5px; margin-bottom: 20px; }
+md-grid-tile{
+  background: #FFFFFF;
+  border: 1px solid #00ABFE;
+  font-size: 18px;
+  text-align: center;
+  padding: 0 20px;
+  margin: 0;
+}
+md-grid-tile.color {
+  background: #00ABFE;
+  color: #FFFFFF;
+  font-size: 13px;
+}
+md-grid-tile.btl{ border-top-left-radius: 10px; }
+md-grid-tile.bbl{ border-bottom-left-radius: 10px; }
+md-grid-tile.btr{ border-top-right-radius: 10px; }
+md-grid-tile.bbr{ border-bottom-right-radius: 10px; }
+
+.sectionscore p.info{
+  color: #00ABFE;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.sectionscore p.info span{
+  color: #38464D;
+  display: inline-block;
+  padding: 0 5px;
+}
+
+.pbottomright{
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+}
+.pbottomright a{
+  background-color: #00ABFE;
+  box-shadow: 1px 1px 20px rgba(0,0,0,0.2);
+  border-radius: 100%;
+  color: #FFFFFF;
+  display: block;
+  font-size: 22px;
+  height: 50px;
+  line-height: 54px;
+  text-align: center;
+  transition: all linear 0.2s;
+  margin: 0 7px;
+  width: 50px;
+  float: left
+}
+.pbottomright a:hover{ background-color: #2192C8; }

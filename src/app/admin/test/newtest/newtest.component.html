@@ -1,0 +1,82 @@
+<div class="main col-lg-9 col-lg-offset-3">
+  <div class="sectionnewtest">
+    <div class="options">
+      <h2 class="title">New test</h2>
+      <div class="steps">
+        <span class="current"></span>
+        <span class="current"></span>
+        <span></span>
+      </div>
+    </div>
+    <div class="bgwhite">
+      <div class="head">
+        <div class="row">
+          <div class="col-sm-7">
+            <h4>TEST NAME - 001223</h4>
+            <p><span>Description:</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum tempus urna, eu dignissim ante</p>
+          </div>
+          <div class="col-sm-5">
+            <p><span>Calculation</span>Lorem ipsum dolor</p>
+            <p><span>Division</span>Lorem ipsum dolor</p>
+            <ul class="location">
+              <li>IL</li>
+              <li>NV</li>
+              <li>NY</li>
+              <li>CA</li>
+              <li>IN</li>
+              <li>KY</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="testcreation">
+        <md-tab-group>
+          <md-tab label="Interview">
+            <div class="head form">
+              <div class="row">
+                <div class="col-sm-7">
+                  <fieldset>
+                    <md-input-container>
+                      <input mdInput #message maxlength="256" placeholder="Description" value="">
+                      <md-hint align="end">{{message.value.length}} / 256</md-hint>
+                    </md-input-container>
+                  </fieldset>
+                </div>
+                <div class="col-sm-5">
+                  <fieldset>
+                    <md-input-container>
+                      <input mdInput placeholder="Calculation">
+                      <md-icon mdSuffix><i class="icon-calculation"></i></md-icon>
+                    </md-input-container>
+                  </fieldset>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-7">
+                <div class="cont">
+                  <div class="field">
+                    <div class="number"><span>1.</span></div>
+                  </div>
+                  <div class="btnadd">
+                    <a href="javascript:void(0)" class="add"><i class="icon-plus"></i></a>
+                  </div>
+                  <div class="buttons">
+                    <a class="btn btn-primary blue left">Back to Test Info</a>
+                    <div class="right">
+                      <a class="btn btn-primary blue inline">Save</a>
+                      <a class="btn btn-primary blue inline">Next</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-5"></div>
+            </div>
+          </md-tab>
+          <md-tab label="Questionnaire">Content 2</md-tab>
+        </md-tab-group>
+      </div>
+    </div>
+  </div>
+</div>
+

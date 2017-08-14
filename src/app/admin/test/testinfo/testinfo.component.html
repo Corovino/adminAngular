@@ -26,9 +26,9 @@
               </md-input-container>
             </fieldset>
             <fieldset>
-              <md-input-container class="example-full-width">
-                <input mdInput #message maxlength="256" placeholder="Description" value="">
-                <md-hint align="end">{{message.value.length}} / 256</md-hint>
+              <md-input-container>
+                <input mdInput #message maxlength="120" placeholder="Description" value="">
+                <md-hint align="end">{{message.value.length}} / 120</md-hint>
               </md-input-container>
             </fieldset>
           </div>
@@ -57,8 +57,8 @@
         </div>
         <div class="contcenter">
           <ul class="inline">
-            <li><button class="btn btn-primary blue">Cancel</button></li>
-            <li><button class="btn btn-primary blue">Next</button></li>
+            <li><a class="btn btn-primary blue" routerLink="test">Cancel</a></li>
+            <li><a class="btn btn-primary blue" routerLink="newtest">Next</a></li>
           </ul>
         </div>
       </form>

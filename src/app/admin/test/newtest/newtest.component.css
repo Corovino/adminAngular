@@ -1,0 +1,80 @@
+.sectionnewtest .bgwhite{ padding: 0; }
+  .sectionnewtest .bgwhite .head{ padding: 40px 80px 20px 80px; }
+  .sectionnewtest .bgwhite .head.form{
+    border-bottom: 1px solid rgba(0,0,0,.12);
+    padding: 20px 40px;
+  }
+
+.sectionnewtest .bgwhite .head p{
+  color: #83898A;
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 5px;
+  line-height: 22px;
+}
+  .sectionnewtest .bgwhite .head p span{
+    color: #38464D;
+    font-weight: 400;
+    display: inline-block;
+    padding-right: 5px;
+  }
+
+.sectionnewtest .bgwhite .head ul.location{
+  margin: 10px 0 0 0;
+  overflow: hidden;
+  padding: 0;
+  list-style: none;
+}
+  .sectionnewtest .bgwhite .head ul.location li{
+    background-color: #00ABFE;
+    border-radius: 3px;
+    color: #FFFFFF;
+    display: block;
+    float: left;
+    font-size: 13px;
+    height: 24px;
+    line-height: 24px;
+    margin-right: 5px;
+    text-align: center;
+    width: 24px;
+  }
+    .sectionnewtest .bgwhite .head ul.location li:hover{ background-color: #2098D3; }
+
+.bgwhite .cont{ border-right: 1px solid rgba(0,0,0,0.12); padding: 20px; }
+  .bgwhite .cont .field{
+    background-color: #F4F4F4;
+    border: 1px solid #00ABFE;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    overflow: hidden;
+    min-height: 140px;
+    position: relative;
+    padding-left: 80px;
+    margin-bottom: 20px;
+  }
+    .bgwhite .cont .field .number{
+      background-color: #00ABFE;
+      color: #FFFFFF;
+      display: block;
+      font-size: 18px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      line-height: 140px;
+      text-align: center;
+      width: 80px;
+    }
+      .bgwhite .cont .field .number span{ display: inline-block; vertical-align: middle; }
+
+  .bgwhite .cont .add{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+    .bgwhite .cont .buttons{ overflow: hidden; margin-bottom: 0px; }
+      .bgwhite .cont .buttons .left{ float: left; }
+      .bgwhite .cont .buttons .right{ float: right; }

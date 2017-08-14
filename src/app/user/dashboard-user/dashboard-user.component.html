@@ -1,8 +1,27 @@
 <div class="main col-lg-9 col-lg-offset-3">
   <section class="dashboard">
-    <div class="col-sm-6">
-      <div class="bgwhite">
-        <div class="chart">
+    <div class="col-sm-6 p2">
+      <div class="bgwhite graph">
+        <div class="form">
+          <label>Test Information by
+            <div class="selsmall">
+              <md-select>
+                <md-option *ngFor="let information of information" [value]="information.value">
+                  {{ information.viewValue }}
+                </md-option>
+              </md-select>
+            </div>
+          </label>
+          <div class="datepicker" *ngFor="let dateInput of dateInputs">
+            <div daterangepicker [options]="{startDate:dateInput.start, endDate:dateInput.end }" >
+              <span class="text">
+                {{ dateInput.start | date:'M/dd/y' }} - {{ dateInput.end| date:'M/dd/y' }}
+                 <span class="arrow"><i class="icon-arrowbottom"></i></span>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="chart line">
           <canvas baseChart
                   [data]="lineChartData"
                   [labels]="lineChartLabels"
@@ -12,11 +31,47 @@
                   (chartHover)="chartHovered($event)"
                   (chartClick)="chartClicked($event)"></canvas>
         </div>
+        <p class="info">TOTAL TESTS STARTED<span>100</span></p>
+        <div class="contcenter">
+          <ul class="legend">
+            <li class="colorblack">
+              <span class="number">35</span>
+              <p>TEST IN PROGRESS</p>
+            </li>
+            <li class="darkblue">
+              <span class="number">96</span>
+              <p>TEST UNSUBMITTED</p>
+            </li>
+            <li class="green">
+              <span class="number">53</span>
+              <p>TEST SUBMITTED</p>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
-    <div class="col-sm-6">
-      <div class="bgwhite">
-        <div class="chart">
+    <div class="col-sm-6 p2">
+      <div class="bgwhite graph">
+        <div class="form">
+          <label>PATIENT DISTRIBUTION BY
+            <div class="selsmall">
+              <md-select>
+                <md-option *ngFor="let distribution of distribution" [value]="distribution.value">
+                  {{ distribution.viewValue }}
+                </md-option>
+              </md-select>
+            </div>
+          </label>
+          <div class="datepicker" *ngFor="let dateInput of dateInputs">
+            <div daterangepicker [options]="{startDate:dateInput.start, endDate:dateInput.end }" >
+              <span class="text">
+                {{ dateInput.start | date:'M/dd/y' }} - {{ dateInput.end| date:'M/dd/y' }}
+                 <span class="arrow"><i class="icon-arrowbottom"></i></span>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="chart pie">
           <canvas baseChart [data]="doughnutChartData"
                   [labels]="doughnutChartLabels"
                   [chartType]="doughnutChartType"
@@ -24,6 +79,18 @@
                   [legend] = false
                   (chartHover)="chartHovered($event)"
                   (chartClick)="chartClicked($event)"></canvas>
+        </div>
+        <div class="contcenter">
+          <ul class="legend">
+            <li class="colorgreen">
+              <span class="number">21%</span>
+              <p>Males</p>
+            </li>
+            <li class="colorblue">
+              <span class="number">79%</span>
+              <p>Females</p>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
