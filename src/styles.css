@@ -79,8 +79,10 @@ h3.title{
 h4{
   color: #00ABFE;
   font-size: 15px;
+  font-weight: 400;
   margin: 0 0 15px 0;
   text-transform: uppercase;
+  line-height: 20px;
 }
 
 .backlink{
@@ -392,6 +394,21 @@ section.login .form .mat-input-element{
 }
 section.login .form .mat-input-underline { background-color: #FFFFFF; }
 
+fieldset.slidebutton{ margin-bottom: 15px; }
+  fieldset.slidebutton label{
+    display: inline-block;
+    font-weight: normal;
+    margin-bottom: 0;
+    font-weight: 400;
+    font-size: 14px;
+    padding-top: 5px;
+    min-width: 60px;
+  }
+  fieldset.slidebutton .mat-slide-toggle{
+    position: relative;
+    top: 3px;
+  }
+
 /* Steps
 ================================================== */
 .steps{
@@ -607,6 +624,9 @@ section.login .form .mat-input-underline { background-color: #FFFFFF; }
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-cancel:before { content: "\e927"; }
+.icon-reorder:before { content: "\e925"; color: #fff; }
+.icon-minus:before { content: "\e926"; color: #00abfe; }
 .icon-patient2:before { content: "\e923"; }
 .icon-test2:before { content: "\e924"; }
 .icon-question:before { content: "\e922"; color: #00abfe; }
