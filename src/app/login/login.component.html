@@ -4,19 +4,27 @@
       <div class="contcenter">
         <h1 class="logo"><a href="#"><img src="assets/images/logo2.svg"></a></h1>
       </div>
-      <form class="form">
+      <form class="form"  [formGroup]="loginForm" (ngSubmit)="onSubmit()">
         <fieldset>
           <md-input-container>
-            <input mdInput placeholder="User Name" value="">
+            <input mdInput placeholder="User Name"
+                   value=""
+                   formControlName="user_name" >
           </md-input-container>
         </fieldset>
         <fieldset class="mb40">
           <md-input-container>
-            <input mdInput type="password" placeholder="Password" value="">
+            <input mdInput
+                   type="password"
+                   placeholder="Password"
+                   formControlName="password"
+                   value="">
           </md-input-container>
         </fieldset>
         <div class="contcenter">
-          <button class="btn btn-primary blue inline">Login</button>
+          <button class="btn btn-primary blue inline"
+                  type="submit"
+                  [disabled]="!loginForm.valid">Login</button>
           <p class="small">Forgot your password?<a href="#" class="linkblue">Remember me</a></p>
         </div>
       </form>

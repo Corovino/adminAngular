@@ -9,6 +9,7 @@ import { ChartsModule } from 'ng2-charts';
 import { Daterangepicker } from 'ng2-daterangepicker';
 import { MomentModule } from 'angular2-moment';
 import { ImageUploadModule } from 'angular2-image-upload';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { AppRouting } from './app-routing/app-routing';
@@ -108,6 +109,8 @@ import { ScorepatientComponent } from './user/patient-management/scorepatient/sc
     ChartsModule,
     Daterangepicker,
     MomentModule,
+    FormsModule,
+    ReactiveFormsModule,
     ImageUploadModule.forRoot()
   ],
   providers: [],

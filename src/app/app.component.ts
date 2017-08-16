@@ -15,24 +15,38 @@ export class AppComponent {
   constructor(private router: Router ) {}
   ngOnInit() {
 
+    if(this.router.url === "/"){
+        this.router.navigate[('/login')];
+    }
+    this.pageTitle();
+
+
+
+  }
+
+  pageTitle(){
+
+
+
     this.router.events.forEach((event: NavigationEvent) => {
+
       if (event instanceof NavigationStart) {
+
         this.currentUrl = event.url;
-        console.log(this.currentUrl);
+
         switch (this.currentUrl) {
           case '/user':
+
             this.titlePageUser = 'Test-User';
-            console.log(this.titlePageUser);
             break;
+
           default:
+
             this.titlePageUser = "User Admin";
             break;
-
         }
-
       }
     });
-
   }
 }
 

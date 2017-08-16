@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -7,9 +9,47 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  public loginForm : FormGroup;
+  private  dataLogin :any;
 
-  ngOnInit() {
+  constructor(private formbuilder : FormBuilder, private router : Router, private activate : ActivatedRoute ) { }
+
+  ngOnInit()
+  {
+
+    this.loginForm = this.formbuilder.group({
+      user_name : ['', [Validators.required] ],
+      password :['', [Validators.required, Validators.minLength(2)]  ],
+    });
   }
+
+   onSubmit()
+   {
+       this.dataLogin = {
+           user_name : this.loginForm.get('user_name').value,
+           password  : this.loginForm.get('password').value
+       }
+
+       console.log(this.dataLogin.password);
+
+       /*switch(this.dataLogin.password){
+         case 'admin':
+           console.log('admin');
+           this.router.navigate[('/admin')];
+           break;
+         case 'user':
+           console.log('user');
+           this.router.navigate[('/user')];
+           break;
+       }*/
+       if( this.dataLogin.password == 'admin' ){
+         console.log('admin');
+         this.router.navigate(['/admin']);
+       }else{
+         console.log('user');
+         this.router.navigate(['/user']);
+       }
+   }
+
 
 }
