@@ -6,7 +6,6 @@ import { LoginComponent } from '../login/login.component';
 
 import { AdminComponent } from '../admin/admin/admin.component';
 import { DashboardAdminComponent } from '../admin/dashboard-admin/dashboard-admin.component';
-import { DashboardAdmin2Component } from '../admin/dashboard-admin2/dashboard-admin2.component';
 import { LocationsComponent } from '../admin/locations/locations.component';
 import { UserlistComponent } from '../admin/usermanagement/userlist/userlist.component';
 import { UserinfoComponent } from '../admin/usermanagement/userinfo/userinfo.component';
@@ -23,6 +22,7 @@ import { NewtestComponent } from '../admin/test/newtest/newtest.component';
 
 import { UserComponent } from '../user/user/user.component';
 import { DashboardUserComponent } from '../user/dashboard-user/dashboard-user.component';
+import { DashboardUser2Component } from '../user/dashboard-user2/dashboard-user2.component';
 import { TestListRepositoryComponent } from '../user/testrepository/test-list-repository/test-list-repository.component';
 import { TestPacientRepositoryComponent } from '../user/testrepository/test-pacient-repository/test-pacient-repository.component';
 import { TesthistoryComponent } from '../user/testhistory/testhistory.component';
@@ -31,11 +31,11 @@ import { PatientlistUserComponent } from '../user/patient-management/patientlist
 import { ScorepatientComponent } from '../user/patient-management/scorepatient/scorepatient.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: '/login', pathMatch: 'full' },
   { path: 'admin',
     component: AdminComponent,
     children: [
       { path: 'dashboardAdmin', component: DashboardAdminComponent },
-      { path: 'dashboardAdmin2', component: DashboardAdmin2Component },
       { path: 'test', component: TestlistComponent },
       { path: 'test/testinfo', component: TestinfoComponent },
       { path: 'test/newtest', component: NewtestComponent },
@@ -55,6 +55,7 @@ const routes: Routes = [
     component: UserComponent,
     children: [
       { path: 'dashboardUser', component: DashboardUserComponent },
+      { path: 'dashboardUser2', component: DashboardUser2Component },
       { path: 'testrepository', component: TestListRepositoryComponent },
       { path: 'testpacient', component: TestPacientRepositoryComponent },
       { path: 'testhistory', component: TesthistoryComponent },

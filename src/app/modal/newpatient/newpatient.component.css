@@ -1,0 +1,30 @@
+h4{ margin-bottom: 5px; }
+fieldset.status{ padding: 15px 0px; }
+fieldset.status label{
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 0;
+  font-weight: normal;
+  font-size: 13px;
+}
+fieldset.status .mat-slide-toggle{
+  position: relative;
+  top: 3px;
+}
+
+.placeholderImage{
+  background-color: #38464D;
+  border: 2px solid #00ABFE;
+  border-radius: 100%;
+  overflow: hidden;
+  height: 114px;
+  margin: 0 auto 20px;
+  width: 114px;
+}
+a.uploadbtn{
+  display: block;
+  position: relative;
+  padding: 6px 20px;
+}
+.sectionewuser .form .mat-select { min-width: 100%; }
+.mailing{ margin-bottom: 10px; padding-top: 8px; }

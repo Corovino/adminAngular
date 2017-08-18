@@ -18,7 +18,6 @@ import { AdminComponent } from './admin/admin/admin.component';
 import { AsideAdminComponent } from './admin/partials/asideadmin/asideadmin.component';
 import { HeaderAdminComponent } from './admin/partials/headeradmin/headeradmin.component';
 import { DashboardAdminComponent } from './admin/dashboard-admin/dashboard-admin.component';
-import { DashboardAdmin2Component } from './admin/dashboard-admin2/dashboard-admin2.component';
 import { TestinfoComponent } from './admin/test/testinfo/testinfo.component';
 import { TestlistComponent } from './admin/test/testlist/testlist.component';
 import { UserlistComponent } from './admin/usermanagement/userlist/userlist.component';
@@ -39,6 +38,7 @@ import { UserComponent } from './user/user/user.component';
 import { AsideuserComponent } from './user/partials/asideuser/asideuser.component';
 import { HeaderuserComponent } from './user/partials/headeruser/headeruser.component';
 import { DashboardUserComponent } from './user/dashboard-user/dashboard-user.component';
+import { DashboardUser2Component } from './user/dashboard-user2/dashboard-user2.component';
 import { TesthistoryComponent } from './user/testhistory/testhistory.component';
 import { PatienttestlistUserComponent } from './user/patient-management/patienttestlist-user/patienttestlist-user.component';
 import { PatientlistUserComponent } from './user/patient-management/patientlist-user/patientlist-user.component';
@@ -79,6 +79,7 @@ import { ScorepatientComponent } from './user/patient-management/scorepatient/sc
     TesthistoryComponent,
     UserComponent,
     DashboardUserComponent,
+    DashboardUser2Component,
     AsideuserComponent,
     HeaderuserComponent,
     PatienttestlistUserComponent,
@@ -94,7 +95,6 @@ import { ScorepatientComponent } from './user/patient-management/scorepatient/sc
     ScoreComponent,
     TestpatientComponent,
     ScorepatientComponent,
-    DashboardAdmin2Component,
     NewtestComponent,
   ],
   imports: [

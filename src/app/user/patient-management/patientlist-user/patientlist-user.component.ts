@@ -1,9 +1,8 @@
 import {Component, NgModule, OnInit} from '@angular/core';
-import {BrowserModule} from '@angular/platform-browser';
-import { Daterangepicker } from 'ng2-daterangepicker';
 import { DaterangepickerConfig } from 'ng2-daterangepicker';
 import * as moment from 'moment/moment';
 import { MdDialog } from '@angular/material';
+import { NewpatientComponent } from '../../../modal/newpatient/newpatient.component';
 
 
 @Component({
@@ -12,13 +11,6 @@ import { MdDialog } from '@angular/material';
   styleUrls: ['./patientlist-user.component.css']
 })
 export class PatientlistUserComponent implements OnInit {
-
-  search = [
-    {value: 'option1', viewValue: 'Option 1'},
-    {value: 'option2', viewValue: 'Option 2'},
-    {value: 'option3', viewValue: 'Option 3'}
-  ];
-
 
   // lineChart
   public lineChartData: Array<any> = [
@@ -70,6 +62,9 @@ export class PatientlistUserComponent implements OnInit {
 
   public chartHovered(e: any): void {
     console.log(e);
+  }
+  newpatient() {
+    this.dialog.open(NewpatientComponent);
   }
   ngOnInit() {}
 

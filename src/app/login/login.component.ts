@@ -23,33 +23,23 @@ export class LoginComponent implements OnInit {
     });
   }
 
-   onSubmit()
-   {
-       this.dataLogin = {
-           user_name : this.loginForm.get('user_name').value,
-           password  : this.loginForm.get('password').value
-       }
+  onSubmit()
+  {
+    this.dataLogin = {
+      user_name : this.loginForm.get('user_name').value,
+      password  : this.loginForm.get('password').value
+    }
 
-       console.log(this.dataLogin.password);
+    console.log(this.dataLogin.password);
 
-       /*switch(this.dataLogin.password){
-         case 'admin':
-           console.log('admin');
-           this.router.navigate[('/admin')];
-           break;
-         case 'user':
-           console.log('user');
-           this.router.navigate[('/user')];
-           break;
-       }*/
-       if( this.dataLogin.password == 'admin' ){
-         console.log('admin');
-         this.router.navigate(['/admin']);
-       }else{
-         console.log('user');
-         this.router.navigate(['/user']);
-       }
-   }
+    if( this.dataLogin.password == 'admin' ){
+      console.log('admin');
+      this.router.navigate(['/admin/dashboardAdmin']);
+    }else{
+      console.log('user');
+      this.router.navigate(['/user/dashboardUser']);
+    }
+  }
 
 
 }

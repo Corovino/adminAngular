@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MdDialog } from '@angular/material';
 import { DescriptionTestComponent } from '../../../modal/description-test/description-test.component';
 import { DeleteComponent } from '../../../modal/delete/delete.component';
+import { TestComponent } from '../../../modal/test/test.component';
 
 @Component({
   selector: 'app-testlist',
@@ -10,11 +11,6 @@ import { DeleteComponent } from '../../../modal/delete/delete.component';
 })
 export class TestlistComponent implements OnInit {
 
-  search = [
-    {value: 'option1', viewValue: 'Option 1'},
-    {value: 'option2', viewValue: 'Option 2'},
-    {value: 'option3', viewValue: 'Option 3'}
-  ];
   constructor(public dialog: MdDialog) {}
 
   openDescription() {
@@ -22,6 +18,9 @@ export class TestlistComponent implements OnInit {
   }
   openDelete() {
     this.dialog.open(DeleteComponent);
+  }
+  openTest() {
+    this.dialog.open(TestComponent);
   }
 
   ngOnInit() {

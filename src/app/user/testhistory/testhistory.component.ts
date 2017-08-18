@@ -11,12 +11,6 @@ import { PatientscoreComponent } from '../../modal/patientscore/patientscore.com
 })
 export class TesthistoryComponent implements OnInit {
 
-  search = [
-    {value: 'option1', viewValue: 'Option 1'},
-    {value: 'option2', viewValue: 'Option 2'},
-    {value: 'option3', viewValue: 'Option 3'}
-  ];
-
   // lineChart
   public lineChartData: Array<any> = [
     [65, 59, 80, 81, 56, 55, 40],

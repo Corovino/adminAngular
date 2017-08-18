@@ -315,7 +315,7 @@ table.table .mat-checkbox-inner-container{ top: 3px; }
 }
 .cdk-overlay-backdrop.cdk-overlay-backdrop-showing { opacity: 0.8; }
 .cdk-overlay-dark-backdrop { background: rgb(0,0,0); }
-
+.mat-dialog-container{ max-width: 100%; }
 .mat-dialog-container .modalclose{
   color: #00ABFE;
   font-size: 20px;
@@ -330,6 +330,7 @@ table.table .mat-checkbox-inner-container{ top: 3px; }
 
 .w790 { width: 790px; }
 .w850 { width: 850px; }
+.w980 { width: 980px; }
 
 h3.withline{
   border-bottom: 1px solid #D4D4D4;
@@ -548,6 +549,31 @@ fieldset.slidebutton{ margin-bottom: 15px; }
   }
 }
 
+/* Search
+================================================== */
+div.search{ position: relative; }
+  div.search:after{
+    color: #00ABFE;
+    content: "\E917";
+    font-family: 'icomoon';
+    position: absolute;
+    top: 5px;
+    right: 15px;
+  }
+  div.search input{
+    border-radius: 20px;
+    box-sizing: border-box;
+    border: 1px solid rgba(0,0,0,0.12);
+    height: 30px;
+    line-height: 30px;
+    padding: 0px 40px 0px 15px;
+    width: 100%;
+    background-color: #FFFFFF;
+    font-size: 14px;
+    color: #455A64;
+  }
+  div.search input:focus{ box-shadow: none; outline: none; }
+
 /* File Upload
 ================================================== */
 .bgwhite .file-upload[_ngcontent-c5]{ padding: 0; background-color: transparent; }
@@ -624,6 +650,7 @@ fieldset.slidebutton{ margin-bottom: 15px; }
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-dashboard:before { content: "\e928"; }
 .icon-cancel:before { content: "\e927"; }
 .icon-reorder:before { content: "\e925"; color: #fff; }
 .icon-minus:before { content: "\e926"; color: #00abfe; }

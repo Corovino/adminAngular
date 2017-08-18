@@ -16,7 +16,7 @@
 .form label .selsmall{
   display: inline-block;
   position: relative;
-  top: -8px;
+  top: -5px;
   margin-left: 5px;
   width: 200px;
 }
@@ -75,12 +75,17 @@
 .bgwhite.item:hover span.image{ color: #FFFFFF; }
 
 .bgwhite.graph{ min-height: 568px; margin-bottom: 30px; }
-.bgwhite.graph .chart{
+.bgwhite.graph .chart.pie{
   margin: 0 auto 20px;
   height: 300px;
   width: 300px;
 }
-
+.bgwhite.graph .chart.line{
+  margin: 0px auto 20px;
+  width: 430px;
+  height: 220px;
+  padding-left: 5px;
+}
 .legend{
   overflow: hidden;
   display: block;
@@ -102,6 +107,7 @@
 .legend li.darkblue{ border-bottom: 8px solid #006B9E; }
 .legend li.blue{ border-bottom: 8px solid #00ABFE; }
 .legend li.lightblue{ border-bottom: 8px solid #72D1FF; }
+.legend li.colorblack{ border-bottom: 8px solid #1C2326; }
 .legend li span.number{
   color: #38464D;
   display: block;
@@ -112,4 +118,15 @@
   color: #83898A;
   font-size: 15px;
   text-transform: uppercase;
+}
+p.info{
+  font-size: 15px;
+  text-transform: uppercase;
+  padding: 0px 40px;
+  margin-bottom: 40px;
+}
+p.info span{
+  display: inline-block;
+  color: #00ABFE;
+  padding: 0px 5px;
 }

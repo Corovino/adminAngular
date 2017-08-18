@@ -27,3 +27,9 @@ fieldset.status{ padding: 15px 0px; }
   margin: 0 auto 20px;
   width: 114px;
 }
+a.uploadbtn{
+  display: block;
+  position: relative;
+  padding: 6px 20px;
+}
+.sectionewuser .form .mat-select { min-width: 100%; }

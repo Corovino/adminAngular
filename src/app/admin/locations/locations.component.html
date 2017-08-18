@@ -3,12 +3,10 @@
   <div class="sectionlocations">
     <div class="options">
       <h2 class="title">Location on the map</h2>
-      <div class="right form selsmall">
-        <md-select placeholder="Search">
-          <md-option *ngFor="let search of search" [value]="search.value">
-            {{ search.viewValue }}
-          </md-option>
-        </md-select>
+      <div class="right form">
+        <div class="search">
+          <input name="" value="" placeholder="Search"/>
+        </div>
       </div>
     </div>
     <div class="cont">
@@ -18,7 +16,7 @@
             <div class="dropdown">
               <button md-button [mdMenuTriggerFor]="menu"><i class="icon-menu"></i></button>
               <md-menu #menu="mdMenu">
-                <a class="dropdown-item" href="#"><i class="icon-edit"></i>Edit</a>
+                <a class="dropdown-item" href="javascript:void(0)"><i class="icon-edit"></i>Edit</a>
                 <a class="dropdown-item" href="javascript:void(0)" (click)="openDelete()"><i class="icon-delete"></i>Delete</a>
               </md-menu>
             </div>
@@ -32,7 +30,7 @@
             <div class="dropdown">
               <button md-button [mdMenuTriggerFor]="menu"><i class="icon-menu"></i></button>
               <md-menu #menu="mdMenu">
-                <a class="dropdown-item" href="#"><i class="icon-edit"></i>Edit</a>
+                <a class="dropdown-item" href="javascript:void(0)"><i class="icon-edit"></i>Edit</a>
                 <a class="dropdown-item" href="javascript:void(0)" (click)="openDelete()"><i class="icon-delete"></i>Delete</a>
               </md-menu>
             </div>
@@ -46,7 +44,7 @@
             <div class="dropdown">
               <button md-button [mdMenuTriggerFor]="menu"><i class="icon-menu"></i></button>
               <md-menu #menu="mdMenu">
-                <a class="dropdown-item" href="#"><i class="icon-edit"></i>Edit</a>
+                <a class="dropdown-item" href="javascript:void(0)"><i class="icon-edit"></i>Edit</a>
                 <a class="dropdown-item" href="javascript:void(0)" (click)="openDelete()"><i class="icon-delete"></i>Delete</a>
               </md-menu>
             </div>
@@ -62,7 +60,7 @@
             <div class="dropdown">
               <button md-button [mdMenuTriggerFor]="menu"><i class="icon-menu"></i></button>
               <md-menu #menu="mdMenu">
-                <a class="dropdown-item" href="#"><i class="icon-edit"></i>Edit</a>
+                <a class="dropdown-item" href="javascript:void(0)"><i class="icon-edit"></i>Edit</a>
                 <a class="dropdown-item" href="javascript:void(0)" (click)="openDelete()"><i class="icon-delete"></i>Delete</a>
               </md-menu>
             </div>
@@ -76,7 +74,7 @@
             <div class="dropdown">
               <button md-button [mdMenuTriggerFor]="menu"><i class="icon-menu"></i></button>
               <md-menu #menu="mdMenu">
-                <a class="dropdown-item" href="#"><i class="icon-edit"></i>Edit</a>
+                <a class="dropdown-item" href="javascript:void(0)"><i class="icon-edit"></i>Edit</a>
                 <a class="dropdown-item" href="javascript:void(0)" (click)="openDelete()"><i class="icon-delete"></i>Delete</a>
               </md-menu>
             </div>
@@ -90,7 +88,7 @@
             <div class="dropdown">
               <button md-button [mdMenuTriggerFor]="menu"><i class="icon-menu"></i></button>
               <md-menu #menu="mdMenu">
-                <a class="dropdown-item" href="#"><i class="icon-edit"></i>Edit</a>
+                <a class="dropdown-item" href="javascript:void(0)"><i class="icon-edit"></i>Edit</a>
                 <a class="dropdown-item" href="javascript:void(0)" (click)="openDelete()"><i class="icon-delete"></i>Delete</a>
               </md-menu>
             </div>

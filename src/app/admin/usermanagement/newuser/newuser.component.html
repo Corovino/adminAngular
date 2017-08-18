@@ -10,7 +10,9 @@
             <div class="placeholderImage">
               <img src="assets/images/placeholder.svg" alt=""/>
             </div>
-            <image-upload [buttonCaption]="'Upload Picture'"></image-upload>
+            <div class="contcenter">
+              <a href="javascript:void(0)" class="uploadbtn btn btn-primary blue">Upload picture</a>
+            </div>
           </div>
           <div class="col-sm-10">
             <h4>Personal Info</h4>
@@ -44,6 +46,11 @@
               </div>
               <div class="col-sm-6">
                 <fieldset>
+                  <md-input-container>
+                    <input mdInput placeholder="DOB" value="">
+                  </md-input-container>
+                </fieldset>
+                <fieldset>
                   <md-select placeholder="Gender">
                     <md-option *ngFor="let gender of gender" [value]="gender.value">
                       {{ gender.viewValue }}
@@ -74,23 +81,36 @@
                 </fieldset>
                 <fieldset>
                   <md-input-container>
-                    <input mdInput placeholder="Zip Code" value="">
+                    <input mdInput placeholder="Address 2" value="">
                   </md-input-container>
                 </fieldset>
-                <fieldset>
-                  <md-select placeholder="State">
-                    <md-option *ngFor="let state of state" [value]="state.value">
-                      {{ state.viewValue }}
-                    </md-option>
-                  </md-select>
-                </fieldset>
-                <fieldset>
-                  <md-select placeholder="City">
-                    <md-option *ngFor="let city of city" [value]="city.value">
-                      {{ city.viewValue }}
-                    </md-option>
-                  </md-select>
-                </fieldset>
+                <div class="row">
+                  <div class="col-sm-4">
+                    <fieldset>
+                      <md-select placeholder="City">
+                        <md-option *ngFor="let city of city" [value]="city.value">
+                          {{ city.viewValue }}
+                        </md-option>
+                      </md-select>
+                    </fieldset>
+                  </div>
+                  <div class="col-sm-4">
+                    <fieldset>
+                      <md-select placeholder="State">
+                        <md-option *ngFor="let state of state" [value]="state.value">
+                          {{ state.viewValue }}
+                        </md-option>
+                      </md-select>
+                    </fieldset>
+                  </div>
+                  <div class="col-sm-4">
+                    <fieldset>
+                      <md-input-container>
+                        <input mdInput placeholder="Zip Code" value="">
+                      </md-input-container>
+                    </fieldset>
+                  </div>
+                </div>
               </div>
               <div class="col-sm-6">
                 <h4>Mailing Address</h4>
@@ -104,23 +124,36 @@
                 </fieldset>
                 <fieldset>
                   <md-input-container>
-                    <input mdInput placeholder="Zip Code" value="">
+                    <input mdInput placeholder="Address 2" value="">
                   </md-input-container>
                 </fieldset>
-                <fieldset>
-                  <md-select placeholder="State">
-                    <md-option *ngFor="let state of state" [value]="state.value">
-                      {{ state.viewValue }}
-                    </md-option>
-                  </md-select>
-                </fieldset>
-                <fieldset>
-                  <md-select placeholder="City">
-                    <md-option *ngFor="let city of city" [value]="city.value">
-                      {{ city.viewValue }}
-                    </md-option>
-                  </md-select>
-                </fieldset>
+                <div class="row">
+                  <div class="col-sm-4">
+                    <fieldset>
+                      <md-select placeholder="City">
+                        <md-option *ngFor="let city of city" [value]="city.value">
+                          {{ city.viewValue }}
+                        </md-option>
+                      </md-select>
+                    </fieldset>
+                  </div>
+                  <div class="col-sm-4">
+                    <fieldset>
+                      <md-select placeholder="State">
+                        <md-option *ngFor="let state of state" [value]="state.value">
+                          {{ state.viewValue }}
+                        </md-option>
+                      </md-select>
+                    </fieldset>
+                  </div>
+                  <div class="col-sm-4">
+                    <fieldset>
+                      <md-input-container>
+                        <input mdInput placeholder="Zip Code" value="">
+                      </md-input-container>
+                    </fieldset>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="row bb">

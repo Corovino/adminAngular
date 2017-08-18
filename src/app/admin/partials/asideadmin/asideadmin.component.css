@@ -32,6 +32,7 @@ aside{
       }
         aside ul li a i.icon-users{ font-size: 18px; left: 25px; }
         aside ul li a i.icon-patient{ font-size: 18px; left: 25px; }
+        aside ul li a i.icon-dashboard{ font-size: 18px; left: 21px; }
       aside ul li.active a{
         background-color: #00ABFE;
         border-left: 4px solid #1C2326;
@@ -44,27 +45,4 @@ aside{
       bottom: 30px;
       left: 0;
     }
-      aside div.search:after{
-        color: #0277BD;
-        content: "\E917";
-        font-family: 'icomoon';
-        position: absolute;
-        top: 5px;
-        right: 35px;
-      }
-      aside div.search input{
-        border-radius: 20px;
-        box-sizing: border-box;
-        height: 30px;
-        line-height: 30px;
-        padding: 0px 40px 0px 15px;
-        width: 100%;
-        background-color: #FFFFFF;
-        border: none;
-        font-size: 14px;
-        color: #455A64;
-      }
-      aside div.search input:focus{
-        box-shadow: none;
-        outline: none;
-      }
+      div.search:after{ right: 35px; }

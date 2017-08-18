@@ -4,7 +4,7 @@
       <div class="bgblue">
         <div>
           <div class="verticalcenter">
-            <p class="number">14</p>
+            <p class="number">140</p>
             <p>TEST IN PROGRESS</p>
           </div>
         </div>
@@ -24,7 +24,7 @@
             <p>TESTS HAVE <span>BEEN DONE</span></p>
           </div>
           <div class="detail bordergreen">
-            <span class="number">235</span>
+            <span class="number">102</span>
             <p>SUBMITTED <span>TESTS</span></p>
           </div>
         </div>
@@ -41,162 +41,147 @@
       </div>
     </section>
     <div class="options">
-      <h2 class="title">Patient list</h2>
-      <div class="right form selsmall">
-        <md-select placeholder="Search">
-          <md-option *ngFor="let search of search" [value]="search.value">
-            {{ search.viewValue }}
-          </md-option>
-        </md-select>
+      <h2 class="title">Test list</h2>
+      <div class="right form">
+        <div class="search">
+          <input name="" value="" placeholder="Search"/>
+        </div>
       </div>
     </div>
     <table class="table">
       <thead>
-      <tr>
-        <th>Test ID<i class="icon-arrowbottom"></i></th>
-        <th>Test Name<i class="icon-arrowbottom"></i></th>
-        <th>Created On <i class="icon-arrowbottom"></i></th>
-        <th>Location<i class="icon-arrowbottom"></i></th>
-        <th>Score<i class="icon-arrowbottom"></i></th>
-        <th>Interviewer<i class="icon-arrowbottom"></i></th>
-        <th>Status<i class="icon-arrowbottom"></i></th>
-        <th></th>
-      </tr>
+        <tr>
+          <th>Test ID<i class="icon-arrowbottom"></i></th>
+          <th>Name<i class="icon-arrowbottom"></i></th>
+          <th>Created On <i class="icon-arrowbottom"></i></th>
+          <th>Location<i class="icon-arrowbottom"></i></th>
+          <th>Score<i class="icon-arrowbottom"></i></th>
+          <th>Status<i class="icon-arrowbottom"></i></th>
+          <th></th>
+        </tr>
       </thead>
       <tbody>
         <tr>
           <td><a href="javascript:void(0)" (click)="openScore()">001234</a></td>
-          <td><a href="javascript:void(0)">Test Name</a></td>
-          <td>22/01/2017</td>
+          <td><a href="javascript:void(0)" routerLink="/user/patientManagement/PatienttestlistUser">Patient Name</a></td>
+          <td>01/22/2017</td>
           <td>CHICAGO, IL</td>
           <td><span class="score">6</span></td>
-          <td>User Name</td>
           <td>IN PROGRESS</td>
           <td></td>
         </tr>
         <tr>
           <td><a href="javascript:void(0)" (click)="openScore()">001234</a></td>
-          <td><a href="javascript:void(0)">Test Name</a></td>
-          <td>22/01/2017</td>
+          <td><a href="javascript:void(0)" routerLink="/user/patientManagement/PatienttestlistUser">Patient Name</a></td>
+          <td>01/22/2017</td>
           <td>CHICAGO, IL</td>
           <td><span class="score">6</span></td>
-          <td>User Name</td>
           <td>UNSUBMITED</td>
           <td><a class="btn btn-primary blue" href="javascript:void(0)">Submit</a></td>
         </tr>
         <tr>
           <td><a href="javascript:void(0)" (click)="openScore()">001234</a></td>
-          <td><a href="javascript:void(0)">Test Name</a></td>
-          <td>22/01/2017</td>
+          <td><a href="javascript:void(0)" routerLink="/user/patientManagement/PatienttestlistUser">Patient Name</a></td>
+          <td>01/22/2017</td>
           <td>CHICAGO, IL</td>
           <td><span class="score">6</span></td>
-          <td>User Name</td>
           <td>UNSUBMITED</td>
           <td><a class="btn btn-primary blue" href="javascript:void(0)">Submit</a></td>
         </tr>
         <tr>
           <td><a href="javascript:void(0)" (click)="openScore()">001234</a></td>
-          <td><a href="javascript:void(0)">Test Name</a></td>
-          <td>22/01/2017</td>
+          <td><a href="javascript:void(0)" routerLink="/user/patientManagement/PatienttestlistUser">Patient Name</a></td>
+          <td>01/22/2017</td>
           <td>CHICAGO, IL</td>
           <td><span class="score">6</span></td>
-          <td>User Name</td>
           <td>IN PROGRESS</td>
           <td></td>
         </tr>
         <tr>
           <td><a href="javascript:void(0)" (click)="openScore()">001234</a></td>
-          <td><a href="javascript:void(0)">Test Name</a></td>
-          <td>22/01/2017</td>
+          <td><a href="javascript:void(0)" routerLink="/user/patientManagement/PatienttestlistUser">Patient Name</a></td>
+          <td>01/22/2017</td>
           <td>CHICAGO, IL</td>
           <td><span class="score">6</span></td>
-          <td>User Name</td>
           <td>UNSUBMITED</td>
           <td><a class="btn btn-primary blue" href="javascript:void(0)">Submit</a></td>
         </tr>
         <tr>
           <td><a href="javascript:void(0)" (click)="openScore()">001234</a></td>
-          <td><a href="javascript:void(0)">Test Name</a></td>
-          <td>22/01/2017</td>
+          <td><a href="javascript:void(0)" routerLink="/user/patientManagement/PatienttestlistUser">Patient Name</a></td>
+          <td>01/22/2017</td>
           <td>CHICAGO, IL</td>
           <td><span class="score">6</span></td>
-          <td>User Name</td>
           <td>IN PROGRESS</td>
           <td></td>
         </tr>
         <tr>
           <td><a href="javascript:void(0)" (click)="openScore()">001234</a></td>
-          <td><a href="javascript:void(0)">Test Name</a></td>
-          <td>22/01/2017</td>
+          <td><a href="javascript:void(0)" routerLink="/user/patientManagement/PatienttestlistUser">Patient Name</a></td>
+          <td>01/22/2017</td>
           <td>CHICAGO, IL</td>
           <td><span class="score">6</span></td>
-          <td>User Name</td>
           <td>IN PROGRESS</td>
           <td></td>
         </tr>
         <tr>
           <td><a href="javascript:void(0)" (click)="openScore()">001234</a></td>
-          <td><a href="javascript:void(0)">Test Name</a></td>
-          <td>22/01/2017</td>
+          <td><a href="javascript:void(0)" routerLink="/user/patientManagement/PatienttestlistUser">Patient Name</a></td>
+          <td>01/22/2017</td>
           <td>CHICAGO, IL</td>
           <td><span class="score">6</span></td>
-          <td>User Name</td>
           <td>UNSUBMITED</td>
           <td><a class="btn btn-primary blue" href="javascript:void(0)">Submit</a></td>
         </tr>
         <tr>
           <td><a href="javascript:void(0)" (click)="openScore()">001234</a></td>
-          <td><a href="javascript:void(0)">Test Name</a></td>
-          <td>22/01/2017</td>
+          <td><a href="javascript:void(0)" routerLink="/user/patientManagement/PatienttestlistUser">Patient Name</a></td>
+          <td>01/22/2017</td>
           <td>CHICAGO, IL</td>
           <td><span class="score">6</span></td>
-          <td>User Name</td>
           <td>UNSUBMITED</td>
           <td><a class="btn btn-primary blue" href="javascript:void(0)">Submit</a></td>
         </tr>
         <tr>
           <td><a href="javascript:void(0)" (click)="openScore()">001234</a></td>
-          <td><a href="javascript:void(0)">Test Name</a></td>
-          <td>22/01/2017</td>
+          <td><a href="javascript:void(0)" routerLink="/user/patientManagement/PatienttestlistUser">Patient Name</a></td>
+          <td>01/22/2017</td>
           <td>CHICAGO, IL</td>
           <td><span class="score">6</span></td>
-          <td>User Name</td>
           <td>IN PROGRESS</td>
           <td></td>
         </tr>
         <tr>
           <td><a href="javascript:void(0)" (click)="openScore()">001234</a></td>
-          <td><a href="javascript:void(0)">Test Name</a></td>
-          <td>22/01/2017</td>
+          <td><a href="javascript:void(0)" routerLink="/user/patientManagement/PatienttestlistUser">Patient Name</a></td>
+          <td>01/22/2017</td>
           <td>CHICAGO, IL</td>
           <td><span class="score">6</span></td>
-          <td>User Name</td>
           <td>UNSUBMITED</td>
           <td><a class="btn btn-primary blue" href="javascript:void(0)">Submit</a></td>
         </tr>
         <tr>
           <td><a href="javascript:void(0)" (click)="openScore()">001234</a></td>
-          <td><a href="javascript:void(0)">Test Name</a></td>
-          <td>22/01/2017</td>
+          <td><a href="javascript:void(0)" routerLink="/user/patientManagement/PatienttestlistUser">Patient Name</a></td>
+          <td>01/22/2017</td>
           <td>CHICAGO, IL</td>
           <td><span class="score">6</span></td>
-          <td>User Name</td>
           <td>IN PROGRESS</td>
           <td></td>
         </tr>
       </tbody>
       <tfoot>
-      <tr>
-        <td colspan="9">
-          <div class="pagination">
-            <nav>
-              <a href="#"><span class="icon-arrowleft"><span class="path1"></span><span class="path2"></span></span></a>
-              <a href="#">1 - 6</a>
-              <a href="#"><span class="icon-arrowright"><span class="path1"></span><span class="path2"></span></span></a>
-            </nav>
-          </div>
-        </td>
-      </tr>
+        <tr>
+          <td colspan="9">
+            <div class="pagination">
+              <nav>
+                <a href="javascript:void(0)"><span class="icon-arrowleft"><span class="path1"></span><span class="path2"></span></span></a>
+                <a href="javascript:void(0)">1 - 6</a>
+                <a href="javascript:void(0)"><span class="icon-arrowright"><span class="path1"></span><span class="path2"></span></span></a>
+              </nav>
+            </div>
+          </td>
+        </tr>
       </tfoot>
     </table>
   </div>

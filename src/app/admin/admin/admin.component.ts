@@ -19,6 +19,9 @@ export class AdminComponent implements OnInit {
         this.currentUrl = event.url;
         console.log(this.currentUrl);
         switch (this.currentUrl) {
+          case '/admin/dashboardAdmin':
+            this.titlePage = 'Dashboard';
+            break;
           case '/admin/test':
             this.titlePage = 'Test';
             break;

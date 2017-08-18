@@ -32,12 +32,12 @@
       width: 100%;
     }
     section.login h1.logo{ margin: 0 0 20px 0; }
-    p.small{
+    p.small, p.small a{
       color: #FFFFFF;
       font-size: 12px;
       margin-bottom: 0;
     }
-    a.linkblue {
+    p.small a.linkblue {
       color: #00ABFE;
       display: inline-block;
       text-decoration: underline;

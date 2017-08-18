@@ -30,13 +30,14 @@ aside ul li a i{
   left: 30px;
   top: 12px;
 }
-aside ul li a i.icon-users{ font-size: 18px; left: 25px; }
-aside ul li a i.icon-patient{ font-size: 18px; left: 25px; }
-aside ul li.active a{
-  background-color: #00ABFE;
-  border-left: 4px solid #1C2326;
-  color: #FFFFFF;
-}
+  aside ul li a i.icon-users{ font-size: 18px; left: 25px; }
+  aside ul li a i.icon-patient{ font-size: 18px; left: 25px; }
+  aside ul li a i.icon-dashboard{ font-size: 18px; left: 21px; }
+  aside ul li.active a{
+    background-color: #00ABFE;
+    border-left: 4px solid #1C2326;
+    color: #FFFFFF;
+  }
 
 aside div.search{
   position: absolute;

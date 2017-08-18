@@ -1,3 +1,166 @@
-<p>
-  newpatient works!
-</p>
+<div class="sectionewuser w980">
+  <button md-button [md-dialog-close]="true" class="modalclose"><span class="icon-close"><span class="path1"></span><span class="path2"></span></span></button>
+  <h3 class="withline">New User</h3>
+  <form class="form">
+    <div class="row mb20">
+      <div class="col-sm-2">
+        <div class="placeholderImage">
+          <img src="assets/images/placeholder.svg" alt=""/>
+        </div>
+        <div class="contcenter">
+          <a href="javascript:void(0)" class="uploadbtn btn btn-primary blue">Upload picture</a>
+        </div>
+      </div>
+      <div class="col-sm-10">
+        <div class="row">
+          <div class="col-sm-6">
+            <h4>Personal Info</h4>
+            <fieldset>
+              <md-input-container>
+                <input mdInput placeholder="First Name" value="">
+              </md-input-container>
+            </fieldset>
+            <fieldset>
+              <md-input-container>
+                <input mdInput placeholder="Last Name" value="">
+              </md-input-container>
+            </fieldset>
+            <fieldset>
+              <md-input-container>
+                <input mdInput placeholder="Driving Lic. No" value="">
+              </md-input-container>
+            </fieldset>
+            <div class="row">
+              <div class="col-sm-6">
+                <fieldset>
+                  <md-input-container>
+                    <input mdInput placeholder="DOB" value="">
+                  </md-input-container>
+                </fieldset>
+              </div>
+              <div class="col-sm-6">
+                <fieldset>
+                  <md-select placeholder="Gender">
+                    <md-option *ngFor="let gender of gender" [value]="gender.value">
+                      {{ gender.viewValue }}
+                    </md-option>
+                  </md-select>
+                </fieldset>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <fieldset>
+                  <md-input-container>
+                    <input mdInput placeholder="Nationality" value="">
+                  </md-input-container>
+                </fieldset>
+              </div>
+              <div class="col-sm-6">
+                <fieldset>
+                  <md-select placeholder="Status">
+                    <md-option *ngFor="let gender of gender" [value]="gender.value">
+                      {{ gender.viewValue }}
+                    </md-option>
+                  </md-select>
+                </fieldset>
+              </div>
+            </div>
+            <fieldset>
+              <md-input-container>
+                <input mdInput type="email" placeholder="Email" value="">
+              </md-input-container>
+            </fieldset>
+          </div>
+          <div class="col-sm-6">
+            <h4>Address</h4>
+            <fieldset>
+              <md-input-container>
+                <input mdInput placeholder="Address 1" value="">
+              </md-input-container>
+            </fieldset>
+            <fieldset>
+              <md-input-container>
+                <input mdInput placeholder="Address 2" value="">
+              </md-input-container>
+            </fieldset>
+            <div class="row">
+              <div class="col-sm-4">
+                <fieldset>
+                  <md-select placeholder="City">
+                    <md-option *ngFor="let city of city" [value]="city.value">
+                      {{ city.viewValue }}
+                    </md-option>
+                  </md-select>
+                </fieldset>
+              </div>
+              <div class="col-sm-4">
+                <fieldset>
+                  <md-select placeholder="State">
+                    <md-option *ngFor="let state of state" [value]="state.value">
+                      {{ state.viewValue }}
+                    </md-option>
+                  </md-select>
+                </fieldset>
+              </div>
+              <div class="col-sm-4">
+                <fieldset>
+                  <md-input-container>
+                    <input mdInput placeholder="Zip Code" value="">
+                  </md-input-container>
+                </fieldset>
+              </div>
+            </div>
+            <h4 class="mailing">Mailing Address</h4>
+            <fieldset>
+              <md-checkbox>Use the same Address</md-checkbox>
+            </fieldset>
+            <fieldset>
+              <md-input-container>
+                <input mdInput placeholder="Address 1" value="">
+              </md-input-container>
+            </fieldset>
+            <fieldset>
+              <md-input-container>
+                <input mdInput placeholder="Address 2" value="">
+              </md-input-container>
+            </fieldset>
+            <div class="row">
+              <div class="col-sm-4">
+                <fieldset>
+                  <md-select placeholder="City">
+                    <md-option *ngFor="let city of city" [value]="city.value">
+                      {{ city.viewValue }}
+                    </md-option>
+                  </md-select>
+                </fieldset>
+              </div>
+              <div class="col-sm-4">
+                <fieldset>
+                  <md-select placeholder="State">
+                    <md-option *ngFor="let state of state" [value]="state.value">
+                      {{ state.viewValue }}
+                    </md-option>
+                  </md-select>
+                </fieldset>
+              </div>
+              <div class="col-sm-4">
+                <fieldset>
+                  <md-input-container>
+                    <input mdInput placeholder="Zip Code" value="">
+                  </md-input-container>
+                </fieldset>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contcenter">
+      <ul class="inline">
+        <li><button class="btn btn-primary blue inline">Create And Start Test</button></li>
+      </ul>
+    </div>
+  </form>
+</div>
+

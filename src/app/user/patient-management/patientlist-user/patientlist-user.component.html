@@ -1,5 +1,5 @@
 <div class="main col-lg-9 col-lg-offset-3">
-  <a routerLink="newpermition" class="add"><i class="icon-plus"></i></a>
+  <a href="javascript:void(0)" (click)="newpatient()" class="add"><i class="icon-plus"></i></a>
   <div class="patientlist">
     <section class="chartsection">
       <div class="bgblue">
@@ -38,111 +38,109 @@
     </section>
     <div class="options">
       <h2 class="title">Patient list</h2>
-      <div class="right form selsmall">
-        <md-select placeholder="Search">
-          <md-option *ngFor="let search of search" [value]="search.value">
-            {{ search.viewValue }}
-          </md-option>
-        </md-select>
+      <div class="right form">
+        <div class="search">
+          <input name="" value="" placeholder="Search"/>
+        </div>
       </div>
     </div>
     <table class="table">
       <thead>
-      <tr>
-        <th width="30%">Name<i class="icon-arrowbottom"></i></th>
-        <th width="20%">ID Number<i class="icon-arrowbottom"></i></th>
-        <th width="30%">Location<i class="icon-arrowbottom"></i></th>
-        <th width="20%"></th>
-      </tr>
+        <tr>
+          <th width="30%">Name<i class="icon-arrowbottom"></i></th>
+          <th width="20%">ID Number<i class="icon-arrowbottom"></i></th>
+          <th width="30%">Location<i class="icon-arrowbottom"></i></th>
+          <th width="20%"></th>
+        </tr>
       </thead>
       <tbody>
-      <tr>
-        <td><a routerLink="PatienttestlistUser">PATIENT NAME</a></td>
-        <td>870347299</td>
-        <td>CHICAGO, IL</td>
-        <td><a class="btn btn-primary blue" href="#">New Test</a></td>
-      </tr>
-      <tr>
-        <td><a routerLink="PatienttestlistUser">PATIENT NAME</a></td>
-        <td>870347299</td>
-        <td>CHICAGO, IL</td>
-        <td><a class="btn btn-primary blue" href="#">New Test</a></td>
-      </tr>
-      <tr>
-        <td><a routerLink="PatienttestlistUser">PATIENT NAME</a></td>
-        <td>870347299</td>
-        <td>CHICAGO, IL</td>
-        <td><a class="btn btn-primary blue" href="#">New Test</a></td>
-      </tr>
-      <tr>
-        <td><a routerLink="PatienttestlistUser">PATIENT NAME</a></td>
-        <td>870347299</td>
-        <td>CHICAGO, IL</td>
-        <td><a class="btn btn-primary blue" href="#">New Test</a></td>
-      </tr>
-      <tr>
-        <td><a routerLink="PatienttestlistUser">PATIENT NAME</a></td>
-        <td>870347299</td>
-        <td>CHICAGO, IL</td>
-        <td><a class="btn btn-primary blue" href="#">New Test</a></td>
-      </tr>
-      <tr>
-        <td><a routerLink="PatienttestlistUser">PATIENT NAME</a></td>
-        <td>870347299</td>
-        <td>CHICAGO, IL</td>
-        <td><a class="btn btn-primary blue" href="#">New Test</a></td>
-      </tr>
-      <tr>
-        <td><a routerLink="PatienttestlistUser">PATIENT NAME</a></td>
-        <td>870347299</td>
-        <td>CHICAGO, IL</td>
-        <td><a class="btn btn-primary blue" href="#">New Test</a></td>
-      </tr>
-      <tr>
-        <td><a routerLink="PatienttestlistUser">PATIENT NAME</a></td>
-        <td>870347299</td>
-        <td>CHICAGO, IL</td>
-        <td><a class="btn btn-primary blue" href="#">New Test</a></td>
-      </tr>
-      <tr>
-        <td><a routerLink="PatienttestlistUser">PATIENT NAME</a></td>
-        <td>870347299</td>
-        <td>CHICAGO, IL</td>
-        <td><a class="btn btn-primary blue" href="#">New Test</a></td>
-      </tr>
-      <tr>
-        <td><a routerLink="PatienttestlistUser">PATIENT NAME</a></td>
-        <td>870347299</td>
-        <td>CHICAGO, IL</td>
-        <td><a class="btn btn-primary blue" href="#">New Test</a></td>
-      </tr>
-      <tr>
-        <td><a routerLink="PatienttestlistUser">PATIENT NAME</a></td>
-        <td>870347299</td>
-        <td>CHICAGO, IL</td>
-        <td><a class="btn btn-primary blue" href="#">New Test</a></td>
-      </tr>
-      <tr>
-        <td><a routerLink="PatienttestlistUser">PATIENT NAME</a></td>
-        <td>870347299</td>
-        <td>CHICAGO, IL</td>
-        <td><a class="btn btn-primary blue" href="#">New Test</a></td>
-      </tr>
-      <tr>
-        <td><a routerLink="PatienttestlistUser">PATIENT NAME</a></td>
-        <td>870347299</td>
-        <td>CHICAGO, IL</td>
-        <td><a class="btn btn-primary blue" href="#">New Test</a></td>
-      </tr>
+        <tr>
+          <td><a routerLink="PatienttestlistUser">PATIENT NAME</a></td>
+          <td>870347299</td>
+          <td>CHICAGO, IL</td>
+          <td><a class="btn btn-primary blue" href="javascript:void(0)">New Test</a></td>
+        </tr>
+        <tr>
+          <td><a routerLink="PatienttestlistUser">PATIENT NAME</a></td>
+          <td>870347299</td>
+          <td>CHICAGO, IL</td>
+          <td><a class="btn btn-primary blue" href="javascript:void(0)">New Test</a></td>
+        </tr>
+        <tr>
+          <td><a routerLink="PatienttestlistUser">PATIENT NAME</a></td>
+          <td>870347299</td>
+          <td>CHICAGO, IL</td>
+          <td><a class="btn btn-primary blue" href="javascript:void(0)">New Test</a></td>
+        </tr>
+        <tr>
+          <td><a routerLink="PatienttestlistUser">PATIENT NAME</a></td>
+          <td>870347299</td>
+          <td>CHICAGO, IL</td>
+          <td><a class="btn btn-primary blue" href="javascript:void(0)">New Test</a></td>
+        </tr>
+        <tr>
+          <td><a routerLink="PatienttestlistUser">PATIENT NAME</a></td>
+          <td>870347299</td>
+          <td>CHICAGO, IL</td>
+          <td><a class="btn btn-primary blue" href="javascript:void(0)">New Test</a></td>
+        </tr>
+        <tr>
+          <td><a routerLink="PatienttestlistUser">PATIENT NAME</a></td>
+          <td>870347299</td>
+          <td>CHICAGO, IL</td>
+          <td><a class="btn btn-primary blue" href="javascript:void(0)">New Test</a></td>
+        </tr>
+        <tr>
+          <td><a routerLink="PatienttestlistUser">PATIENT NAME</a></td>
+          <td>870347299</td>
+          <td>CHICAGO, IL</td>
+          <td><a class="btn btn-primary blue" href="javascript:void(0)">New Test</a></td>
+        </tr>
+        <tr>
+          <td><a routerLink="PatienttestlistUser">PATIENT NAME</a></td>
+          <td>870347299</td>
+          <td>CHICAGO, IL</td>
+          <td><a class="btn btn-primary blue" href="javascript:void(0)">New Test</a></td>
+        </tr>
+        <tr>
+          <td><a routerLink="PatienttestlistUser">PATIENT NAME</a></td>
+          <td>870347299</td>
+          <td>CHICAGO, IL</td>
+          <td><a class="btn btn-primary blue" href="javascript:void(0)">New Test</a></td>
+        </tr>
+        <tr>
+          <td><a routerLink="PatienttestlistUser">PATIENT NAME</a></td>
+          <td>870347299</td>
+          <td>CHICAGO, IL</td>
+          <td><a class="btn btn-primary blue" href="javascript:void(0)">New Test</a></td>
+        </tr>
+        <tr>
+          <td><a routerLink="PatienttestlistUser">PATIENT NAME</a></td>
+          <td>870347299</td>
+          <td>CHICAGO, IL</td>
+          <td><a class="btn btn-primary blue" href="javascript:void(0)">New Test</a></td>
+        </tr>
+        <tr>
+          <td><a routerLink="PatienttestlistUser">PATIENT NAME</a></td>
+          <td>870347299</td>
+          <td>CHICAGO, IL</td>
+          <td><a class="btn btn-primary blue" href="javascript:void(0)">New Test</a></td>
+        </tr>
+        <tr>
+          <td><a routerLink="PatienttestlistUser">PATIENT NAME</a></td>
+          <td>870347299</td>
+          <td>CHICAGO, IL</td>
+          <td><a class="btn btn-primary blue" href="javascript:void(0)">New Test</a></td>
+        </tr>
       </tbody>
       <tfoot>
       <tr>
         <td colspan="4">
           <div class="pagination">
             <nav>
-              <a href="#"><span class="icon-arrowleft"><span class="path1"></span><span class="path2"></span></span></a>
-              <a href="#">1 - 200</a>
-              <a href="#"><span class="icon-arrowright"><span class="path1"></span><span class="path2"></span></span></a>
+              <a href="javascript:void(0)"><span class="icon-arrowleft"><span class="path1"></span><span class="path2"></span></span></a>
+              <a href="javascript:void(0)">1 - 200</a>
+              <a href="javascript:void(0)"><span class="icon-arrowright"><span class="path1"></span><span class="path2"></span></span></a>
             </nav>
           </div>
         </td>

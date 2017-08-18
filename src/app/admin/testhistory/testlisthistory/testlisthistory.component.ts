@@ -1,11 +1,10 @@
 import {Component, NgModule, OnInit} from '@angular/core';
-import {BrowserModule} from '@angular/platform-browser';
-import { Daterangepicker } from 'ng2-daterangepicker';
 import { DaterangepickerConfig } from 'ng2-daterangepicker';
 import * as moment from 'moment/moment';
 import { MdDialog } from '@angular/material';
 import { DeleteComponent } from '../../../modal/delete/delete.component';
 import { PatientscoreComponent } from '../../../modal/patientscore/patientscore.component';
+import { DescriptionTestComponent } from '../../../modal/description-test/description-test.component';
 
 @Component({
   selector: 'app-testlisthistory',
@@ -13,13 +12,6 @@ import { PatientscoreComponent } from '../../../modal/patientscore/patientscore.
   styleUrls: ['./testlisthistory.component.css']
 })
 export class TestlisthistoryComponent implements OnInit {
-
-  search = [
-    {value: 'option1', viewValue: 'Option 1'},
-    {value: 'option2', viewValue: 'Option 2'},
-    {value: 'option3', viewValue: 'Option 3'}
-  ];
-
 
   // lineChart
   public lineChartData: Array<any> = [
@@ -86,6 +78,9 @@ export class TestlisthistoryComponent implements OnInit {
   }
   openDelete() {
     this.dialog.open(DeleteComponent);
+  }
+  openDescription() {
+    this.dialog.open(DescriptionTestComponent);
   }
   ngOnInit() {}
 

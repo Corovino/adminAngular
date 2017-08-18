@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MdDialog } from '@angular/material';
+import { DeleteComponent } from '../../../modal/delete/delete.component';
 
 @Component({
   selector: 'app-userinfo',
@@ -7,9 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserinfoComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dialog: MdDialog) { }
 
   ngOnInit() {
   }
-
+  openDelete() {
+    this.dialog.open(DeleteComponent);
+  }
 }

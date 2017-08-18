@@ -28,9 +28,11 @@
       </div>
       <div class="col-sm-6">
         <fieldset>
-          <md-input-container>
-            <input mdInput placeholder="Zipcode" value="">
-          </md-input-container>
+          <md-select placeholder="City">
+            <md-option *ngFor="let city of city" [value]="city.value">
+              {{ city.viewValue }}
+            </md-option>
+          </md-select>
         </fieldset>
         <fieldset>
           <md-select placeholder="State">
@@ -40,11 +42,9 @@
           </md-select>
         </fieldset>
         <fieldset>
-          <md-select placeholder="City">
-            <md-option *ngFor="let city of city" [value]="city.value">
-              {{ city.viewValue }}
-            </md-option>
-          </md-select>
+          <md-input-container>
+            <input mdInput placeholder="Zipcode" value="">
+          </md-input-container>
         </fieldset>
         <fieldset>
           <md-select placeholder="Time Zone">

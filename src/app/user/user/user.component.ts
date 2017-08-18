@@ -19,7 +19,10 @@ export class UserComponent implements OnInit {
         this.currentUrl = event.url;
         console.log(this.currentUrl);
         switch (this.currentUrl) {
-          case '/user/dashboard':
+          case '/user/dashboardUser':
+            this.titlePage = 'Dashboard';
+            break;
+          case '/user/dashboardUser2':
             this.titlePage = 'Dashboard';
             break;
           case '/user/testrepository':
