@@ -17,6 +17,7 @@ import { AppRouting } from './app-routing/app-routing';
 import { AdminComponent } from './admin/admin/admin.component';
 import { AsideAdminComponent } from './admin/partials/asideadmin/asideadmin.component';
 import { HeaderAdminComponent } from './admin/partials/headeradmin/headeradmin.component';
+import { SearchComponent } from './admin/search/search.component';
 import { DashboardAdminComponent } from './admin/dashboard-admin/dashboard-admin.component';
 import { TestinfoComponent } from './admin/test/testinfo/testinfo.component';
 import { TestlistComponent } from './admin/test/testlist/testlist.component';
@@ -48,12 +49,13 @@ import { SelecttestComponent } from './modal/selecttest/selecttest.component';
 import { PatientscoreComponent } from './modal/patientscore/patientscore.component';
 import { TestComponent } from './modal/test/test.component';
 import { NewpatientComponent } from './modal/newpatient/newpatient.component';
-import { LoginComponent } from './login/login.component';
+import { LoginComponent } from './login/login/login.component';
+import { ForgotpasswordComponent } from './login/forgotpassword/forgotpassword.component';
 import { AlertsComponent } from './modal/alerts/alerts.component';
 import { ScoreComponent } from './admin/patient-management/score/score.component';
 import { TestpatientComponent } from './admin/patient-management/testpatient/testpatient.component';
 import { ScorepatientComponent } from './user/patient-management/scorepatient/scorepatient.component';
-
+import { SearchUserComponent } from './user/search-user/search-user.component';
 
 @NgModule({
   declarations: [
@@ -96,6 +98,9 @@ import { ScorepatientComponent } from './user/patient-management/scorepatient/sc
     TestpatientComponent,
     ScorepatientComponent,
     NewtestComponent,
+    SearchComponent,
+    SearchUserComponent,
+    ForgotpasswordComponent
   ],
   imports: [
     BrowserModule,

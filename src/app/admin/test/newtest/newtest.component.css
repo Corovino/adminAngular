@@ -107,6 +107,12 @@
       top: 22px;
       right: 15px;
     }
+    .bgwhite .accordeon .panel-title span{
+      position: absolute;
+      top: 14px;
+      left: 15px;
+      font-size: 20px;
+    }
 
 .bgwhite .accordeon .options{ margin-bottom: 0; }
 .bgwhite .accordeon .panel-heading{
@@ -116,7 +122,7 @@
   padding: 0;
 }
   .bgwhite .accordeon .panel-heading a{
-    padding: 15px;
+    padding: 15px 15px 15px 45px;
     display: block;
   }
   .bgwhite .accordeon .panel-heading:hover{ background-color: #00ABFE; }
@@ -129,11 +135,17 @@
     border: none;
   }
   .bgwhite .accordeon .options a{
-    color: #38464D;
-    display: block;
-    padding: 8px 15px;
-    text-decoration: none;
-  }
+     color: #38464D;
+     display: block;
+     padding: 8px 15px 8px 40px;
+    position: relative;
+     text-decoration: none;
+   }
+    .bgwhite .accordeon .options a span{
+      position: absolute;
+      top: 11px;
+      left: 15px;
+    }
   .bgwhite .accordeon .options a.current{
     background-color: #00ABFE;
     color: #FFFFFF;

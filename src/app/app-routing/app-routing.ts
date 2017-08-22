@@ -2,9 +2,11 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 
-import { LoginComponent } from '../login/login.component';
+import { LoginComponent } from '../login/login/login.component';
+import { ForgotpasswordComponent } from '../login/forgotpassword/forgotpassword.component';
 
 import { AdminComponent } from '../admin/admin/admin.component';
+import { SearchComponent } from '../admin/search/search.component';
 import { DashboardAdminComponent } from '../admin/dashboard-admin/dashboard-admin.component';
 import { LocationsComponent } from '../admin/locations/locations.component';
 import { UserlistComponent } from '../admin/usermanagement/userlist/userlist.component';
@@ -21,6 +23,7 @@ import { ScoreComponent } from '../admin/patient-management/score/score.componen
 import { NewtestComponent } from '../admin/test/newtest/newtest.component';
 
 import { UserComponent } from '../user/user/user.component';
+import { SearchUserComponent } from '../user/search-user/search-user.component';
 import { DashboardUserComponent } from '../user/dashboard-user/dashboard-user.component';
 import { DashboardUser2Component } from '../user/dashboard-user2/dashboard-user2.component';
 import { TestListRepositoryComponent } from '../user/testrepository/test-list-repository/test-list-repository.component';
@@ -48,7 +51,8 @@ const routes: Routes = [
       { path: 'locations', component: LocationsComponent },
       { path: 'usersManagement/userinfo', component: UserinfoComponent },
       { path: 'usersManagement/newuser', component: NewuserComponent },
-      { path: 'testhistory', component: TestlisthistoryComponent }
+      { path: 'testhistory', component: TestlisthistoryComponent },
+      { path: 'search', component: SearchComponent }
     ]
   },
   { path: 'user',
@@ -61,11 +65,15 @@ const routes: Routes = [
       { path: 'testhistory', component: TesthistoryComponent },
       { path: 'patientManagement', component: PatientlistUserComponent },
       { path: 'patientManagement/PatienttestlistUser', component: PatienttestlistUserComponent },
-      { path: 'patientManagement/score', component: ScorepatientComponent }
+      { path: 'patientManagement/score', component: ScorepatientComponent },
+      { path: 'search', component: SearchUserComponent }
     ]
   },
   { path: 'login',
     component: LoginComponent
+  },
+  { path: 'forgotpassword',
+      component: ForgotpasswordComponent
   }
 ];
 

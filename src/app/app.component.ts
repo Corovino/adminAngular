@@ -13,9 +13,9 @@ export class AppComponent {
   public titlePageUser: string;
 
   constructor(private router: Router ) {
-    if(this.router.url === this.currentUrl){
+    /*if(this.router.url === this.currentUrl){
       this.router.navigate[('/login')];
-    }
+    }*/
   }
   ngOnInit() {
     this.pageTitle();

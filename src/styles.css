@@ -153,6 +153,12 @@ table.table.tablesize15{ font-size: 15px; }
             position: relative;
             top: 3px;
           }
+table.table span.score{
+  color: #00ABFE;
+  display: block;
+  font-size: 16px;
+  padding-left: 15px;
+}
 
 /* Buttons
 ================================================== */
@@ -621,6 +627,8 @@ div.search{ position: relative; }
   .bgwhite .mat-tab-label-active{ color: #00ABFE; }
   .bgwhite .mat-tab-label:focus { background-color: rgba(0,171,254,.12); }
   .bgwhite .mat-tab-body-content{ overflow: hidden; }
+  .bgwhite .mat-tab-label{ display: inline-block; }
+
 
 /* Icons
 ================================================== */
@@ -650,6 +658,19 @@ div.search{ position: relative; }
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-problem:before { content: "\e929"; }
+.icon-text:before { content: "\e92a"; }
+.icon-image:before { content: "\e92b"; }
+.icon-video:before { content: "\e92c"; }
+.icon-solution:before { content: "\e92d"; }
+.icon-rules:before { content: "\e92e"; }
+.icon-position:before { content: "\e92f"; }
+.icon-singleline:before { content: "\e930"; }
+.icon-radio:before { content: "\e931"; }
+.icon-checkbox:before { content: "\e932"; }
+.icon-number:before { content: "\e933"; }
+.icon-decimal:before { content: "\e934"; }
+.icon-dropdown:before { content: "\e935"; }
 .icon-dashboard:before { content: "\e928"; }
 .icon-cancel:before { content: "\e927"; }
 .icon-reorder:before { content: "\e925"; color: #fff; }
