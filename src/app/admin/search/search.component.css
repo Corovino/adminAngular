@@ -1,0 +1,18 @@
+.sectionsearch .search{
+    margin-bottom: 20px;
+}
+    .sectionsearch .search input{
+        height: 44px;
+        font-size: 17px;
+        font-weight: 300;
+        border-radius: 25px;
+     }
+        .sectionsearch div.search:after{
+            font-size: 25px;
+            right: 15px;
+            top: 4px;
+        }
+
+.sectionsearch .item{
+    margin-bottom: 20px;
+}
