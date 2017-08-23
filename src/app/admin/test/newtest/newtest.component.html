@@ -57,18 +57,18 @@
                 <div class="cont">
                   <div class="field">
                     <div class="number"><span>1.</span></div>
-                    <p class="text"><span>Note:</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum t</p>
-                    <p>Question lorem ipsum dolor si amet consectetur</p>
+                    <p class="text"><span>Note:</span>{{noteTest}}</p>
+                    <p>{{newTest}}</p>
                     <ul class="checkboxes">
-                      <li><md-checkbox>Option Number 1</md-checkbox></li>
+                      <!--li><md-checkbox>Option Number 1</md-checkbox></li>
                       <li><md-checkbox>Option Number 2</md-checkbox></li>
                       <li><md-checkbox>Option Number 3</md-checkbox></li>
-                      <li><md-checkbox>Option Number 4</md-checkbox></li>
+                      <li><md-checkbox>Option Number 4</md-checkbox></li-->
                     </ul>
                   </div>
-                  <div class="field">
+                  <!--div class="field">
                     <div class="number"><span>2.</span></div>
-                  </div>
+                  </div-->
                   <div class="btnadd">
                     <a href="javascript:void(0)" class="add"><i class="icon-plus"></i></a>
                   </div>
@@ -189,19 +189,19 @@
                       <p class="text"><span>Type:</span>Legend</p>
                       <fieldset>
                         <md-input-container>
-                          <input mdInput #value maxlength="120" placeholder="Value" value="">
+                          <input mdInput #value maxlength="120" placeholder="Value" value="" [(ngModel)]="newTest">
                           <md-hint align="end">{{value.value.length}} / 120</md-hint>
                         </md-input-container>
                       </fieldset>
                       <fieldset>
                         <md-input-container>
-                          <input mdInput #hint maxlength="120" placeholder="Hint" value="">
+                          <input mdInput #hint maxlength="120" placeholder="Hint" value="" >
                           <md-hint align="end">{{hint.value.length}} / 120</md-hint>
                         </md-input-container>
                       </fieldset>
                       <fieldset>
                         <md-input-container>
-                          <input mdInput #note maxlength="120" placeholder="Note" value="">
+                          <input mdInput #note maxlength="120" placeholder="Note" value="" [(ngModel)]="noteTest">
                           <md-hint align="end">{{note.value.length}} / 120</md-hint>
                         </md-input-container>
                       </fieldset>

@@ -20,11 +20,15 @@ export class NewtestComponent implements OnInit {
 
 
   public status : any;
+  public newTest : string;
+  public noteTest : string;
 
   constructor() { }
 
   ngOnInit() {
 
+    this.newTest = '';
+    this.noteTest = '';
     this.status = {
        problem : true,
        solution : false,
@@ -32,7 +36,7 @@ export class NewtestComponent implements OnInit {
        position : false
     }
 
-    console.log(this.status.problem);
+
   }
 
 
