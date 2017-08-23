@@ -32,6 +32,7 @@ import { TesthistoryComponent } from '../user/testhistory/testhistory.component'
 import { PatienttestlistUserComponent } from '../user/patient-management/patienttestlist-user/patienttestlist-user.component';
 import { PatientlistUserComponent } from '../user/patient-management/patientlist-user/patientlist-user.component';
 import { ScorepatientComponent } from '../user/patient-management/scorepatient/scorepatient.component';
+import { TestlistblankComponent } from '../user/patient-management/testlistblank/testlistblank.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
@@ -65,6 +66,7 @@ const routes: Routes = [
       { path: 'testhistory', component: TesthistoryComponent },
       { path: 'patientManagement', component: PatientlistUserComponent },
       { path: 'patientManagement/PatienttestlistUser', component: PatienttestlistUserComponent },
+      { path: 'patientManagement/Emptytestlist', component: TestlistblankComponent },
       { path: 'patientManagement/score', component: ScorepatientComponent },
       { path: 'search', component: SearchUserComponent }
     ]

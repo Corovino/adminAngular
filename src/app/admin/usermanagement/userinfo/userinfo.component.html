@@ -9,7 +9,7 @@
         <button md-button [mdMenuTriggerFor]="menu"><i class="icon-menu"></i></button>
         <md-menu #menu="mdMenu">
           <a class="dropdown-item" href="javascript:void(0)"><i class="icon-edit"></i>Edit</a>
-          <a class="dropdown-item" href="javascript:void(0)"><i class="icon-password"></i>Reset Password</a>
+          <a class="dropdown-item" href="javascript:void(0)" (click)="modalresetpassword()"><i class="icon-password"></i>Reset Password</a>
           <a class="dropdown-item" href="javascript:void(0)" (click)="openDelete()"><i class="icon-delete"></i>Delete User</a>
         </md-menu>
       </div>

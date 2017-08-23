@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MdDialog } from '@angular/material';
 import { DescriptionTestComponent } from '../../../modal/description-test/description-test.component';
+import { SearchpatientComponent } from '../../../modal/searchpatient/searchpatient.component';
 
 @Component({
   selector: 'app-test-list-repository',
@@ -13,6 +14,9 @@ export class TestListRepositoryComponent implements OnInit {
 
   openDescription() {
     this.dialog.open(DescriptionTestComponent);
+  }
+  openSearch() {
+    this.dialog.open(SearchpatientComponent);
   }
 
   ngOnInit() {

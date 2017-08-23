@@ -21,7 +21,7 @@ a:hover{ text-decoration: none; }
 .col-lg-9{ min-width: 1100px; width: calc(100% - 260px); }
 .col-md-3 { width: 25%; float: left; }
 .col-md-6 { width: 50%; float: left; }
-.mb0{ margin-bottom: 0px; }
+.mb0{ margin-bottom: 0; }
 .mb20{ margin-bottom: 20px; }
 .mb40{ margin-bottom: 40px; }
 
@@ -100,6 +100,14 @@ h4{
     position: relative;
     top: 1px;
   }
+
+  .linkblue{
+    color: #00ABFE;
+    display: inline-block;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+    .linkblue:hover{ color: #207CA8; }
 
 /* Tables
 ================================================== */
@@ -265,7 +273,7 @@ a.add{
   line-height: 59px;
   text-align: center;
   width: 56px;
-  box-shadow: 0px 2px 8px rgba(0,0,0,0.5);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
   font-size: 18px;
   z-index: 100;
 }
@@ -404,7 +412,6 @@ section.login .form .mat-input-underline { background-color: #FFFFFF; }
 fieldset.slidebutton{ margin-bottom: 15px; }
   fieldset.slidebutton label{
     display: inline-block;
-    font-weight: normal;
     margin-bottom: 0;
     font-weight: 400;
     font-size: 14px;
@@ -421,8 +428,8 @@ fieldset.slidebutton{ margin-bottom: 15px; }
 .steps{
   display: block;
   float: left;
-  padding: 10px 0px;
-  margin: 0px 20px;
+  padding: 10px 0;
+  margin: 0 20px;
   position: relative;
   top: 3px;
 }
@@ -488,7 +495,7 @@ fieldset.slidebutton{ margin-bottom: 15px; }
     display: block;
     font-size: 12px;
     text-align: left;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     padding-right: 30px;
     position: relative;
   }
@@ -558,27 +565,47 @@ fieldset.slidebutton{ margin-bottom: 15px; }
 /* Search
 ================================================== */
 div.search{ position: relative; }
-  div.search:after{
-    color: #00ABFE;
-    content: "\E917";
-    font-family: 'icomoon';
-    position: absolute;
-    top: 5px;
-    right: 15px;
-  }
   div.search input{
     border-radius: 20px;
     box-sizing: border-box;
     border: 1px solid rgba(0,0,0,0.12);
     height: 30px;
     line-height: 30px;
-    padding: 0px 40px 0px 15px;
+    padding: 0 40px 0 15px;
     width: 100%;
     background-color: #FFFFFF;
     font-size: 14px;
     color: #455A64;
   }
   div.search input:focus{ box-shadow: none; outline: none; }
+  div.search .button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 6px;
+    right: 15px;
+    color: #00ABFE;
+  }
+
+div.search.big{ margin-bottom: 20px; }
+  div.search.big input{
+    background-color: #f1f1f1;
+    height: 44px;
+    font-size: 17px;
+    font-weight: 300;
+    border-radius: 25px;
+  }
+  div.search.big .button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 8px;
+    right: 20px;
+    color: #00ABFE;
+    font-size: 22px;
+  }
 
 /* File Upload
 ================================================== */

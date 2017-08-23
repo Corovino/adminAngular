@@ -45,13 +45,12 @@ aside div.search{
   bottom: 30px;
   left: 0;
 }
-div.search:after{ content: ''; }
-aside div.search .button{
-  background-color: transparent;
-  border: none;
-  outline: none;
-  position: absolute;
-  top: 6px;
-  right: 32px;
-  color: #00ABFE;
-}
+  aside div.search .button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 6px;
+    right: 32px;
+    color: #00ABFE;
+  }
