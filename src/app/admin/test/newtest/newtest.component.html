@@ -86,10 +86,16 @@
                   <div class="col-sm-6 bl plr0 h1000">
                     <div class="accordeon">
                       <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                        <div class="panel">
+                        <div class="panel" >
                           <div class="panel-heading" role="tab" id="headingOne">
                             <h4 class="panel-title">
-                              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              <a role="button"
+                                 data-toggle="collapse"
+                                 data-parent="#accordion"
+                                 href="#collapseOne"
+                                 aria-expanded="true"
+                                 aria-controls="collapseOne"
+                                 (click)="asideStatus('problem')">
                                 <span class="icon-problem"></span>Problem <i class="icon-arrowbottom"></i>
                               </a>
                             </h4>
@@ -104,10 +110,17 @@
                             </div>
                           </div>
                         </div>
-                        <div class="panel">
+                        <div class="panel" >
                           <div class="panel-heading" role="tab" id="headingTwo">
                             <h4 class="panel-title">
-                              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              <a class="collapsed"
+                                 role="button"
+                                 data-toggle="collapse"
+                                 data-parent="#accordion"
+                                 href="#collapseTwo"
+                                 aria-expanded="false"
+                                 aria-controls="collapseTwo"
+                                 (click)="asideStatus('solution')">
                                 <span class="icon-solution"></span>Solution <i class="icon-arrowbottom"></i>
                               </a>
                             </h4>
@@ -125,10 +138,17 @@
                             </div>
                           </div>
                         </div>
-                        <div class="panel">
+                        <div class="panel" >
                           <div class="panel-heading" role="tab" id="headingThree">
                             <h4 class="panel-title">
-                              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              <a class="collapsed"
+                                 role="button"
+                                 data-toggle="collapse"
+                                 data-parent="#accordion"
+                                 href="#collapseThree"
+                                 aria-expanded="false"
+                                 aria-controls="collapseThree"
+                                 (click)="asideStatus('rules')">
                                 <span class="icon-rules"></span>Rules <i class="icon-arrowbottom"></i>
                               </a>
                             </h4>
@@ -141,7 +161,7 @@
                             </div>
                           </div>
                         </div>
-                        <div class="panel">
+                        <div class="panel" >
                           <div class="panel-heading" role="tab" id="headingFour">
                             <h4 class="panel-title">
                               <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
@@ -152,7 +172,9 @@
                           <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
                             <div class="panel-body">
                               <nav class="options">
-                                <a href="javascript:void(0)" class="current"><span class="icon-position"></span>Position</a>
+                                <a href="javascript:void(0)"
+                                   class="current"
+                                   (click)="asideStatus('position')"><span class="icon-position"></span>Position</a>
                               </nav>
                             </div>
                           </div>
@@ -161,7 +183,7 @@
                     </div>
                   </div>
                   <div class="col-sm-6 bl h1000">
-                    <div class="form problem configuration">
+                    <div class="form problem configuration"  *ngIf="status.problem">
                       <h4>Problem Configuration</h4>
                       <p class="text"><span>Problem Model:</span> Type</p>
                       <p class="text"><span>Type:</span>Legend</p>
@@ -216,7 +238,7 @@
                         </md-input-container>
                       </fieldset>
                     </div>
-                    <div class="form solution configuration">
+                    <div class="form solution configuration" *ngIf="status.solution">
                       <h4>Solution Configuration</h4>
                       <p class="text"><span>Solution Model:</span> Type</p>
                       <p class="text mb20"><span>Type:</span>Checklist</p>
@@ -251,7 +273,7 @@
                         </md-input-container>
                       </fieldset>
                     </div>
-                    <div class="form rules configuration">
+                    <div class="form rules configuration"    *ngIf="status.rules">
                       <h4>Rules Configuration</h4>
                       <ul class="ruleslist">
                         <li>Rule #1
@@ -269,7 +291,7 @@
                       </ul>
                       <a href="javascript:void(0)" class="addrule"><i class="icon-plus"></i></a>
                     </div>
-                    <div class="form position configuration">
+                    <div class="form position configuration" *ngIf="status.position">
                       <h4>Location Configuration</h4>
                       <fieldset>
                         <md-input-container>
