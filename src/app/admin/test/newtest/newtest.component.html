@@ -29,6 +29,13 @@
           </div>
         </div>
       </div>
+      <div class="contcenter mt20">
+        <ul class="inline">
+          <li> <a class="btn btn-primary blue" routerLink="/admin/test/testinfo">Back to Test</a></li>
+          <li> <a class="btn btn-primary blue">Save</a></li>
+          <li> <a class="btn btn-primary blue">Publish</a></li>
+        </ul>
+      </div>
       <div class="testcreation">
         <md-tab-group>
           <md-tab label="Interview">
@@ -54,32 +61,22 @@
             </div>
             <div class="row">
               <div class="col-sm-7">
-                <div class="cont">
+                <div class="cont" id="questionBox">
                   <div class="field">
                     <div class="number"><span>1.</span></div>
                     <p class="text"><span>Note:</span>{{noteTest}}</p>
                     <p>{{newTest}}</p>
-                    <ul class="checkboxes">
-                      <!--li><md-checkbox>Option Number 1</md-checkbox></li>
-                      <li><md-checkbox>Option Number 2</md-checkbox></li>
+                    <ul class="checkboxes" id="checkboxes">
+                      <li><md-checkbox>{{solutionTest.inputOne}}</md-checkbox></li>
+                      <!--li><md-checkbox>Option Number 2</md-checkbox></li>
                       <li><md-checkbox>Option Number 3</md-checkbox></li>
                       <li><md-checkbox>Option Number 4</md-checkbox></li-->
                     </ul>
                   </div>
-                  <!--div class="field">
-                    <div class="number"><span>2.</span></div>
-                  </div-->
-                  <div class="btnadd">
-                    <a href="javascript:void(0)" class="add"><i class="icon-plus"></i></a>
-                  </div>
-                  <div class="buttons">
-                    <a class="btn btn-primary blue left">Back to Test Info</a>
-                    <div class="right">
-                      <a class="btn btn-primary blue inline">Save</a>
-                      <a class="btn btn-primary blue inline">Next</a>
-                    </div>
-                  </div>
                 </div>
+                  <div class="btnadd">
+                    <a href="javascript:void(0)" class="add" (click)="questionBox()"><i class="icon-plus"></i></a>
+                  </div>
               </div>
               <div class="col-sm-5">
                 <div class="row">
@@ -182,7 +179,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-6 bl h1000">
+                  <div class="col-sm-6 bl h1000" >
                     <div class="form problem configuration"  *ngIf="status.problem">
                       <h4>Problem Configuration</h4>
                       <p class="text"><span>Problem Model:</span> Type</p>
@@ -238,36 +235,42 @@
                         </md-input-container>
                       </fieldset>
                     </div>
-                    <div class="form solution configuration" *ngIf="status.solution">
+                    <div class="form solution configuration" id="inputSolution" *ngIf="status.solution">
                       <h4>Solution Configuration</h4>
                       <p class="text"><span>Solution Model:</span> Type</p>
                       <p class="text mb20"><span>Type:</span>Checklist</p>
-                      <fieldset class="mb20">
+                      <fieldset class="mb20" #uno>
                         <md-input-container>
-                          <input mdInput #value1 maxlength="120" placeholder="Value 01" value="">
+                          <input mdInput
+                                 #value1
+                                 maxlength="120"
+                                 placeholder="Value 01"
+                                 value=""
+                                 [(ngModel)]="solutionTest.inputOne"
+                                 (keyup)="addCheckbox($event)">
                           <md-hint align="star">
-                            <a href="javascript:void(0)" class="plus"><i class="icon-plus"></i></a>
-                            <a hhref="javascript:void(0)" class="minus"><i class="icon-minus"></i></a>
+                            <a href="javascript:void(0)" class="plus" (click)="addElement()"><i class="icon-plus"></i></a>
+                            <a hhref="javascript:void(0)" class="minus" (click)="uno.remove()"><i class="icon-minus"></i></a>
                           </md-hint>
                           <md-hint align="end">{{value1.value.length}} / 120</md-hint>
                         </md-input-container>
                       </fieldset>
-                      <fieldset class="mb20">
+                      <fieldset class="mb20" #dos>
                         <md-input-container>
                           <input mdInput #value2 maxlength="120" placeholder="Value 02" value="">
                           <md-hint align="star">
-                            <a href="javascript:void(0)" class="plus"><i class="icon-plus"></i></a>
-                            <a href="javascript:void(0)" class="minus"><i class="icon-minus"></i></a>
+                            <a href="javascript:void(0)" class="plus" (click)="addElement()"><i class="icon-plus"></i></a>
+                            <a href="javascript:void(0)" class="minus" (click)="deleteElement($event, dos)"><i class="icon-minus"></i></a>
                           </md-hint>
                           <md-hint align="end">{{value2.value.length}} / 120</md-hint>
                         </md-input-container>
                       </fieldset>
-                      <fieldset class="mb20">
+                      <fieldset class="mb20" #tres>
                         <md-input-container>
                           <input mdInput #value3 maxlength="120" placeholder="Value 03" value="">
                           <md-hint align="star">
-                            <a href="javascript:void(0)" class="plus"><i class="icon-plus"></i></a>
-                            <a href="javascript:void(0)" class="minus"><i class="icon-minus"></i></a>
+                            <a href="javascript:void(0)" class="plus" (click)="addElement()"><i class="icon-plus"></i></a>
+                            <a href="javascript:void(0)" class="minus" (click)="deleteElement($event, tres)"><i class="icon-minus"></i></a>
                           </md-hint>
                           <md-hint align="end">{{value3.value.length}} / 120</md-hint>
                         </md-input-container>
